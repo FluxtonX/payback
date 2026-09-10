@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #030e31;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1208px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1208px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Visibility helpers matching source */
+@media (max-width: 1207px) {
+  .show-xl {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1208px) {
+  .hide-xl {
+    display: none !important;
+  }
+}
+
+/* SVG partner hover transition */
+.partnerIcon path {
+  transition: fill 0.3s ease;
+}
+
+.partnerIcon:hover .changeToOrange,
+.partnerIcon:hover path.changeToOrange {
+  fill: #ff9635;
+}
+
+.partnerIcon:hover .changeToWhite,
+.partnerIcon:hover path.changeToWhite {
+  fill: #edf2ff;
+}
+
+
+/* Base typography matching live computed styles */
+h1 {
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+@media (min-width: 414px) {
+  h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media (min-width: 1208px) {
+  h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+h2, .h2 {
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  h2, .h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1208px) {
+  h2, .h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+h3, .h3 {
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (min-width: 1208px) {
+  h3, .h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+h4, .h4 {
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Brand Yellow */
+.yellow {
+  color: #ffd700;
+}
+
