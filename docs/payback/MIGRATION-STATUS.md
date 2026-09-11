@@ -11,12 +11,15 @@ Tracking phases, milestones, and verification status.
 | **Phase 0** | **Global Architecture, Design Tokens & Shared Components** | Typography, Colors, Assets, Navbar, Footer, Global Layout, Registries | **COMPLETED** | 2026-09-10 | 2026-09-10 |
 | **Phase 1** | **Page 01: Homepage (`/`)** | All 18 sections, Intake Form, Packages, Reviews, Modals, Carousel | **COMPLETED** | 2026-09-10 | 2026-09-10 |
 | **Phase 2** | **Page 02: About Us (`/about-us/`)** | Mission, team, leadership, company timeline | **COMPLETED** | 2026-09-10 | 2026-09-10 |
-| **Phase 3** | **Page 03: Contact Us (`/contact-us/`)** | Full contact forms, global phone numbers, office locations | **PENDING** | - | - |
-| **Phase 4** | **Page 04: Testimonials (`/testimonials/`)** | Client reviews, trustpilot embed, case studies | **PENDING** | - | - |
-| **Phase 5** | **Page 05: FAQ (`/faq/`)** | Complete FAQ accordion categories | **PENDING** | - | - |
-| **Phase 6** | **Page 06: Services Suite** | Cyber Investigation, Crypto Tracing, KYC, B2B Security | **PENDING** | - | - |
-| **Phase 7** | **Page 07: Specific Scam Guides** | Forex, Binary, Crypto, Phishing guides | **PENDING** | - | - |
-| **Phase 8** | **Page 08: Blog & Articles** | Blog index & article template | **PENDING** | - | - |
+| **Phase 3** | **Page 03: Contact Us (`/contact-us/`)** | Full contact forms, global phone numbers, office locations | **COMPLETED** | 2026-09-10 | 2026-09-10 |
+| **Phase 4** | **Page 04: Testimonials (`/testimonials/`)** | Client reviews, Trustpilot embed, video reviews, scam categories | **COMPLETED** | 2026-09-10 | 2026-09-10 |
+| **Phase 5** | **Page 05: FAQ (`/faq/`)** | Complete FAQ accordion categories | **COMPLETED** | 2026-09-10 | 2026-09-10 |
+| **Phase 6** | **Page 06: Affiliate Page (`/affiliate-page/`)** | Affiliate workflow, 4-step cards, 2-col why work, partner statement | **COMPLETED** | 2026-09-10 | 2026-09-10 |
+| **Phase 7** | **Scam Guides Suite (8 Pages)** | All 8 Scam Guides: Binary Options, Forex, Crypto, Stock, Romance, Financial, Property, Credit Card | **COMPLETED** | 2026-09-11 | 2026-09-11 |
+| **Phase 8** | **Cyber Investigation & Services Suite** | Cyber Investigation, Crypto Tracing, KYC, AML, B2B Security | **PENDING** | - | - |
+| **Phase 9** | **Fraud Prevention & Security Tools** | Fraud prevention tools, Payback verifier, Scam detector | **PENDING** | - | - |
+| **Phase 10** | **Legal & Policy Suite** | Privacy policy, terms, whistleblowing, legal | **PENDING** | - | - |
+| **Phase 11** | **Blog Engine & Article Archive** | Blog index & dynamic article template (~150 posts) | **PENDING** | - | - |
 
 ---
 

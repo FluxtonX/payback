@@ -4,7 +4,7 @@ import IntakeForm from './IntakeForm';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="bg-[#112152] text-[#b7c3e8] pt-8 sm:pt-12 xl:pt-24 pb-8 xl:pb-16 font-sans relative overflow-hidden">
+    <section className="bg-[var(--brand-primary)] text-[var(--brand-periwinkle)] pt-8 sm:pt-12 xl:pt-24 pb-8 xl:pb-16 font-sans relative overflow-hidden">
       <div className="container max-w-[1208px] mx-auto px-4">
         <div className="xl:flex xl:items-start xl:justify-between relative">
           {/* Left Column: Headline, Subtitle, Desktop 'As Seen in' */}
@@ -13,13 +13,13 @@ export const HeroSection: React.FC = () => {
               <span className="text-[#ffd700]">Get your money back</span> from a scam
             </h1>
 
-            <p className="text-[16px] sm:text-[18px] xl:text-[20px] text-[#edf2ff] leading-[26px] sm:leading-[28px] xl:leading-[32px] max-w-[584px] mx-auto xl:mx-0 mb-8 xl:mb-20">
+            <p className="text-[16px] sm:text-[18px] xl:text-[20px] text-[var(--brand-soft)] leading-[26px] sm:leading-[28px] xl:leading-[32px] max-w-[584px] mx-auto xl:mx-0 mb-8 xl:mb-20">
               Thousands of clients used our Investigation Report to retrieve their losses. Start with securing a free consultation now
             </p>
 
             {/* Desktop 'As Seen In' (show-xl) */}
             <div className="hidden xl:flex items-center gap-6 text-[#a0a6ba]">
-              <p className="text-[#edf2ff] font-medium text-[16px]">As seen in:</p>
+              <p className="text-[var(--brand-soft)] font-medium text-[16px]">As seen in:</p>
               <div className="flex items-center gap-6">
                 <a
                   target="_blank"

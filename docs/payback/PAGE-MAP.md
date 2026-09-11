@@ -33,17 +33,17 @@ Total Discovered Routes: 256
 | Security Consulting | `/security-consulting/` | P1 (Core Service) | PENDING | PENDING | PENDING |
 | Soc Consulting | `/soc-consulting/` | P1 (Core Service) | PENDING | PENDING | PENDING |
 | Social Engineering | `/social-engineering/` | P1 (Core Service) | PENDING | PENDING | PENDING |
-| Binary Options Scams | `/binary-options-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Credit Card Phishing | `/credit-card-phishing/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Digital Currency Scams | `/digital-currency-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Financial Scams | `/financial-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Forex Scams | `/forex-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Property Scams | `/property-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Romance Scams | `/romance-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
+| Binary Options Scams | `/binary-options-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
+| Credit Card Phishing | `/credit-card-phishing/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
+| Digital Currency Scams | `/digital-currency-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
+| Financial Scams | `/financial-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
+| Forex Scams | `/forex-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
+| Property Scams | `/property-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
+| Romance Scams | `/romance-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
 | Scam Detector | `/scam-detector/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
 | Scam Detector/Contact Us | `/scam-detector/contact-us/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
 | Scam Detector/Privacy Policy | `/scam-detector/privacy-policy/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
-| Stock Trading Scams | `/stock-trading-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
+| Stock Trading Scams | `/stock-trading-scams/` | P2 (Scam Guide) | COMPLETE | COMPLETE | COMPLETE |
 | Blog/Other Scams | `/blog/other-scams/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
 | Blogs/The 2026 Online Scam Threat Landscape How To Get Your Money Back From A Scam | `/blogs/the-2026-online-scam-threat-landscape-how-to-get-your-money-back-from-a-scam/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |
 | Blogs/Why Millennials And Gen Z Are Increasingly Targeted By Scammers | `/blogs/why-millennials-and-gen-z-are-increasingly-targeted-by-scammers/` | P2 (Scam Guide) | PENDING | PENDING | PENDING |

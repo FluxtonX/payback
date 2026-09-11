@@ -81,7 +81,7 @@ export const ScamTypesSection: React.FC = () => {
     <div className="scamMargin my-16 min-[360px]:my-[72px] md:my-24 xl:mt-32 xl:mb-28">
       <section className="w-full pb-0 bg-white font-sans">
         <div className="container max-w-[1208px] mx-auto px-4 flex flex-col items-center">
-          <h2 className="text-[#030e31] font-bold text-center mb-10 md:mb-14 xl:mb-12 font-heading text-[28px] leading-[32px] md:text-[32px] md:leading-[40px] xl:text-[40px] xl:leading-[48px]">
+          <h2 className="text-[var(--brand-deep)] font-bold text-center mb-10 md:mb-14 xl:mb-12 font-heading text-[28px] leading-[32px] md:text-[32px] md:leading-[40px] xl:text-[40px] xl:leading-[48px]">
             The types of scams we can help you with
           </h2>
 
@@ -89,17 +89,17 @@ export const ScamTypesSection: React.FC = () => {
             Grid Container:
             Mobile/Tablet: 2 columns, max-w-[470px]
             Desktop (>= 1366px): 4 columns x 2 rows, max-w-[1000px], grid-flow: column
-            Border: 1px solid #112152, gap: 1px, background-color: #112152
+            Border: 1px solid var(--brand-primary), gap: 1px, background-color: var(--brand-primary)
           */}
-          <div className="grid grid-cols-2 xl:grid-cols-4 xl:grid-rows-2 xl:grid-flow-col border border-[#112152] bg-[#112152] gap-[1px] w-full max-w-[470px] xl:max-w-[1000px]">
+          <div className="grid grid-cols-2 xl:grid-cols-4 xl:grid-rows-2 xl:grid-flow-col border border-[var(--brand-primary)] bg-[var(--brand-primary)] gap-[1px] w-full max-w-[470px] xl:max-w-[1000px]">
             {scamCards.map((card, idx) => (
               <Link
                 key={idx}
                 href={card.href}
-                className={`group bg-white hover:bg-[#112152] text-[#030e31] hover:text-[#f4f4f4] transition-colors duration-300 ease-linear flex flex-col justify-center items-center gap-y-2 h-[88px] md:h-[104px] xl:h-[136px] cursor-pointer ${card.orderClass}`}
+                className={`group bg-white hover:bg-[var(--brand-primary)] text-[var(--brand-deep)] hover:text-[#f4f4f4] transition-colors duration-300 ease-linear flex flex-col justify-center items-center gap-y-2 h-[88px] md:h-[104px] xl:h-[136px] cursor-pointer ${card.orderClass}`}
               >
                 {card.svg}
-                <div className="font-heading font-bold text-center text-[#030e31] group-hover:text-[#f4f4f4] transition-colors duration-200 text-[14px] leading-[16px] md:text-[18px] md:leading-[24px] xl:text-[22px] max-w-[120px] md:max-w-none">
+                <div className="font-heading font-bold text-center text-[var(--brand-deep)] group-hover:text-[#f4f4f4] transition-colors duration-200 text-[14px] leading-[16px] md:text-[18px] md:leading-[24px] xl:text-[22px] max-w-[120px] md:max-w-none">
                   {card.title}
                 </div>
               </Link>

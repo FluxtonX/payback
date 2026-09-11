@@ -17,10 +17,10 @@ export const PbIsBackStatement: React.FC = () => {
             />
           </div>
 
-          <p className="text-[#112152] font-medium text-[15px] sm:text-[16px] mb-1 text-center">
+          <p className="text-[var(--brand-primary)] font-medium text-[15px] sm:text-[16px] mb-1 text-center">
             Statement on recent events:
           </p>
-          <h2 className="text-[28px] sm:text-[32px] lg:text-[40px] font-bold text-[#030e31] text-center mb-6 lg:mb-10 leading-tight">
+          <h2 className="text-[28px] sm:text-[32px] lg:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-6 lg:mb-10 leading-tight">
             Payback is back
           </h2>
 

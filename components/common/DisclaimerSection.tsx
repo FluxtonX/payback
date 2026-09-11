@@ -2,11 +2,11 @@ import React from 'react';
 
 export const DisclaimerSection: React.FC = () => {
   return (
-    <section className="bg-[#112152] text-[#edf2ff] font-sans pb-4 sm:pb-6 xl:pb-10">
+    <section className="bg-[var(--brand-primary)] text-[var(--brand-soft)] font-sans pb-4 sm:pb-6 xl:pb-10">
       <div className="container max-w-[1208px] mx-auto px-4">
         {/* Official Partners Container */}
         <div className="py-4 sm:py-5 xl:py-6 border-b border-[#a0a6ba]/40 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 xl:gap-10">
-          <p className="text-[14px] leading-[16px] text-[#edf2ff] font-light">
+          <p className="text-[14px] leading-[16px] text-[var(--brand-soft)] font-light">
             Official Partners:
           </p>
           <div className="flex items-center gap-6 sm:gap-8 xl:gap-10">
@@ -226,7 +226,7 @@ export const DisclaimerSection: React.FC = () => {
         </div>
 
         {/* Disclaimer Content Wrapper */}
-        <div className="pt-6 pb-4 flex flex-col items-center text-center max-w-[1208px] mx-auto text-[#edf2ff] text-[12px] sm:text-[13px] xl:text-[14px] leading-[22px] sm:leading-[24px]">
+        <div className="pt-6 pb-4 flex flex-col items-center text-center max-w-[1208px] mx-auto text-[var(--brand-soft)] text-[12px] sm:text-[13px] xl:text-[14px] leading-[22px] sm:leading-[24px]">
           <p className="mb-4">
             Money Back Ltd. (trading as Payback), Israeli company No. 515711653, is authorized and regulated in Israel &amp; operates globally.
             <br />

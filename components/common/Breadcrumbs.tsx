@@ -22,7 +22,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
           <Link
             href="/"
             itemProp="item"
-            className="text-[#a0a6ba] hover:text-[#030e31] transition-colors whitespace-nowrap overflow-hidden text-ellipsis font-normal"
+            className="text-[#a0a6ba] hover:text-[var(--brand-deep)] transition-colors whitespace-nowrap overflow-hidden text-ellipsis font-normal"
           >
             <span itemProp="name">Home</span>
           </Link>
@@ -50,7 +50,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
                   <Link
                     href={item.href}
                     itemProp="item"
-                    className="text-[#a0a6ba] hover:text-[#030e31] transition-colors font-normal"
+                    className="text-[#a0a6ba] hover:text-[var(--brand-deep)] transition-colors font-normal"
                   >
                     <span itemProp="name">{item.name}</span>
                   </Link>

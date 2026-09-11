@@ -85,11 +85,11 @@ export const VideoReviewsGrid: React.FC = () => {
                 >
                   <path
                     d="M28.0001 4.66699C15.1341 4.66699 4.66675 15.1343 4.66675 28.0003C4.66675 40.8663 15.1341 51.3337 28.0001 51.3337C40.8661 51.3337 51.3334 40.8663 51.3334 28.0003C51.3334 15.1343 40.8661 4.66699 28.0001 4.66699ZM28.0001 46.667C17.7077 46.667 9.33341 38.2927 9.33341 28.0003C9.33341 17.708 17.7077 9.33366 28.0001 9.33366C38.2924 9.33366 46.6667 17.708 46.6667 28.0003C46.6667 38.2927 38.2924 46.667 28.0001 46.667Z"
-                    className="fill-[#B7C3E8] group-hover:fill-[#ffd700] transition-colors"
+                    className="fill-[var(--brand-periwinkle)] group-hover:fill-[#ffd700] transition-colors"
                   />
                   <path
                     d="M21 39.6663L39.6667 27.9997L21 16.333V39.6663Z"
-                    className="fill-[#B7C3E8] group-hover:fill-[#ffd700] transition-colors"
+                    className="fill-[var(--brand-periwinkle)] group-hover:fill-[#ffd700] transition-colors"
                   />
                 </svg>
               </div>
@@ -141,7 +141,7 @@ export const VideoReviewsGrid: React.FC = () => {
           <li
             onClick={() => setCurrentPage(1)}
             className={`relative flex items-center justify-center w-10 md:w-12 xl:w-16 h-12 md:h-14 font-medium text-[16px] cursor-pointer hover:bg-white transition-colors ${
-              currentPage === 1 ? 'text-[#112152] font-bold bg-white' : 'text-[#616267]'
+              currentPage === 1 ? 'text-[var(--brand-primary)] font-bold bg-white' : 'text-[#616267]'
             }`}
           >
             1
@@ -154,7 +154,7 @@ export const VideoReviewsGrid: React.FC = () => {
           <li
             onClick={() => setCurrentPage(2)}
             className={`relative flex items-center justify-center w-10 md:w-12 xl:w-16 h-12 md:h-14 font-medium text-[16px] cursor-pointer hover:bg-white transition-colors ${
-              currentPage === 2 ? 'text-[#112152] font-bold bg-white' : 'text-[#616267]'
+              currentPage === 2 ? 'text-[var(--brand-primary)] font-bold bg-white' : 'text-[#616267]'
             }`}
           >
             2
@@ -167,7 +167,7 @@ export const VideoReviewsGrid: React.FC = () => {
           <li
             onClick={() => setCurrentPage(3)}
             className={`relative flex items-center justify-center w-10 md:w-12 xl:w-16 h-12 md:h-14 font-medium text-[16px] cursor-pointer hover:bg-white transition-colors ${
-              currentPage === 3 ? 'text-[#112152] font-bold bg-white' : 'text-[#616267]'
+              currentPage === 3 ? 'text-[var(--brand-primary)] font-bold bg-white' : 'text-[#616267]'
             }`}
           >
             3
@@ -180,7 +180,7 @@ export const VideoReviewsGrid: React.FC = () => {
           <li
             onClick={() => setCurrentPage(4)}
             className={`relative flex items-center justify-center w-10 md:w-12 xl:w-16 h-12 md:h-14 font-medium text-[16px] cursor-pointer hover:bg-white transition-colors ${
-              currentPage === 4 ? 'text-[#112152] font-bold bg-white' : 'text-[#616267]'
+              currentPage === 4 ? 'text-[var(--brand-primary)] font-bold bg-white' : 'text-[#616267]'
             }`}
           >
             4
@@ -193,7 +193,7 @@ export const VideoReviewsGrid: React.FC = () => {
           <li
             onClick={() => setCurrentPage(10)}
             className={`relative flex items-center justify-center w-12 md:w-14 xl:w-16 h-12 md:h-14 font-medium text-[16px] cursor-pointer hover:bg-white transition-colors ${
-              currentPage === 10 ? 'text-[#112152] font-bold bg-white' : 'text-[#616267]'
+              currentPage === 10 ? 'text-[var(--brand-primary)] font-bold bg-white' : 'text-[#616267]'
             }`}
           >
             ..10
@@ -243,7 +243,7 @@ export const VideoReviewsGrid: React.FC = () => {
       {/* Video Modal Player */}
       {activeVideo && (
         <div
-          className="fixed inset-0 z-50 bg-[#030e31]/80 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-[var(--brand-deep)]/80 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setActiveVideo(null)}
         >
           <div

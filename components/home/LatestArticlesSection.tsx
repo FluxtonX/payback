@@ -33,7 +33,7 @@ export const LatestArticlesSection: React.FC = () => {
   return (
     <section className="py-12 lg:py-20 font-sans bg-white">
       <div className="container max-w-[1208px] mx-auto px-4">
-        <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[#030e31] text-center mb-8 md:mb-12">
+        <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-8 md:mb-12">
           Latest articles
         </h2>
 
@@ -79,7 +79,7 @@ export const LatestArticlesSection: React.FC = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-[17px] sm:text-[19px] font-bold text-[#030e31] group-hover:text-[#112152] line-clamp-2 leading-snug">
+                    <h3 className="text-[17px] sm:text-[19px] font-bold text-[var(--brand-deep)] group-hover:text-[var(--brand-primary)] line-clamp-2 leading-snug">
                       {article.title}
                     </h3>
                   </div>
@@ -94,7 +94,7 @@ export const LatestArticlesSection: React.FC = () => {
             <button
               onClick={prevSlide}
               aria-label="Previous articles"
-              className="w-10 h-10 flex items-center justify-center text-[#112152] hover:bg-[#edf2ff] rounded-full transition-colors"
+              className="w-10 h-10 flex items-center justify-center text-[var(--brand-primary)] hover:bg-[var(--brand-soft)] rounded-full transition-colors"
             >
               <Image
                 src="/elements/carousel-chevron-left.svg"
@@ -113,7 +113,7 @@ export const LatestArticlesSection: React.FC = () => {
                   aria-label={`Go to slide ${dotIdx + 1}`}
                   className={`w-3 h-3 rounded-full transition-colors ${
                     currentIndex === dotIdx
-                      ? 'bg-[#112152]'
+                      ? 'bg-[var(--brand-primary)]'
                       : 'bg-[#a0a6ba] hover:bg-[#616267]'
                   }`}
                 />
@@ -124,7 +124,7 @@ export const LatestArticlesSection: React.FC = () => {
             <button
               onClick={nextSlide}
               aria-label="Next articles"
-              className="w-10 h-10 flex items-center justify-center text-[#112152] hover:bg-[#edf2ff] rounded-full transition-colors"
+              className="w-10 h-10 flex items-center justify-center text-[var(--brand-primary)] hover:bg-[var(--brand-soft)] rounded-full transition-colors"
             >
               <Image
                 src="/elements/carousel-chevron-right.svg"

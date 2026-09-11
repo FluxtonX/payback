@@ -15,7 +15,7 @@ export const InvestigationPackages: React.FC = () => {
     <section className="py-12 lg:py-16 bg-white font-sans">
       <div className="container max-w-[1000px] mx-auto px-4">
         {/* Title and Subtitle */}
-        <h2 className="text-[28px] sm:text-[32px] lg:text-[38px] font-bold text-[#030e31] text-center mb-4 leading-tight">
+        <h2 className="text-[28px] sm:text-[32px] lg:text-[38px] font-bold text-[var(--brand-deep)] text-center mb-4 leading-tight">
           Purchase an Investigation Report
         </h2>
         <p className="text-[15px] sm:text-[16px] text-[#616267] text-center max-w-[633px] mx-auto mb-10 leading-[24px]">
@@ -48,18 +48,18 @@ export const InvestigationPackages: React.FC = () => {
           {/* Card 1: Fraud Investigation Report */}
           <div className="bg-white border border-[#a0a6ba] p-6 xl:py-8 xl:px-5 flex flex-col justify-between">
             <div>
-              <h3 className="text-[20px] sm:text-[24px] xl:text-[22px] font-bold text-[#030e31] mb-5 min-h-[56px]">
+              <h3 className="text-[20px] sm:text-[24px] xl:text-[22px] font-bold text-[var(--brand-deep)] mb-5 min-h-[56px]">
                 Fraud Investigation Report
               </h3>
-              <div className="text-[40px] xl:text-[44px] font-semibold text-[#030e31] leading-none mb-3">
+              <div className="text-[40px] xl:text-[44px] font-semibold text-[var(--brand-deep)] leading-none mb-3">
                 $3,500
               </div>
-              <div className="text-[14px] text-[#112152] mb-5 h-6">
+              <div className="text-[14px] text-[var(--brand-primary)] mb-5 h-6">
                 + $750 per transaction
               </div>
               <div className="w-full h-px bg-[#a0a6ba] mb-6"></div>
 
-              <p className="text-[16px] font-medium text-[#030e31] mb-2">The service includes:</p>
+              <p className="text-[16px] font-medium text-[var(--brand-deep)] mb-2">The service includes:</p>
 
               <div className="space-y-1">
                 {[
@@ -84,11 +84,11 @@ export const InvestigationPackages: React.FC = () => {
                     body: 'With our investigation report, you’ll receive a recommended step-by-step action plan that will explain how we believe you can recover your losses.',
                   },
                 ].map((item) => (
-                  <div key={item.key} className="border-b border-[#edf2ff] last:border-0">
+                  <div key={item.key} className="border-b border-[var(--brand-soft)] last:border-0">
                     <button
                       type="button"
                       onClick={() => toggleAccordion(item.key)}
-                      className="w-full py-2.5 flex items-center justify-between text-left text-[15px] font-medium text-[#616267] hover:text-[#030e31] transition-colors"
+                      className="w-full py-2.5 flex items-center justify-between text-left text-[15px] font-medium text-[#616267] hover:text-[var(--brand-deep)] transition-colors"
                     >
                       <span className="flex items-center gap-2">
                         <span className="w-1 h-1 rounded-full bg-[#616267]"></span>
@@ -105,12 +105,12 @@ export const InvestigationPackages: React.FC = () => {
                       >
                         <path
                           d="M16.9395 7.93896L12.0005 12.879L7.06145 7.93896L4.93945 10.061L12.0005 17.121L19.0615 10.061L16.9395 7.93896Z"
-                          fill="#030E31"
+                          fill="var(--brand-deep)"
                         />
                       </svg>
                     </button>
                     {openAccordions[item.key] && (
-                      <div className="pl-3 pb-3 text-[14px] leading-[22px] text-[#112152]">
+                      <div className="pl-3 pb-3 text-[14px] leading-[22px] text-[var(--brand-primary)]">
                         {item.body}
                       </div>
                     )}
@@ -122,7 +122,7 @@ export const InvestigationPackages: React.FC = () => {
             <div className="mt-6">
               <Link
                 href="/contact-us/"
-                className="block w-full py-3 text-center bg-[#112152] text-white font-medium text-[15px] hover:bg-[#030e31] transition-colors border border-[#112152]"
+                className="block w-full py-3 text-center bg-[var(--brand-primary)] text-white font-medium text-[15px] hover:bg-[var(--brand-deep)] transition-colors border border-[var(--brand-primary)]"
               >
                 Order Now
               </Link>
@@ -132,16 +132,16 @@ export const InvestigationPackages: React.FC = () => {
           {/* Card 2: Full Support Package */}
           <div className="bg-white border border-[#a0a6ba] p-6 xl:py-8 xl:px-5 flex flex-col justify-between">
             <div>
-              <h3 className="text-[20px] sm:text-[24px] xl:text-[22px] font-bold text-[#030e31] mb-5 min-h-[56px]">
+              <h3 className="text-[20px] sm:text-[24px] xl:text-[22px] font-bold text-[var(--brand-deep)] mb-5 min-h-[56px]">
                 Full Support Package
               </h3>
-              <div className="text-[40px] xl:text-[44px] font-semibold text-[#030e31] leading-none mb-3">
+              <div className="text-[40px] xl:text-[44px] font-semibold text-[var(--brand-deep)] leading-none mb-3">
                 $10,000
               </div>
-              <div className="text-[14px] text-[#112152] mb-5 h-6"></div>
+              <div className="text-[14px] text-[var(--brand-primary)] mb-5 h-6"></div>
               <div className="w-full h-px bg-[#a0a6ba] mb-6"></div>
 
-              <p className="text-[16px] font-medium text-[#030e31] mb-2">The service includes:</p>
+              <p className="text-[16px] font-medium text-[var(--brand-deep)] mb-2">The service includes:</p>
 
               <div className="space-y-1">
                 {[
@@ -166,11 +166,11 @@ export const InvestigationPackages: React.FC = () => {
                     body: 'Rapid-response support for any urgent questions or issues during the implementation phase.',
                   },
                 ].map((item) => (
-                  <div key={item.key} className="border-b border-[#edf2ff] last:border-0">
+                  <div key={item.key} className="border-b border-[var(--brand-soft)] last:border-0">
                     <button
                       type="button"
                       onClick={() => toggleAccordion(item.key)}
-                      className="w-full py-2.5 flex items-center justify-between text-left text-[15px] font-medium text-[#616267] hover:text-[#030e31] transition-colors"
+                      className="w-full py-2.5 flex items-center justify-between text-left text-[15px] font-medium text-[#616267] hover:text-[var(--brand-deep)] transition-colors"
                     >
                       <span className="flex items-center gap-2">
                         <span className="w-1 h-1 rounded-full bg-[#616267]"></span>
@@ -187,12 +187,12 @@ export const InvestigationPackages: React.FC = () => {
                       >
                         <path
                           d="M16.9395 7.93896L12.0005 12.879L7.06145 7.93896L4.93945 10.061L12.0005 17.121L19.0615 10.061L16.9395 7.93896Z"
-                          fill="#030E31"
+                          fill="var(--brand-deep)"
                         />
                       </svg>
                     </button>
                     {openAccordions[item.key] && (
-                      <div className="pl-3 pb-3 text-[14px] leading-[22px] text-[#112152]">
+                      <div className="pl-3 pb-3 text-[14px] leading-[22px] text-[var(--brand-primary)]">
                         {item.body}
                       </div>
                     )}
@@ -204,7 +204,7 @@ export const InvestigationPackages: React.FC = () => {
             <div className="mt-6">
               <Link
                 href="/contact-us/"
-                className="block w-full py-3 text-center bg-[#112152] text-white font-medium text-[15px] hover:bg-[#030e31] transition-colors border border-[#112152]"
+                className="block w-full py-3 text-center bg-[var(--brand-primary)] text-white font-medium text-[15px] hover:bg-[var(--brand-deep)] transition-colors border border-[var(--brand-primary)]"
               >
                 Order Now
               </Link>
@@ -214,18 +214,18 @@ export const InvestigationPackages: React.FC = () => {
           {/* Card 3: Crypto Tracing Report */}
           <div className="bg-white border border-[#a0a6ba] p-6 xl:py-8 xl:px-5 flex flex-col justify-between">
             <div>
-              <h3 className="text-[20px] sm:text-[24px] xl:text-[22px] font-bold text-[#030e31] mb-5 min-h-[56px]">
+              <h3 className="text-[20px] sm:text-[24px] xl:text-[22px] font-bold text-[var(--brand-deep)] mb-5 min-h-[56px]">
                 Crypto Tracing Report
               </h3>
-              <div className="text-[40px] xl:text-[44px] font-semibold text-[#030e31] leading-none mb-3">
+              <div className="text-[40px] xl:text-[44px] font-semibold text-[var(--brand-deep)] leading-none mb-3">
                 $3,500
               </div>
-              <div className="text-[14px] text-[#112152] mb-5 h-6">
+              <div className="text-[14px] text-[var(--brand-primary)] mb-5 h-6">
                 + $750 per transaction
               </div>
               <div className="w-full h-px bg-[#a0a6ba] mb-6"></div>
 
-              <p className="text-[16px] font-medium text-[#030e31] mb-2">The service includes:</p>
+              <p className="text-[16px] font-medium text-[var(--brand-deep)] mb-2">The service includes:</p>
 
               <div className="space-y-1">
                 {[
@@ -245,11 +245,11 @@ export const InvestigationPackages: React.FC = () => {
                     body: 'With our investigation Report, you’ll receive a recommended step-by-step action plan explaining how we believe you can retrieve your losses.',
                   },
                 ].map((item) => (
-                  <div key={item.key} className="border-b border-[#edf2ff] last:border-0">
+                  <div key={item.key} className="border-b border-[var(--brand-soft)] last:border-0">
                     <button
                       type="button"
                       onClick={() => toggleAccordion(item.key)}
-                      className="w-full py-2.5 flex items-center justify-between text-left text-[15px] font-medium text-[#616267] hover:text-[#030e31] transition-colors"
+                      className="w-full py-2.5 flex items-center justify-between text-left text-[15px] font-medium text-[#616267] hover:text-[var(--brand-deep)] transition-colors"
                     >
                       <span className="flex items-center gap-2">
                         <span className="w-1 h-1 rounded-full bg-[#616267]"></span>
@@ -266,12 +266,12 @@ export const InvestigationPackages: React.FC = () => {
                       >
                         <path
                           d="M16.9395 7.93896L12.0005 12.879L7.06145 7.93896L4.93945 10.061L12.0005 17.121L19.0615 10.061L16.9395 7.93896Z"
-                          fill="#030E31"
+                          fill="var(--brand-deep)"
                         />
                       </svg>
                     </button>
                     {openAccordions[item.key] && (
-                      <div className="pl-3 pb-3 text-[14px] leading-[22px] text-[#112152]">
+                      <div className="pl-3 pb-3 text-[14px] leading-[22px] text-[var(--brand-primary)]">
                         {item.body}
                       </div>
                     )}
@@ -283,7 +283,7 @@ export const InvestigationPackages: React.FC = () => {
             <div className="mt-6">
               <Link
                 href="/contact-us/"
-                className="block w-full py-3 text-center bg-[#112152] text-white font-medium text-[15px] hover:bg-[#030e31] transition-colors border border-[#112152]"
+                className="block w-full py-3 text-center bg-[var(--brand-primary)] text-white font-medium text-[15px] hover:bg-[var(--brand-deep)] transition-colors border border-[var(--brand-primary)]"
               >
                 Order Now
               </Link>
@@ -292,17 +292,17 @@ export const InvestigationPackages: React.FC = () => {
         </div>
 
         {/* Free Initial Consultation Banner (spans full width across 3 columns) */}
-        <div className="bg-[#112152] text-white p-6 sm:p-8 xl:py-14 xl:px-8 text-center mb-6">
+        <div className="bg-[var(--brand-primary)] text-white p-6 sm:p-8 xl:py-14 xl:px-8 text-center mb-6">
           <div className="max-w-[584px] mx-auto flex flex-col items-center">
             <h3 className="text-[24px] sm:text-[30px] font-bold text-white mb-4">
               Free Initial Consultation
             </h3>
-            <p className="text-[15px] sm:text-[16px] text-[#edf2ff] leading-[24px] mb-6">
+            <p className="text-[15px] sm:text-[16px] text-[var(--brand-soft)] leading-[24px] mb-6">
               Tell us what happened and we will estimate whether your case is worth pursuing. If not, we will be open and direct about it. If it is, we will get to work as soon as possible
             </p>
             <Link
               href="/contact-us/"
-              className="px-8 py-3.5 bg-[#ffd700] text-[#112152] font-medium text-[16px] hover:bg-[#ffe661] hover:border-[#ffe661] transition-colors border border-[#ffd700]"
+              className="px-8 py-3.5 bg-[#ffd700] text-[var(--brand-primary)] font-medium text-[16px] hover:bg-[#ffe661] hover:border-[#ffe661] transition-colors border border-[#ffd700]"
             >
               Request a Consultation
             </Link>
@@ -314,7 +314,7 @@ export const InvestigationPackages: React.FC = () => {
           We provide investigation and Crypto tracing services, and our services are not intended to replace the help of any local law enforcement agencies. If you’ve been scammed, we advise you to first turn to the relevant authorities in your country.{' '}
           <Link
             href="/directory-of-law-enforcement-agencies/"
-            className="text-[#030e31] font-medium underline"
+            className="text-[var(--brand-deep)] font-medium underline"
           >
             See list here.
           </Link>

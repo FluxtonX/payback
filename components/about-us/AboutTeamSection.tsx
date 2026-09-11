@@ -28,7 +28,7 @@ export const AboutTeamSection: React.FC = () => {
     <section className="py-8 sm:py-12 xl:py-16 font-sans">
       <div className="container max-w-[1208px] mx-auto px-4">
         <div className="max-w-[594px] mx-auto">
-          <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[#030e31] text-center mb-4 leading-tight">
+          <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-4 leading-tight">
             About Our Team
           </h2>
 
@@ -39,7 +39,7 @@ export const AboutTeamSection: React.FC = () => {
           <div className="mt-8 space-y-6">
             {departments.map((dept, idx) => (
               <div key={idx}>
-                <h3 className="text-[20px] sm:text-[22px] font-bold text-[#030e31] mb-2">
+                <h3 className="text-[20px] sm:text-[22px] font-bold text-[var(--brand-deep)] mb-2">
                   {dept.title}
                 </h3>
                 <p className="text-[15px] sm:text-[16px] leading-[24px] text-[#616267]">

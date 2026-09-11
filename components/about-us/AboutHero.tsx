@@ -16,7 +16,7 @@ export const AboutHero: React.FC = () => {
 
           {/* Left Content Column */}
           <div className="flex flex-col items-center xl:items-start xl:w-[480px]">
-            <h1 className="text-[28px] sm:text-[34px] xl:text-[40px] leading-tight xl:leading-[48px] font-bold text-[#030e31] text-center xl:text-left mt-6 xl:mt-2 mb-4 xl:mb-4">
+            <h1 className="text-[28px] sm:text-[34px] xl:text-[40px] leading-tight xl:leading-[48px] font-bold text-[var(--brand-deep)] text-center xl:text-left mt-6 xl:mt-2 mb-4 xl:mb-4">
               About Us
             </h1>
 
@@ -30,7 +30,7 @@ export const AboutHero: React.FC = () => {
                 href="https://www.dnb.com/business-directory/company-profiles.money_back_ltd.58bd6a362fe51694f07c43d6170082f3.html"
                 target="_blank"
                 rel="noreferrer"
-                className="underline hover:text-[#030e31] transition-colors"
+                className="underline hover:text-[var(--brand-deep)] transition-colors"
               >
                 Dun &amp; Bradstreet
               </a>{' '}

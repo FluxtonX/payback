@@ -43,7 +43,7 @@ export const HowItWorksSection: React.FC = () => {
   return (
     <section className="overflow-x-hidden pb-8 mb-16 sm:mb-[72px] md:mb-20 lg:mb-24 xl:mb-32 font-sans">
       <div className="container max-w-[1208px] mx-auto px-4">
-        <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] font-bold text-[#030e31] text-center">
+        <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] font-bold text-[var(--brand-deep)] text-center">
           How it works
         </h2>
 
@@ -52,7 +52,7 @@ export const HowItWorksSection: React.FC = () => {
             <li
               key={idx}
               className={`relative p-4 sm:py-6 sm:px-6 xl:p-8 flex flex-col bg-white shadow-[8px_16px_32px_rgba(3,14,49,0.08)] ${
-                step.withBorder ? 'border border-[#112152]' : ''
+                step.withBorder ? 'border border-[var(--brand-primary)]' : ''
               }`}
             >
               <div className="relative mb-2 flex items-center pl-10 min-h-[32px]">
@@ -61,7 +61,7 @@ export const HowItWorksSection: React.FC = () => {
                   style={{ backgroundImage: `url(${step.icon})` }}
                   aria-hidden="true"
                 />
-                <h4 className="text-[18px] sm:text-[20px] font-bold text-[#030e31]">
+                <h4 className="text-[18px] sm:text-[20px] font-bold text-[var(--brand-deep)]">
                   {step.title}
                 </h4>
               </div>

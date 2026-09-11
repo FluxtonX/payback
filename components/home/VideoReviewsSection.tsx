@@ -135,7 +135,7 @@ export const VideoReviewsSection: React.FC = () => {
   return (
     <section className="py-12 sm:py-16 xl:py-20 bg-white font-sans overflow-hidden">
       <div className="container max-w-[1208px] mx-auto px-4">
-        <h2 className="text-[28px] sm:text-[32px] xl:text-[40px] leading-[32px] sm:leading-[40px] xl:leading-[48px] font-bold text-[#030e31] text-center mb-10">
+        <h2 className="text-[28px] sm:text-[32px] xl:text-[40px] leading-[32px] sm:leading-[40px] xl:leading-[48px] font-bold text-[var(--brand-deep)] text-center mb-10">
           Video reviews
         </h2>
 
@@ -161,7 +161,7 @@ export const VideoReviewsSection: React.FC = () => {
                     <div
                       key={vid.id}
                       onClick={() => setActiveVideo(vid.url)}
-                      className="group relative cursor-pointer overflow-hidden h-[208px] md:h-[248px] xl:h-[302px] bg-[#112152] select-none"
+                      className="group relative cursor-pointer overflow-hidden h-[208px] md:h-[248px] xl:h-[302px] bg-[var(--brand-primary)] select-none"
                     >
                       <Image
                         src={vid.preview}
@@ -190,12 +190,12 @@ export const VideoReviewsSection: React.FC = () => {
                         >
                           <path
                             d="M28.0001 4.66699C15.1341 4.66699 4.66675 15.1343 4.66675 28.0003C4.66675 40.8663 15.1341 51.3337 28.0001 51.3337C40.8661 51.3337 51.3334 40.8663 51.3334 28.0003C51.3334 15.1343 40.8661 4.66699 28.0001 4.66699ZM28.0001 46.667C17.7077 46.667 9.33341 38.2927 9.33341 28.0003C9.33341 17.708 17.7077 9.33366 28.0001 9.33366C38.2924 9.33366 46.6667 17.708 46.6667 28.0003C46.6667 38.2927 38.2924 46.667 28.0001 46.667Z"
-                            fill="#B7C3E8"
+                            fill="var(--brand-periwinkle)"
                             className="transition-colors group-hover:fill-[#ffd700]"
                           />
                           <path
                             d="M21 39.6663L39.6667 27.9997L21 16.333V39.6663Z"
-                            fill="#B7C3E8"
+                            fill="var(--brand-periwinkle)"
                             className="transition-colors group-hover:fill-[#ffd700]"
                           />
                         </svg>
@@ -233,7 +233,7 @@ export const VideoReviewsSection: React.FC = () => {
                 aria-label={`Go to slide ${idx + 1}`}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
                   currentSlide === idx
-                    ? 'bg-[#112152] scale-125'
+                    ? 'bg-[var(--brand-primary)] scale-125'
                     : 'bg-[#a0a6ba] opacity-50 hover:opacity-100'
                 }`}
               />
@@ -259,7 +259,7 @@ export const VideoReviewsSection: React.FC = () => {
         <div className="flex justify-center">
           <Link
             href="/testimonials/"
-            className="block w-full max-w-[344px] sm:max-w-[376px] py-3 text-center text-[16px] font-medium font-sans text-[#030e31] border border-[#112152] bg-transparent hover:bg-[#112152] hover:text-[#f4f4f4] transition-colors"
+            className="block w-full max-w-[344px] sm:max-w-[376px] py-3 text-center text-[16px] font-medium font-sans text-[var(--brand-deep)] border border-[var(--brand-primary)] bg-transparent hover:bg-[var(--brand-primary)] hover:text-[#f4f4f4] transition-colors"
           >
             See more video reviews
           </Link>

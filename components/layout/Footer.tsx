@@ -40,18 +40,18 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#030e31] text-[#edf2ff] font-sans pb-8 sm:pb-10">
+    <footer className="bg-[var(--brand-deep)] text-[var(--brand-soft)] font-sans pb-8 sm:pb-10">
       {/* Top Divider */}
       <hr className="w-full border-t border-[#a0a6ba]/30 m-0" />
 
       <div className="container max-w-[1208px] mx-auto px-4">
         {/* Mobile Accordion View (< 1208px) */}
-        <div className="block xl:hidden py-4 divide-y divide-[#112152]/60">
+        <div className="block xl:hidden py-4 divide-y divide-[var(--brand-primary)]/60">
           {/* Sitelinks */}
           <div className="py-2">
             <button
               onClick={() => toggleAccordion('sitelinks')}
-              className="w-full flex justify-between items-center text-left py-3 text-[#edf2ff] font-semibold text-[16px]"
+              className="w-full flex justify-between items-center text-left py-3 text-[var(--brand-soft)] font-semibold text-[16px]"
             >
               <span>Sitelinks</span>
               <svg
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
                   <li key={idx}>
                     <Link
                       href={link.href}
-                      className="text-[#a0a6ba] hover:text-[#edf2ff] transition-colors block py-0.5"
+                      className="text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors block py-0.5"
                     >
                       {link.title}
                     </Link>
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
           <div className="py-2">
             <button
               onClick={() => toggleAccordion('contact')}
-              className="w-full flex justify-between items-center text-left py-3 text-[#edf2ff] font-semibold text-[16px]"
+              className="w-full flex justify-between items-center text-left py-3 text-[var(--brand-soft)] font-semibold text-[16px]"
             >
               <span>Contact us</span>
               <svg
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
                     href="https://wa.me/+972539538554?text=Good day."
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-[#a0a6ba] hover:text-[#edf2ff] pb-2 border-b border-[#a0a6ba]/40 transition-colors"
+                    className="inline-flex items-center gap-2 text-[#a0a6ba] hover:text-[var(--brand-soft)] pb-2 border-b border-[#a0a6ba]/40 transition-colors"
                   >
                     <svg
                       width="24"
@@ -135,7 +135,7 @@ export const Footer: React.FC = () => {
                   <li key={idx}>
                     <a
                       href={`tel:${p.tel}`}
-                      className="text-[#a0a6ba] hover:text-[#edf2ff] transition-colors block py-0.5"
+                      className="text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors block py-0.5"
                     >
                       {p.country}{' '}
                       <span style={{ paddingRight: `${p.space}px` }} />{' '}
@@ -151,7 +151,7 @@ export const Footer: React.FC = () => {
           <div className="py-2">
             <button
               onClick={() => toggleAccordion('location')}
-              className="w-full flex justify-between items-center text-left py-3 text-[#edf2ff] font-semibold text-[16px]"
+              className="w-full flex justify-between items-center text-left py-3 text-[var(--brand-soft)] font-semibold text-[16px]"
             >
               <span>Location</span>
               <svg
@@ -180,7 +180,7 @@ export const Footer: React.FC = () => {
           <div className="py-2">
             <button
               onClick={() => toggleAccordion('hours')}
-              className="w-full flex justify-between items-center text-left py-3 text-[#edf2ff] font-semibold text-[16px]"
+              className="w-full flex justify-between items-center text-left py-3 text-[var(--brand-soft)] font-semibold text-[16px]"
             >
               <span>Our office hours (GMT)</span>
               <svg
@@ -211,7 +211,7 @@ export const Footer: React.FC = () => {
           <div className="py-2">
             <button
               onClick={() => toggleAccordion('social')}
-              className="w-full flex justify-between items-center text-left py-3 text-[#edf2ff] font-semibold text-[16px]"
+              className="w-full flex justify-between items-center text-left py-3 text-[var(--brand-soft)] font-semibold text-[16px]"
             >
               <span>Social</span>
               <svg
@@ -237,7 +237,7 @@ export const Footer: React.FC = () => {
                       href={s.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-[#a0a6ba] hover:text-[#edf2ff] transition-colors block py-0.5"
+                      className="text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors block py-0.5"
                     >
                       {s.name}
                     </a>
@@ -252,7 +252,7 @@ export const Footer: React.FC = () => {
         <div className="hidden xl:grid grid-cols-4 grid-rows-[auto_auto] gap-x-10 gap-y-10 pt-14 pb-10">
           {/* Post 1: Sitelinks (grid-column: 1 / 2; grid-row: 1 / 3) */}
           <div className="col-start-1 col-end-2 row-start-1 row-end-3 text-[#a0a6ba]">
-            <h4 className="text-[18px] font-semibold text-[#edf2ff] mb-4">
+            <h4 className="text-[18px] font-semibold text-[var(--brand-soft)] mb-4">
               Sitelinks
             </h4>
             <ul className="flex flex-col">
@@ -260,7 +260,7 @@ export const Footer: React.FC = () => {
                 <li key={idx} className="pt-2 first:pt-0">
                   <Link
                     href={link.href}
-                    className="text-[#a0a6ba] hover:text-[#edf2ff] text-[16px] transition-colors block py-0.5"
+                    className="text-[#a0a6ba] hover:text-[var(--brand-soft)] text-[16px] transition-colors block py-0.5"
                   >
                     {link.title}
                   </Link>
@@ -271,7 +271,7 @@ export const Footer: React.FC = () => {
 
           {/* Post 2: Contact us (grid-column: 2 / 3; grid-row: 1 / 3) */}
           <div className="col-start-2 col-end-3 row-start-1 row-end-3 text-[#a0a6ba]">
-            <h4 className="text-[18px] font-semibold text-[#edf2ff] mb-4">
+            <h4 className="text-[18px] font-semibold text-[var(--brand-soft)] mb-4">
               Contact us
             </h4>
             <ul>
@@ -281,7 +281,7 @@ export const Footer: React.FC = () => {
                   href="https://wa.me/+972539538554?text=Good day."
                   target="_blank"
                   rel="noreferrer"
-                  className="group inline-flex items-center gap-1.5 pb-3 border-b border-[#a0a6ba] text-[#a0a6ba] hover:text-[#edf2ff] transition-colors"
+                  className="group inline-flex items-center gap-1.5 pb-3 border-b border-[#a0a6ba] text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors"
                 >
                   <svg
                     width="24"
@@ -293,7 +293,7 @@ export const Footer: React.FC = () => {
                     <path
                       d="M16.0034 4.80957C22.18 4.80957 27.1867 9.81731 27.1867 15.995C27.1867 22.1728 22.18 27.1805 16.0034 27.1805C14.1 27.1832 12.2276 26.698 10.565 25.7712L10.2239 25.5721L6.83308 26.5698C6.64855 26.6242 6.4532 26.6305 6.26554 26.5882C6.07788 26.5459 5.90412 26.4564 5.76075 26.3281C5.61737 26.1999 5.50913 26.0371 5.44628 25.8552C5.38343 25.6734 5.36805 25.4785 5.40161 25.2891L5.43069 25.1671L6.42824 21.7757C5.37371 20.0322 4.81748 18.0328 4.82008 15.995C4.82008 9.81731 9.82685 4.80957 16.0034 4.80957ZM16.0034 7.04667C14.4015 7.04638 12.829 7.47625 11.4499 8.2914C10.0709 9.10655 8.93594 10.2771 8.16363 11.6807C7.39131 13.0844 7.00996 14.6697 7.05938 16.2711C7.1088 17.8726 7.58719 19.4313 8.44459 20.7847C8.66602 21.1337 8.76108 21.5632 8.68615 21.9893L8.64254 22.1717L8.14936 23.8506L9.82797 23.3573C10.3122 23.2142 10.8155 23.3014 11.2147 23.5553C12.3871 24.2978 13.7161 24.7573 15.0966 24.8976C16.4771 25.0379 17.8714 24.855 19.1691 24.3636C20.4668 23.8721 21.6324 23.0854 22.5738 22.0657C23.5152 21.0461 24.2065 19.8213 24.5932 18.4884C24.9798 17.1555 25.0512 15.7508 24.8016 14.3856C24.552 13.0203 23.9883 11.7318 23.1551 10.622C22.3219 9.51211 21.242 8.61133 20.0008 7.99081C18.7596 7.3703 17.391 7.04706 16.0034 7.04667Z"
                       fill="#A0A6BA"
-                      className="group-hover:fill-[#edf2ff] transition-colors"
+                      className="group-hover:fill-[var(--brand-soft)] transition-colors"
                     />
                   </svg>
                   <span>+972-539-538-554</span>
@@ -305,7 +305,7 @@ export const Footer: React.FC = () => {
                 <li key={idx} className="pb-2 last:pb-0">
                   <a
                     href={`tel:${p.tel}`}
-                    className="text-[#a0a6ba] hover:text-[#edf2ff] text-[16px] transition-colors block"
+                    className="text-[#a0a6ba] hover:text-[var(--brand-soft)] text-[16px] transition-colors block"
                   >
                     {p.country}{' '}
                     <span style={{ paddingRight: `${p.space}px` }} />{' '}
@@ -318,7 +318,7 @@ export const Footer: React.FC = () => {
 
           {/* Post 3: Location (grid-column: 3 / 4; grid-row: 1 / 2) */}
           <div className="col-start-3 col-end-4 row-start-1 row-end-2 text-[#a0a6ba]">
-            <h4 className="text-[18px] font-semibold text-[#edf2ff] mb-4">
+            <h4 className="text-[18px] font-semibold text-[var(--brand-soft)] mb-4">
               Location
             </h4>
             <p className="text-[#a0a6ba] text-[16px] leading-[24px]">
@@ -328,7 +328,7 @@ export const Footer: React.FC = () => {
 
           {/* Post 4: Office hours (grid-column: 3 / 4; grid-row: 2 / 2) */}
           <div className="col-start-3 col-end-4 row-start-2 row-end-3 text-[#a0a6ba]">
-            <h4 className="text-[18px] font-semibold text-[#edf2ff] mb-4">
+            <h4 className="text-[18px] font-semibold text-[var(--brand-soft)] mb-4">
               Our office hours (GMT)
             </h4>
             <ul className="select-none">
@@ -342,7 +342,7 @@ export const Footer: React.FC = () => {
 
           {/* Post 5: Social (grid-column: 4 / 4; grid-row: 1 / 2) */}
           <div className="col-start-4 col-end-5 row-start-1 row-end-2 text-[#a0a6ba]">
-            <h4 className="text-[18px] font-semibold text-[#edf2ff] mb-4">
+            <h4 className="text-[18px] font-semibold text-[var(--brand-soft)] mb-4">
               Social
             </h4>
             <ul>
@@ -352,7 +352,7 @@ export const Footer: React.FC = () => {
                     href={s.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-[#a0a6ba] hover:text-[#edf2ff] text-[16px] transition-colors block"
+                    className="text-[#a0a6ba] hover:text-[var(--brand-soft)] text-[16px] transition-colors block"
                   >
                     {s.name}
                   </a>
@@ -372,7 +372,7 @@ export const Footer: React.FC = () => {
             <li>
               <Link
                 href="/tnc/"
-                className="text-[#a0a6ba] hover:text-[#edf2ff] transition-colors"
+                className="text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors"
               >
                 Terms &amp; Conditions
               </Link>
@@ -380,7 +380,7 @@ export const Footer: React.FC = () => {
             <li>
               <Link
                 href="/privacy-policy/"
-                className="text-[#a0a6ba] hover:text-[#edf2ff] transition-colors"
+                className="text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors"
               >
                 Privacy Policy
               </Link>
@@ -388,7 +388,7 @@ export const Footer: React.FC = () => {
             <li>
               <Link
                 href="/legal/"
-                className="text-[#a0a6ba] hover:text-[#edf2ff] transition-colors"
+                className="text-[#a0a6ba] hover:text-[var(--brand-soft)] transition-colors"
               >
                 Legal
               </Link>

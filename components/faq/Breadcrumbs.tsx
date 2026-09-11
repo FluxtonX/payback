@@ -18,7 +18,7 @@ export const Breadcrumbs: React.FC = () => {
           <Link
             itemProp="item"
             href="/"
-            className="text-[#a0a6ba] hover:text-[#030e31] transition-colors cursor-pointer font-normal"
+            className="text-[#a0a6ba] hover:text-[var(--brand-deep)] transition-colors cursor-pointer font-normal"
           >
             <span itemProp="name">Home</span>
           </Link>

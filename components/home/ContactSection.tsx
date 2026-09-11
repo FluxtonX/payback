@@ -59,26 +59,26 @@ export const ContactSection: React.FC = () => {
         <div className="bg-white shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] p-5 sm:p-8 md:py-12 md:px-16 lg:px-24 flex flex-col items-center">
           {submitted ? (
             <div className="py-16 text-center max-w-[400px]">
-              <div className="w-16 h-16 bg-[#112152] rounded-full flex items-center justify-center mx-auto mb-4 text-[#ffd700]">
+              <div className="w-16 h-16 bg-[var(--brand-primary)] rounded-full flex items-center justify-center mx-auto mb-4 text-[#ffd700]">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="text-[22px] font-bold text-[#030e31] mb-2">Thank you!</h3>
+              <h3 className="text-[22px] font-bold text-[var(--brand-deep)] mb-2">Thank you!</h3>
               <p className="text-[#616267] text-[16px] mb-6">
                 Your request has been received. One of our fraud investigation specialists will contact you shortly.
               </p>
               <button
                 type="button"
                 onClick={() => setSubmitted(false)}
-                className="px-6 py-2.5 bg-[#112152] text-white font-medium text-[15px]"
+                className="px-6 py-2.5 bg-[var(--brand-primary)] text-white font-medium text-[15px]"
               >
                 Send another message
               </button>
             </div>
           ) : (
             <>
-              <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[#030e31] text-center mb-4 leading-tight">
+              <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-4 leading-tight">
                 Contact us now to get started
               </h2>
               <p className="text-[16px] text-[#616267] text-center max-w-[584px] mb-8 font-normal">
@@ -93,7 +93,7 @@ export const ContactSection: React.FC = () => {
                       onClick={() => setIntentOpen(!intentOpen)}
                       className={`relative w-full bg-[#f4f4f4] border px-4 py-3.5 flex items-center justify-between cursor-pointer select-none text-[16px] ${
                         formData.intent
-                          ? 'text-[#112152] border-[#112152] bg-white'
+                          ? 'text-[var(--brand-primary)] border-[var(--brand-primary)] bg-white'
                           : 'text-[#616267] border-[#f4f4f4]'
                       }`}
                     >
@@ -107,7 +107,7 @@ export const ContactSection: React.FC = () => {
                       />
                     </div>
                     {intentOpen && (
-                      <div className="absolute top-full left-0 w-full bg-white border border-[#b7c3e8] shadow-lg z-30">
+                      <div className="absolute top-full left-0 w-full bg-white border border-[var(--brand-periwinkle)] shadow-lg z-30">
                         {intentOptions.map((opt, i) => (
                           <div
                             key={i}
@@ -115,7 +115,7 @@ export const ContactSection: React.FC = () => {
                               setFormData({ ...formData, intent: opt });
                               setIntentOpen(false);
                             }}
-                            className="px-4 py-3 text-[15px] text-[#030e31] hover:bg-[#edf2ff] cursor-pointer"
+                            className="px-4 py-3 text-[15px] text-[var(--brand-deep)] hover:bg-[var(--brand-soft)] cursor-pointer"
                           >
                             {opt}
                           </div>
@@ -132,7 +132,7 @@ export const ContactSection: React.FC = () => {
                       value={formData.firstName}
                       onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                       required
-                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[#112152] focus:bg-white px-4 py-3.5 text-[16px] text-[#112152] outline-none transition-colors placeholder-[#616267]"
+                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[var(--brand-primary)] focus:bg-white px-4 py-3.5 text-[16px] text-[var(--brand-primary)] outline-none transition-colors placeholder-[#616267]"
                     />
                   </div>
 
@@ -143,7 +143,7 @@ export const ContactSection: React.FC = () => {
                       value={formData.lastName}
                       onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                       required
-                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[#112152] focus:bg-white px-4 py-3.5 text-[16px] text-[#112152] outline-none transition-colors placeholder-[#616267]"
+                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[var(--brand-primary)] focus:bg-white px-4 py-3.5 text-[16px] text-[var(--brand-primary)] outline-none transition-colors placeholder-[#616267]"
                     />
                   </div>
 
@@ -155,7 +155,7 @@ export const ContactSection: React.FC = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       required
-                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[#112152] focus:bg-white px-4 py-3.5 text-[16px] text-[#112152] outline-none transition-colors placeholder-[#616267]"
+                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[var(--brand-primary)] focus:bg-white px-4 py-3.5 text-[16px] text-[var(--brand-primary)] outline-none transition-colors placeholder-[#616267]"
                     />
                   </div>
 
@@ -166,7 +166,7 @@ export const ContactSection: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
-                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[#112152] focus:bg-white px-4 py-3.5 text-[16px] text-[#112152] outline-none transition-colors placeholder-[#616267]"
+                      className="w-full bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[var(--brand-primary)] focus:bg-white px-4 py-3.5 text-[16px] text-[var(--brand-primary)] outline-none transition-colors placeholder-[#616267]"
                     />
                   </div>
 
@@ -176,7 +176,7 @@ export const ContactSection: React.FC = () => {
                       onClick={() => setScamTypeOpen(!scamTypeOpen)}
                       className={`relative w-full bg-[#f4f4f4] border px-4 py-3.5 flex items-center justify-between cursor-pointer select-none text-[16px] ${
                         formData.scamType
-                          ? 'text-[#112152] border-[#112152] bg-white'
+                          ? 'text-[var(--brand-primary)] border-[var(--brand-primary)] bg-white'
                           : 'text-[#616267] border-[#f4f4f4]'
                       }`}
                     >
@@ -190,7 +190,7 @@ export const ContactSection: React.FC = () => {
                       />
                     </div>
                     {scamTypeOpen && (
-                      <div className="absolute top-full left-0 w-full bg-white border border-[#b7c3e8] shadow-lg z-30 max-h-60 overflow-y-auto">
+                      <div className="absolute top-full left-0 w-full bg-white border border-[var(--brand-periwinkle)] shadow-lg z-30 max-h-60 overflow-y-auto">
                         {scamOptions.map((opt, i) => (
                           <div
                             key={i}
@@ -198,7 +198,7 @@ export const ContactSection: React.FC = () => {
                               setFormData({ ...formData, scamType: opt });
                               setScamTypeOpen(false);
                             }}
-                            className="px-4 py-2.5 text-[15px] text-[#030e31] hover:bg-[#edf2ff] cursor-pointer"
+                            className="px-4 py-2.5 text-[15px] text-[var(--brand-deep)] hover:bg-[var(--brand-soft)] cursor-pointer"
                           >
                             {opt}
                           </div>
@@ -212,7 +212,7 @@ export const ContactSection: React.FC = () => {
                       onClick={() => setLostAmountOpen(!lostAmountOpen)}
                       className={`relative w-full bg-[#f4f4f4] border px-4 py-3.5 flex items-center justify-between cursor-pointer select-none text-[16px] ${
                         formData.lostAmount
-                          ? 'text-[#112152] border-[#112152] bg-white'
+                          ? 'text-[var(--brand-primary)] border-[var(--brand-primary)] bg-white'
                           : 'text-[#616267] border-[#f4f4f4]'
                       }`}
                     >
@@ -226,7 +226,7 @@ export const ContactSection: React.FC = () => {
                       />
                     </div>
                     {lostAmountOpen && (
-                      <div className="absolute top-full left-0 w-full bg-white border border-[#b7c3e8] shadow-lg z-30 max-h-60 overflow-y-auto">
+                      <div className="absolute top-full left-0 w-full bg-white border border-[var(--brand-periwinkle)] shadow-lg z-30 max-h-60 overflow-y-auto">
                         {amountOptions.map((opt, i) => (
                           <div
                             key={i}
@@ -234,7 +234,7 @@ export const ContactSection: React.FC = () => {
                               setFormData({ ...formData, lostAmount: opt });
                               setLostAmountOpen(false);
                             }}
-                            className="px-4 py-2.5 text-[15px] text-[#030e31] hover:bg-[#edf2ff] cursor-pointer"
+                            className="px-4 py-2.5 text-[15px] text-[var(--brand-deep)] hover:bg-[var(--brand-soft)] cursor-pointer"
                           >
                             {opt}
                           </div>
@@ -249,7 +249,7 @@ export const ContactSection: React.FC = () => {
                       placeholder="Outline your case"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full h-[140px] bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[#112152] focus:bg-white px-4 py-3.5 text-[16px] text-[#112152] outline-none transition-colors placeholder-[#616267] resize-none"
+                      className="w-full h-[140px] bg-[#f4f4f4] border border-[#f4f4f4] focus:border-[var(--brand-primary)] focus:bg-white px-4 py-3.5 text-[16px] text-[var(--brand-primary)] outline-none transition-colors placeholder-[#616267] resize-none"
                     ></textarea>
                   </div>
 
@@ -257,7 +257,7 @@ export const ContactSection: React.FC = () => {
                   <div className="md:col-span-2 flex justify-center">
                     <button
                       type="submit"
-                      className="w-full sm:w-auto min-w-[280px] px-8 py-3.5 bg-[#ffd700] text-[#112152] font-medium text-[16px] hover:bg-[#ffe661] hover:border-[#ffe661] transition-colors border border-[#ffd700]"
+                      className="w-full sm:w-auto min-w-[280px] px-8 py-3.5 bg-[#ffd700] text-[var(--brand-primary)] font-medium text-[16px] hover:bg-[#ffe661] hover:border-[#ffe661] transition-colors border border-[#ffd700]"
                     >
                       Get a free consultation
                     </button>

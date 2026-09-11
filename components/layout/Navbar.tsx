@@ -171,7 +171,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
 
   return (
     <>
-      <header className="sticky top-0 left-0 w-full bg-[#112152] text-[#f4f4f4] z-50 py-5 min-[1366px]:py-6 min-[1366px]:min-h-[88px] px-4 md:px-6 min-[1366px]:px-20 transition-colors">
+      <header className="sticky top-0 left-0 w-full bg-[var(--brand-primary)] text-[#f4f4f4] z-50 py-5 min-[1366px]:py-6 min-[1366px]:min-h-[88px] px-4 md:px-6 min-[1366px]:px-20 transition-colors">
         <div className="max-w-[1208px] mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="block flex-shrink-0">
@@ -220,14 +220,14 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   >
                     <path
                       d="M16.939 7L12 11.94L7.06096 7L4.93896 9.122L12 16.182L19.061 9.122L16.939 7Z"
-                      fill={activeDropdown === 'services' ? '#f4f4f4' : '#B7C3E8'}
+                      fill={activeDropdown === 'services' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
                     />
                   </svg>
                 </div>
 
                 {/* Services Flyout Container */}
                 {activeDropdown === 'services' && (
-                  <div className="absolute top-[54px] -left-[130px] w-[410px] bg-white text-[#112152] shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] z-60">
+                  <div className="absolute top-[54px] -left-[130px] w-[410px] bg-white text-[var(--brand-primary)] shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] z-60">
                     <div className="p-4 flex flex-col gap-1 relative">
                       {serviceCategories.map((cat, idx) => (
                         <div
@@ -235,8 +235,8 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                           onMouseEnter={() => setActiveServiceCategory(idx)}
                           className={`p-3 flex items-center justify-between cursor-pointer transition-colors relative ${
                             activeServiceCategory === idx
-                              ? 'bg-[#112152] text-[#f4f4f4]'
-                              : 'text-[#112152] hover:bg-[#edf2ff]/50'
+                              ? 'bg-[var(--brand-primary)] text-[#f4f4f4]'
+                              : 'text-[var(--brand-primary)] hover:bg-[var(--brand-soft)]/50'
                           }`}
                         >
                           <div className="flex items-center gap-3 font-medium text-[16px]">
@@ -265,9 +265,9 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                                 <Link
                                   key={linkIdx}
                                   href={linkItem.href}
-                                  className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[#112152] transition-colors whitespace-nowrap"
+                                  className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
                                 >
-                                  <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[#112152] transition-all flex-shrink-0" />
+                                  <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
                                   <span>{linkItem.label}</span>
                                 </Link>
                               ))}
@@ -278,8 +278,8 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     </div>
 
                     {/* Bottom Disclaimer Note */}
-                    <div className="p-3.5 px-7 bg-[#f6f6f6] text-[#616267] text-[14px] leading-[22px] border-t border-[#edf2ff]">
-                      <strong className="font-semibold text-[#112152]">Note:</strong> Due to local regulations, not all services are available in all countries. For more information, contact us.
+                    <div className="p-3.5 px-7 bg-[#f6f6f6] text-[#616267] text-[14px] leading-[22px] border-t border-[var(--brand-soft)]">
+                      <strong className="font-semibold text-[var(--brand-primary)]">Note:</strong> Due to local regulations, not all services are available in all countries. For more information, contact us.
                     </div>
                   </div>
                 )}
@@ -305,7 +305,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   >
                     <path
                       d="M16.939 7L12 11.94L7.06096 7L4.93896 9.122L12 16.182L19.061 9.122L16.939 7Z"
-                      fill={activeDropdown === 'online-safety' ? '#f4f4f4' : '#B7C3E8'}
+                      fill={activeDropdown === 'online-safety' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
                     />
                   </svg>
                 </div>
@@ -314,27 +314,27 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <li>
                       <Link
                         href="/whistleblowing/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[#112152] transition-colors whitespace-nowrap"
+                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
                       >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[#112152] transition-all flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
                         <span>Whistleblowing</span>
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/fraud-prevention-tools/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[#112152] transition-colors whitespace-nowrap"
+                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
                       >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[#112152] transition-all flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
                         <span>Fraud Prevention Tools</span>
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/payback-verifier/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[#112152] transition-colors whitespace-nowrap"
+                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
                       >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[#112152] transition-all flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
                         <span>Payback Verifier</span>
                       </Link>
                     </li>
@@ -362,12 +362,12 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   >
                     <path
                       d="M16.939 7L12 11.94L7.06096 7L4.93896 9.122L12 16.182L19.061 9.122L16.939 7Z"
-                      fill={activeDropdown === 'blog' ? '#f4f4f4' : '#B7C3E8'}
+                      fill={activeDropdown === 'blog' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
                     />
                   </svg>
                 </div>
                 {activeDropdown === 'blog' && (
-                  <div className="absolute top-[54px] -left-[75px] w-[460px] bg-white text-[#112152] p-4 shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] z-60 flex flex-col gap-4">
+                  <div className="absolute top-[54px] -left-[75px] w-[460px] bg-white text-[var(--brand-primary)] p-4 shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] z-60 flex flex-col gap-4">
                     <ul className="flex flex-col gap-4">
                       {blogPreviewArticles.map((article, idx) => (
                         <li key={idx} className="group/item">
@@ -386,7 +386,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                               <span className="text-[#616267] font-light text-[14px] leading-[16px]">
                                 {article.date}
                               </span>
-                              <p className="text-[#112152] text-[16px] leading-[24px] font-normal line-clamp-2 max-h-[48px] overflow-hidden group-hover/item:text-[#216ba5] transition-colors whitespace-normal">
+                              <p className="text-[var(--brand-primary)] text-[16px] leading-[24px] font-normal line-clamp-2 max-h-[48px] overflow-hidden group-hover/item:text-[var(--brand-accent)] transition-colors whitespace-normal">
                                 {article.title}
                               </p>
                             </div>
@@ -396,7 +396,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     </ul>
                     <Link
                       href="/blog/"
-                      className="inline-flex items-center justify-between text-[15px] font-semibold text-[#112152] hover:text-[#216ba5] transition-colors pt-2 border-t border-[#edf2ff] whitespace-nowrap"
+                      className="inline-flex items-center justify-between text-[15px] font-semibold text-[var(--brand-primary)] hover:text-[var(--brand-accent)] transition-colors pt-2 border-t border-[var(--brand-soft)] whitespace-nowrap"
                     >
                       <span>View All Articles</span>
                       <Image
@@ -430,7 +430,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   >
                     <path
                       d="M16.939 7L12 11.94L7.06096 7L4.93896 9.122L12 16.182L19.061 9.122L16.939 7Z"
-                      fill={activeDropdown === 'payback' ? '#f4f4f4' : '#B7C3E8'}
+                      fill={activeDropdown === 'payback' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
                     />
                   </svg>
                 </div>
@@ -439,18 +439,18 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <li>
                       <Link
                         href="/contact-us/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[#112152] transition-colors whitespace-nowrap"
+                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
                       >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[#112152] transition-all flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
                         <span>Contact us</span>
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/about-us/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[#112152] transition-colors whitespace-nowrap"
+                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
                       >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[#112152] transition-all flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
                         <span>About Us</span>
                       </Link>
                     </li>
@@ -495,7 +495,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
             <div className="hidden min-[1366px]:block">
               <Link
                 href="/contact-us/"
-                className="block text-center w-[228px] py-[12px] bg-[#112152] border border-[#edf2ff] text-[#edf2ff] font-medium text-[16px] hover:bg-[#edf2ff] hover:text-[#112152] transition-colors whitespace-nowrap"
+                className="block text-center w-[228px] py-[12px] bg-[var(--brand-primary)] border border-[var(--brand-soft)] text-[var(--brand-soft)] font-medium text-[16px] hover:bg-[var(--brand-soft)] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
               >
                 Get your money back
               </Link>
@@ -541,13 +541,13 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
 
       {/* Mobile Drawer Menu (< 1366px) */}
       {mobileMenuOpen && (
-        <div className="fixed inset-x-0 top-[72px] md:top-[80px] bottom-0 bg-white z-40 overflow-y-auto px-6 py-6 text-[#030e31] font-sans min-[1366px]:hidden">
+        <div className="fixed inset-x-0 top-[72px] md:top-[80px] bottom-0 bg-white z-40 overflow-y-auto px-6 py-6 text-[var(--brand-deep)] font-sans min-[1366px]:hidden">
           <ul className="space-y-4 text-[16px] font-medium divide-y divide-[#f4f4f4]">
             <li className="pt-2">
               <Link
                 href="/testimonials/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block py-2 text-[#112152]"
+                className="block py-2 text-[var(--brand-primary)]"
               >
                 Testimonials
               </Link>
@@ -557,7 +557,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
             <li className="pt-2">
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="w-full flex justify-between items-center py-2 text-[#112152]"
+                className="w-full flex justify-between items-center py-2 text-[var(--brand-primary)]"
               >
                 <span>Services</span>
                 <span className="text-xl">{mobileServicesOpen ? '−' : '+'}</span>
@@ -565,13 +565,13 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
               {mobileServicesOpen && (
                 <div className="pl-4 pt-2 space-y-4 text-[15px] text-[#616267]">
                   <div>
-                    <h5 className="font-semibold text-[#112152] mb-2">Investigation</h5>
+                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">Investigation</h5>
                     <ul className="space-y-2">
                       <li>
                         <Link
                           href="/cyber-investigations/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Cyber investigation / (Fraud investigations)
                         </Link>
@@ -580,7 +580,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/crypto-asset-tracing/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Crypto asset tracing
                         </Link>
@@ -589,7 +589,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/kyc-services/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           KYC services
                         </Link>
@@ -598,7 +598,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/binary-options-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Binary Options Scams
                         </Link>
@@ -607,7 +607,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/digital-currency-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Digital Currency Scam
                         </Link>
@@ -616,7 +616,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/forex-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Forex Scam
                         </Link>
@@ -625,7 +625,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/stock-trading-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Stock Trading Scams
                         </Link>
@@ -634,7 +634,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/credit-card-phishing/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Credit Card Phishing Scams
                         </Link>
@@ -643,7 +643,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/property-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Property Scams
                         </Link>
@@ -652,7 +652,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/romance-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Romance Scams
                         </Link>
@@ -661,7 +661,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/financial-scams/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Other Scams...
                         </Link>
@@ -670,13 +670,13 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   </div>
 
                   <div>
-                    <h5 className="font-semibold text-[#112152] mb-2">Education</h5>
+                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">Education</h5>
                     <ul className="space-y-2">
                       <li>
                         <Link
                           href="/adr-course/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           ADR course
                         </Link>
@@ -685,7 +685,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/adr-advanced-course/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           ADR advanced course
                         </Link>
@@ -694,13 +694,13 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   </div>
 
                   <div>
-                    <h5 className="font-semibold text-[#112152] mb-2">Professional Consulting</h5>
+                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">Professional Consulting</h5>
                     <ul className="space-y-2">
                       <li>
                         <Link
                           href="/scam-restitution-consulting/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Scam Restitution Consulting
                         </Link>
@@ -709,7 +709,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/adr-guidance/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           ADR guidance
                         </Link>
@@ -718,7 +718,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/claims-and-disputes/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Claims &amp; Disputes
                         </Link>
@@ -727,7 +727,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/forced-account-liquidations/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Forced account liquidations
                         </Link>
@@ -736,7 +736,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/regulatory-compliance-and-other-services/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Regulatory compliance &amp; other services
                         </Link>
@@ -745,7 +745,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/aml-compliance/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Aml compliance
                         </Link>
@@ -754,13 +754,13 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                   </div>
 
                   <div>
-                    <h5 className="font-semibold text-[#112152] mb-2">B2B Cyber Security</h5>
+                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">B2B Cyber Security</h5>
                     <ul className="space-y-2">
                       <li>
                         <Link
                           href="/blue-team/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Blue Team
                         </Link>
@@ -769,7 +769,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/red-team/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Red Team
                         </Link>
@@ -778,7 +778,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/security-consulting/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Security Consulting
                         </Link>
@@ -787,7 +787,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/soc-consulting/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           SOC Consulting
                         </Link>
@@ -796,7 +796,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/cyber-intelligence/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Cyber Intelligence
                         </Link>
@@ -805,7 +805,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         <Link
                           href="/social-engineering/"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[#112152]"
+                          className="block py-1 hover:text-[var(--brand-primary)]"
                         >
                           Social Engineering
                         </Link>
@@ -820,7 +820,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
             <li className="pt-2">
               <button
                 onClick={() => setMobileOnlineSafetyOpen(!mobileOnlineSafetyOpen)}
-                className="w-full flex justify-between items-center py-2 text-[#112152]"
+                className="w-full flex justify-between items-center py-2 text-[var(--brand-primary)]"
               >
                 <span>Online Safety</span>
                 <span className="text-xl">{mobileOnlineSafetyOpen ? '−' : '+'}</span>
@@ -831,7 +831,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <Link
                       href="/whistleblowing/"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[#112152]"
+                      className="block py-1 hover:text-[var(--brand-primary)]"
                     >
                       Whistleblowing
                     </Link>
@@ -840,7 +840,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <Link
                       href="/fraud-prevention-tools/"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[#112152]"
+                      className="block py-1 hover:text-[var(--brand-primary)]"
                     >
                       Fraud Prevention Tools
                     </Link>
@@ -849,7 +849,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <Link
                       href="/payback-verifier/"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[#112152]"
+                      className="block py-1 hover:text-[var(--brand-primary)]"
                     >
                       Payback Verifier
                     </Link>
@@ -863,7 +863,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
               <Link
                 href="/blog/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block py-2 text-[#112152]"
+                className="block py-2 text-[var(--brand-primary)]"
               >
                 Blog
               </Link>
@@ -873,7 +873,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
             <li className="pt-2">
               <button
                 onClick={() => setMobilePaybackOpen(!mobilePaybackOpen)}
-                className="w-full flex justify-between items-center py-2 text-[#112152]"
+                className="w-full flex justify-between items-center py-2 text-[var(--brand-primary)]"
               >
                 <span>Payback</span>
                 <span className="text-xl">{mobilePaybackOpen ? '−' : '+'}</span>
@@ -884,7 +884,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <Link
                       href="/contact-us/"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[#112152]"
+                      className="block py-1 hover:text-[var(--brand-primary)]"
                     >
                       Contact us
                     </Link>
@@ -893,7 +893,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     <Link
                       href="/about-us/"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[#112152]"
+                      className="block py-1 hover:text-[var(--brand-primary)]"
                     >
                       About Us
                     </Link>
@@ -906,7 +906,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
               <Link
                 href="/faq/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block py-2 text-[#112152]"
+                className="block py-2 text-[var(--brand-primary)]"
               >
                 FAQ
               </Link>
@@ -917,7 +917,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
             <Link
               href="/contact-us/"
               onClick={() => setMobileMenuOpen(false)}
-              className="block w-full py-3 bg-[#112152] border border-[#112152] text-[#edf2ff] text-center font-medium"
+              className="block w-full py-3 bg-[var(--brand-primary)] border border-[var(--brand-primary)] text-[var(--brand-soft)] text-center font-medium"
             >
               Get your money back
             </Link>

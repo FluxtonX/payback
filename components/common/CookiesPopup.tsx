@@ -37,7 +37,7 @@ export const CookiesPopup: React.FC<CookiesPopupProps> = ({ onAccept }) => {
         </Link>
         <button
           onClick={handleAccept}
-          className="w-[66px] h-[24px] bg-white border border-[#112152] px-[5px] py-[2px] text-[14px] leading-[16px] font-medium text-[#112152] font-sans hover:bg-[#112152] hover:text-white transition-colors"
+          className="w-[66px] h-[24px] bg-white border border-[var(--brand-primary)] px-[5px] py-[2px] text-[14px] leading-[16px] font-medium text-[var(--brand-primary)] font-sans hover:bg-[var(--brand-primary)] hover:text-white transition-colors"
         >
           OK
         </button>

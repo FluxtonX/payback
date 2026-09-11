@@ -16,7 +16,7 @@ export const OurVisionSection: React.FC = () => {
 
           {/* Right Content Column */}
           <div className="flex flex-col items-center xl:items-start xl:w-[480px] xl:ml-[236px]">
-            <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] leading-tight xl:leading-[48px] font-bold text-[#030e31] text-center xl:text-left mt-6 xl:mt-0 mb-4 xl:mb-4">
+            <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] leading-tight xl:leading-[48px] font-bold text-[var(--brand-deep)] text-center xl:text-left mt-6 xl:mt-0 mb-4 xl:mb-4">
               Our Vision
             </h2>
 

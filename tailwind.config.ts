@@ -9,13 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          primary: "var(--brand-primary)",
+          deep: "var(--brand-deep)",
+          accent: "var(--brand-accent)",
+          soft: "var(--brand-soft)",
+          periwinkle: "var(--brand-periwinkle)",
+          slate: "var(--brand-slate)",
+        },
         pb: {
-          navy: "#112152",
-          deep: "#030e31",
-          blue: "#216ba5",
-          soft: "#edf2ff",
-          periwinkle: "#b7c3e8",
-          slate: "#3e4761",
+          navy: "var(--brand-primary)",
+          deep: "var(--brand-deep)",
+          blue: "var(--brand-accent)",
+          soft: "var(--brand-soft)",
+          periwinkle: "var(--brand-periwinkle)",
+          slate: "var(--brand-slate)",
           grey: "#f4f4f4",
           body: "#616267",
           muted: "#a0a6ba",

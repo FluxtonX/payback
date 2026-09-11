@@ -55,7 +55,7 @@ export const TestimonialsMiddle: React.FC = () => {
 
           {/* Section 1 */}
           <div id="1" className="pt-12 md:pt-14 scroll-mt-28">
-            <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[#030e31] mb-6 md:mb-8 font-heading">
+            <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[var(--brand-deep)] mb-6 md:mb-8 font-heading">
               The Process We Follow to Trace Misplaced or Lost Funds
             </h3>
             <p className="text-[16px] leading-[26px] mb-6">
@@ -73,7 +73,7 @@ export const TestimonialsMiddle: React.FC = () => {
 
           {/* Section 2 */}
           <div id="2" className="pt-12 md:pt-14 scroll-mt-28">
-            <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[#030e31] mb-6 md:mb-8 font-heading">
+            <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[var(--brand-deep)] mb-6 md:mb-8 font-heading">
               Payback Services
             </h3>
             <p className="text-[16px] leading-[26px]">
@@ -87,7 +87,7 @@ export const TestimonialsMiddle: React.FC = () => {
 
           {/* Section 3 */}
           <div id="3" className="pt-12 md:pt-14 scroll-mt-28">
-            <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[#030e31] mb-6 md:mb-8 font-heading">
+            <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[var(--brand-deep)] mb-6 md:mb-8 font-heading">
               Customer Testimonials
             </h3>
             <p className="text-[16px] leading-[26px]">
@@ -101,8 +101,8 @@ export const TestimonialsMiddle: React.FC = () => {
         {/* Right Sticky Sidebar (376px) */}
         <div className="hidden md:block w-full md:w-[320px] xl:w-[376px] flex-shrink-0">
           <div className="sticky top-[120px]">
-            <aside className="border border-[#edf2ff] p-6 xl:p-8 bg-white shadow-sm">
-              <h4 className="font-bold text-[20px] md:text-[22px] leading-[28px] text-[#030e31] mb-6 font-heading">
+            <aside className="border border-[var(--brand-soft)] p-6 xl:p-8 bg-white shadow-sm">
+              <h4 className="font-bold text-[20px] md:text-[22px] leading-[28px] text-[var(--brand-deep)] mb-6 font-heading">
                 Table of Contents
               </h4>
               <ul className="space-y-4 list-none m-0 p-0 select-none">
@@ -126,15 +126,15 @@ export const TestimonialsMiddle: React.FC = () => {
                         className={`absolute left-0 top-1/2 -translate-y-1/2 rounded-full transition-all duration-200 ${
                           isActive
                             ? 'opacity-0'
-                            : 'w-[4px] h-[4px] bg-[#616267] group-hover:w-[6px] group-hover:h-[6px] group-hover:bg-[#112152]'
+                            : 'w-[4px] h-[4px] bg-[#616267] group-hover:w-[6px] group-hover:h-[6px] group-hover:bg-[var(--brand-primary)]'
                         }`}
                       />
 
                       <p
                         className={`text-[15px] xl:text-[16px] leading-[24px] transition-colors ${
                           isActive
-                            ? 'text-[#112152] font-semibold'
-                            : 'text-[#616267] group-hover:text-[#112152]'
+                            ? 'text-[var(--brand-primary)] font-semibold'
+                            : 'text-[#616267] group-hover:text-[var(--brand-primary)]'
                         }`}
                       >
                         {item.title}

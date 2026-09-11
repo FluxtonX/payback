@@ -50,7 +50,7 @@ export const FaqAccordionSection: React.FC = () => {
     <section className="py-12 lg:py-20 font-sans">
       <div className="container max-w-[1208px] mx-auto px-4">
         <div className="flex flex-col items-center">
-          <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[#030e31] text-center max-w-[700px] mb-6 md:mb-10 leading-tight">
+          <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[var(--brand-deep)] text-center max-w-[700px] mb-6 md:mb-10 leading-tight">
             More about Payback and our Fraud Investigation Services
           </h2>
 
@@ -61,7 +61,7 @@ export const FaqAccordionSection: React.FC = () => {
                 <div key={idx} className="border-b border-[#a0a6ba]">
                   <h4
                     onClick={() => toggleItem(idx)}
-                    className="relative py-4 md:py-6 pr-10 cursor-pointer select-none text-[20px] md:text-[24px] font-bold text-[#030e31] leading-snug flex items-center justify-between"
+                    className="relative py-4 md:py-6 pr-10 cursor-pointer select-none text-[20px] md:text-[24px] font-bold text-[var(--brand-deep)] leading-snug flex items-center justify-between"
                   >
                     <span>{item.title}</span>
                     <span

@@ -26,7 +26,7 @@ export const WhyWorkSection: React.FC = () => {
               />
             </div>
 
-            <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[#030e31] mb-6 xl:mb-4 max-w-[584px] xl:w-[480px] leading-tight">
+            <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[var(--brand-deep)] mb-6 xl:mb-4 max-w-[584px] xl:w-[480px] leading-tight">
               Why work with us?
             </h2>
 
@@ -36,7 +36,7 @@ export const WhyWorkSection: React.FC = () => {
 
             <Link
               href="/about-us/"
-              className="mt-8 block w-full max-w-[344px] sm:max-w-[376px] py-3 text-center text-[16px] font-medium font-sans text-[#030e31] border border-[#112152] bg-transparent hover:bg-[#112152] hover:text-[#f4f4f4] transition-colors"
+              className="mt-8 block w-full max-w-[344px] sm:max-w-[376px] py-3 text-center text-[16px] font-medium font-sans text-[var(--brand-deep)] border border-[var(--brand-primary)] bg-transparent hover:bg-[var(--brand-primary)] hover:text-[#f4f4f4] transition-colors"
             >
               About us
             </Link>

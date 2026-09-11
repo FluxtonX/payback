@@ -78,7 +78,7 @@ export const FAQAccordion: React.FC = () => {
           <div key={idx} className="border-b border-[#a0a6ba]">
             <h4
               onClick={() => toggleItem(idx)}
-              className="select-none relative cursor-pointer pr-10 py-4 min-[360px]:py-6 md:py-6 text-[#112152] font-bold text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] xl:text-[20px] xl:leading-[24px] transition-colors"
+              className="select-none relative cursor-pointer pr-10 py-4 min-[360px]:py-6 md:py-6 text-[var(--brand-primary)] font-bold text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] xl:text-[20px] xl:leading-[24px] transition-colors"
             >
               <span>{item.question}</span>
               <span

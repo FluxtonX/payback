@@ -4,11 +4,11 @@ import Image from 'next/image';
 export const ContactUsFooter: React.FC = () => {
   return (
     <div className="w-full max-w-[470px] md:max-w-[792px] mx-auto px-4 md:px-0 my-16 md:mt-32 md:mb-20 font-sans">
-      <h2 className="font-bold text-[22px] sm:text-[24px] md:text-[28px] leading-[32px] text-[#030e31] text-center mb-8 md:mb-12">
+      <h2 className="font-bold text-[22px] sm:text-[24px] md:text-[28px] leading-[32px] text-[var(--brand-deep)] text-center mb-8 md:mb-12">
         You can also contact us in the following ways:
       </h2>
 
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-0 text-[16px] leading-[24px] text-[#112152]">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-0 text-[16px] leading-[24px] text-[var(--brand-primary)]">
         {/* Left Column: Address & Email */}
         <div className="w-full md:w-[340px] md:pr-8 flex flex-col gap-4 text-center md:text-left items-center md:items-start">
           {/* Location */}
@@ -22,7 +22,7 @@ export const ContactUsFooter: React.FC = () => {
                 className="w-8 h-8 object-contain"
               />
             </div>
-            <span className="text-[#112152] font-normal">
+            <span className="text-[var(--brand-primary)] font-normal">
               Ha-Khilazon St 5, Ramat Gan, Israel, 5252269
             </span>
           </div>
@@ -40,7 +40,7 @@ export const ContactUsFooter: React.FC = () => {
             </div>
             <a
               href="mailto:info@payback.com"
-              className="text-[#112152] underline hover:text-[#030e31] transition-colors"
+              className="text-[var(--brand-primary)] underline hover:text-[var(--brand-deep)] transition-colors"
             >
               info@payback.com
             </a>
@@ -48,14 +48,14 @@ export const ContactUsFooter: React.FC = () => {
         </div>
 
         {/* Right Column: WhatsApp & Phones */}
-        <div className="w-full md:flex-1 md:pl-8 md:border-l md:border-[#edf2ff] flex flex-col gap-5">
+        <div className="w-full md:flex-1 md:pl-8 md:border-l md:border-[var(--brand-soft)] flex flex-col gap-5">
           {/* WhatsApp CTA */}
           <div>
             <a
               href="https://wa.me/+972539538554?text=Good day."
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-3 text-[#112152] hover:text-[#030e31] font-medium transition-colors group"
+              className="inline-flex items-center gap-3 text-[var(--brand-primary)] hover:text-[var(--brand-deep)] font-medium transition-colors group"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="6" fill="url(#cu_paint0_linear)"></rect>
@@ -103,7 +103,7 @@ export const ContactUsFooter: React.FC = () => {
               />
               <a
                 href="tel:+972777408749"
-                className="text-[#112152] hover:text-[#030e31] transition-colors"
+                className="text-[var(--brand-primary)] hover:text-[var(--brand-deep)] transition-colors"
               >
                 +972-777408749
               </a>
@@ -120,7 +120,7 @@ export const ContactUsFooter: React.FC = () => {
               />
               <a
                 href="tel:+13475184140"
-                className="text-[#112152] hover:text-[#030e31] transition-colors"
+                className="text-[var(--brand-primary)] hover:text-[var(--brand-deep)] transition-colors"
               >
                 +1-347-518-4140
               </a>
@@ -137,7 +137,7 @@ export const ContactUsFooter: React.FC = () => {
               />
               <a
                 href="tel:+61282105236"
-                className="text-[#112152] hover:text-[#030e31] transition-colors"
+                className="text-[var(--brand-primary)] hover:text-[var(--brand-deep)] transition-colors"
               >
                 +61-282-105-236
               </a>
@@ -154,7 +154,7 @@ export const ContactUsFooter: React.FC = () => {
               />
               <a
                 href="tel:+442039960143"
-                className="text-[#112152] hover:text-[#030e31] transition-colors"
+                className="text-[var(--brand-primary)] hover:text-[var(--brand-deep)] transition-colors"
               >
                 +44-203-996-0143
               </a>

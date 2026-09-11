@@ -33,9 +33,9 @@ export const PartnersBar: React.FC = () => {
   };
 
   return (
-    <div className="py-8 lg:py-12 bg-white font-sans border-b border-[#edf2ff] overflow-hidden">
+    <div className="py-8 lg:py-12 bg-white font-sans border-b border-[var(--brand-soft)] overflow-hidden">
       <div className="container max-w-[1208px] mx-auto px-4">
-        <h3 className="text-[18px] sm:text-[20px] font-bold text-[#112152] text-center mb-6 lg:mb-8 font-raleway">
+        <h3 className="text-[18px] sm:text-[20px] font-bold text-[var(--brand-primary)] text-center mb-6 lg:mb-8 font-raleway">
           Some of the frauds we investigated
         </h3>
 
@@ -71,7 +71,7 @@ export const PartnersBar: React.FC = () => {
           <button
             onClick={prevSlide}
             aria-label="Previous logos"
-            className="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-[#112152] hover:text-[#030e31]"
+            className="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-[var(--brand-primary)] hover:text-[var(--brand-deep)]"
           >
             <Image
               src="/elements/carousel-chevron-left.svg"
@@ -85,7 +85,7 @@ export const PartnersBar: React.FC = () => {
           <button
             onClick={nextSlide}
             aria-label="Next logos"
-            className="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-[#112152] hover:text-[#030e31]"
+            className="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-[var(--brand-primary)] hover:text-[var(--brand-deep)]"
           >
             <Image
               src="/elements/carousel-chevron-right.svg"
@@ -103,7 +103,7 @@ export const PartnersBar: React.FC = () => {
                 onClick={() => setCurrentIndex(dIdx * 2)}
                 aria-label={`Go to slide ${dIdx + 1}`}
                 className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                  Math.floor(currentIndex / 2) === dIdx ? 'bg-[#112152]' : 'bg-[#cbd4f1]'
+                  Math.floor(currentIndex / 2) === dIdx ? 'bg-[var(--brand-primary)]' : 'bg-[#cbd4f1]'
                 }`}
               />
             ))}

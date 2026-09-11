@@ -47,7 +47,7 @@ export const WhatSetsApartSection: React.FC = () => {
   return (
     <section className="overflow-x-hidden pb-8 mb-16 sm:mb-[72px] md:mb-20 lg:mb-24 xl:mb-32 font-sans mt-8 sm:mt-12 xl:mt-16">
       <div className="container max-w-[1208px] mx-auto px-4">
-        <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[#030e31] text-center mb-10 xl:mb-14">
+        <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-10 xl:mb-14">
           What Sets Payback Apart
         </h2>
 
@@ -63,7 +63,7 @@ export const WhatSetsApartSection: React.FC = () => {
                   style={{ backgroundImage: `url(${item.icon})` }}
                   aria-hidden="true"
                 />
-                <h4 className="text-[18px] sm:text-[20px] font-bold text-[#030e31]">
+                <h4 className="text-[18px] sm:text-[20px] font-bold text-[var(--brand-deep)]">
                   {item.title}
                 </h4>
               </div>

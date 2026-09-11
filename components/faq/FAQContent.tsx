@@ -7,7 +7,7 @@ export const FAQContent: React.FC = () => {
     <section className="w-full text-[#616267] font-sans pb-16 md:pb-24 xl:pb-20">
       <div className="w-full max-w-[470px] md:max-w-[768px] xl:max-w-[1208px] px-4 md:px-6 xl:px-0 mx-auto">
         {/* Title */}
-        <h2 className="max-w-[593px] mx-auto mt-2 mb-4 md:mb-6 text-center font-bold text-[#112152] text-[28px] leading-[32px] md:text-[32px] md:leading-[40px] xl:text-[40px] xl:leading-[48px]">
+        <h2 className="max-w-[593px] mx-auto mt-2 mb-4 md:mb-6 text-center font-bold text-[var(--brand-primary)] text-[28px] leading-[32px] md:text-[32px] md:leading-[40px] xl:text-[40px] xl:leading-[48px]">
           Payback - How Does It Work?
         </h2>
 
@@ -26,7 +26,7 @@ export const FAQContent: React.FC = () => {
           </p>
           <p>
             You can contact us via phone or email, simply visit our{' '}
-            <Link href="/contact-us/" className="text-[#030e31] underline hover:text-[#112152] transition-colors">
+            <Link href="/contact-us/" className="text-[var(--brand-deep)] underline hover:text-[var(--brand-primary)] transition-colors">
               Contact Us
             </Link>{' '}
             page for the relevant details.
