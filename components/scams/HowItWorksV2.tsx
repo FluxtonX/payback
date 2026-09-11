@@ -1,90 +1,97 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
-interface Step {
-  num: string;
+interface StepItem {
+  id: number;
   title: string;
   desc: string;
   icon: string;
+  withBorder?: boolean;
 }
 
-const steps: Step[] = [
+const steps: StepItem[] = [
   {
-    num: '01',
+    id: 1,
     title: 'Review your case',
-    desc: 'Our case managers examine the details of your case, review the documentation, and evaluate the likelihood of retrieving your funds.',
+    desc: 'Based on our experience, we are performing preliminary checks to assess whether your case can result in a substantial retrieval of losses.',
     icon: '/icons/file-find.svg',
   },
   {
-    num: '02',
+    id: 2,
     title: 'Gather the evidence',
-    desc: 'We collect all necessary evidence and identify key digital records, account statements, and communication logs to build an airtight file.',
+    desc: 'We then gather every piece of evidence you have from your contact with the scammers along the way.',
     icon: '/icons/file.svg',
   },
   {
-    num: '03',
+    id: 3,
     title: 'Investigation Report',
-    desc: 'Our cyber and financial intelligence experts assemble a comprehensive forensic investigation report identifying the perpetrators.',
+    desc: 'We investigate your case and the people who scammed you to provide a detailed Investigation Report.',
     icon: '/icons/report.svg',
+    withBorder: true,
   },
   {
-    num: '04',
+    id: 4,
     title: 'Action Plan',
-    desc: 'You receive a personalized roadmap mapping out every dispute strategy, regulatory escalation path, and legal avenue available.',
+    desc: "With our investigation Report, you'll receive a step-by-step action plan explaining how we believe you can retrieve your losses.",
     icon: '/icons/plan.svg',
+    withBorder: true,
   },
   {
-    num: '05',
+    id: 5,
     title: 'Expert Assistance',
-    desc: 'Our team guides you through the restitution and recovery process, providing support with banks, payment processors, and agencies.',
+    desc: 'Our team of experts can guide you in the execution of the recommended action plan.',
     icon: '/icons/expert-assistance.svg',
   },
   {
-    num: '06',
+    id: 6,
     title: 'Get your money back',
-    desc: 'With our investigation report in hand and continuous expert support, take actionable steps toward reclaiming your stolen capital.',
+    desc: 'Once you successfully execute the suggested action plan, you could retrieve a substantial part, if not all, of your money.',
     icon: '/icons/money-back.svg',
   },
 ];
 
 export const HowItWorksV2: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-white font-sans overflow-hidden">
-      <div className="container max-w-[1208px] mx-auto px-4">
-        <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-10 xl:mb-12">
+    <section className="py-14 sm:py-16 xl:py-20 bg-white font-sans overflow-hidden">
+      <div className="container max-w-[1048px] mx-auto px-4">
+        {/* Title */}
+        <h2 className="text-[28px] sm:text-[36px] xl:text-[40px] font-extrabold text-[var(--brand-deep)] text-center mb-10 sm:mb-14">
           How it works
         </h2>
 
-        {/* 6 Step Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 xl:gap-4">
+        {/* 2-Column Exact Layout Grid (width: 1000px max, 2 columns on tablet/desktop) */}
+        <div className="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           {steps.map((step) => (
             <div
-              key={step.num}
-              className="bg-white border border-[var(--brand-primary)]/30 hover:border-[var(--brand-primary)] shadow-[8px_16px_32px_rgba(5,56,43,0.06)] p-5 flex flex-col justify-between transition-all hover:-translate-y-1 group"
+              key={step.id}
+              className={`relative bg-white p-6 sm:p-8 flex flex-col shadow-[8px_16px_32px_rgba(3,14,49,0.08)] transition-transform hover:-translate-y-1 ${
+                step.withBorder
+                  ? 'border-2 border-[var(--brand-primary)] bg-[var(--brand-soft)]/20'
+                  : 'border border-gray-100'
+              }`}
             >
-              <div>
-                {/* Header line with icon and number */}
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-full bg-[var(--brand-soft)] flex items-center justify-center group-hover:bg-[var(--brand-primary)] transition-colors">
-                    <Image
-                      src={step.icon}
-                      alt={step.title}
-                      width={22}
-                      height={22}
-                      className="w-5 h-5 transition-all group-hover:brightness-0 group-hover:invert"
-                    />
-                  </div>
-                  <span className="text-[14px] font-bold text-[var(--brand-accent)]">{step.num}</span>
+              {/* Header line with icon and title */}
+              <div className="flex items-center gap-3.5 mb-3">
+                <div className="w-8 h-8 flex-shrink-0 relative">
+                  <Image
+                    src={step.icon}
+                    alt={step.title}
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-
-                <h3 className="text-[17px] font-bold text-[var(--brand-deep)] mb-2 group-hover:text-[var(--brand-primary)] transition-colors">
+                <h4 className="text-[18px] sm:text-[20px] font-bold text-[var(--brand-deep)]">
                   {step.title}
-                </h3>
-
-                <p className="text-[13px] leading-[20px] text-[#616267]">
-                  {step.desc}
-                </p>
+                </h4>
               </div>
+
+              {/* Body Content */}
+              <p className="text-[15px] leading-[24px] text-[#616267]">
+                {step.desc}
+              </p>
             </div>
           ))}
         </div>

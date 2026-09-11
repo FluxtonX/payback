@@ -1,24 +1,24 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import ScamHero from '@/components/scams/ScamHero';
+import FraudsCarousel from '@/components/scams/FraudsCarousel';
 import HowItWorksV2 from '@/components/scams/HowItWorksV2';
+import ScamAdvertisementBanner from '@/components/scams/ScamAdvertisementBanner';
 import GuaranteeBlock from '@/components/home/GuaranteeBlock';
 import ForexGuide from '@/components/scams/ForexGuide';
 import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: 'Forex Trading Scam Recovery With PayBack',
-  description:
-    "Our team of highly experienced lawyers make it their purpose to help those who got scammed by Forex brokers. It's Your Money - Get it Back!",
+  title: "Forex Scam Recovery With PayBack",
+  description: "Thousands of clients used our Investigation Report to retrieve their losses from forex fraud. Start with a free consultation.",
   alternates: {
-    canonical: 'https://payback.com/forex-scams/',
+    canonical: "https://payback.com/forex-scams/",
   },
   openGraph: {
-    title: 'Forex Trading Scam Recovery With PayBack',
-    description:
-      "Our team of highly experienced lawyers make it their purpose to help those who got scammed by Forex brokers. It's Your Money - Get it Back!",
-    url: 'https://payback.com/forex-scams/',
+    title: "Forex Scam Recovery With PayBack",
+    description: "Thousands of clients used our Investigation Report to retrieve their losses from forex fraud. Start with a free consultation.",
+    url: "https://payback.com/forex-scams/",
     siteName: 'Payback',
     type: 'website',
     images: [
@@ -26,24 +26,28 @@ export const metadata: Metadata = {
         url: '/images/payback_og.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Forex Trading Scam Recovery',
+        alt: 'Forex Recovery',
       },
     ],
   },
   twitter: {
     card: 'summary',
-    title: 'Forex Trading Scam Recovery With PayBack',
-    description:
-      "Our team of highly experienced lawyers make it their purpose to help those who got scammed by Forex brokers. It's Your Money - Get it Back!",
+    title: "Forex Scam Recovery With PayBack",
+    description: "Thousands of clients used our Investigation Report to retrieve their losses from forex fraud. Start with a free consultation.",
     images: ['/images/payback_og.jpeg'],
   },
 };
 
-export default function ForexScamsPage() {
+export default function Page() {
   return (
     <main className="bg-white min-h-screen">
       <ScamHero scamType="Forex" />
+      <FraudsCarousel />
       <HowItWorksV2 />
+      <ScamAdvertisementBanner
+        title="Forex Scams: Retrieve Your Lost Funds"
+        description="The Forex market can be risky and since the industry itself isn't very well regulated, it can be hard for an everyday person to determine whether they've been duped. If you suspect you've been scammed, we can investigate your case and expose the fraud."
+      />
       <GuaranteeBlock />
       <ForexGuide />
       <LetsTalkCTA />
