@@ -23,7 +23,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: 'How We Empower You to Take Action',
-    a: 'At Payback, we specialize in helping victims of cryptocurrency and digital currency fraud. We trace on-chain transactions, identify wallet clusters, unmask exchange deposit endpoints, and prepare actionable intelligence for law enforcement and dispute processes.',
+    a: 'At Online Reclaims, we specialize in helping victims of cryptocurrency and digital currency fraud. We trace on-chain transactions, identify wallet clusters, unmask exchange deposit endpoints, and prepare actionable intelligence for law enforcement and dispute processes.',
   },
 ];
 
@@ -168,7 +168,7 @@ export const CryptoGuide: React.FC = () => {
                 If you have fallen victim to a digital currency scam, remember that public blockchains are distributed ledgers where every single transaction leaves an indelible digital footprint. No transaction is entirely invisible or untraceable.
               </p>
               <p className="mb-6">
-                Payback employs blockchain analytics tools and intelligence databases to track stolen tokens through intermediary mixers, cross-chain bridges, and unhosted wallets directly to Know-Your-Customer (KYC) compliant off-ramps and centralized exchanges.
+                Online Reclaims employs blockchain analytics tools and intelligence databases to track stolen tokens through intermediary mixers, cross-chain bridges, and unhosted wallets directly to Know-Your-Customer (KYC) compliant off-ramps and centralized exchanges.
               </p>
               <div className="bg-[var(--brand-soft)]/60 p-5 border-l-4 border-[var(--brand-accent)]">
                 <p className="text-[14px] text-[var(--brand-deep)] font-medium">
@@ -206,7 +206,7 @@ export const CryptoGuide: React.FC = () => {
                 Legal Frameworks and Regulations
               </h3>
               <p>
-                Regulatory scrutiny over virtual asset service providers (VASPs) has expanded under FATF Travel Rule guidelines. Regulated exchanges across the US, EU, UK, and Asia are legally obligated to freeze flagged illicit deposits and respond to verified police disclosure notices. Payback aligns forensic reports with official law enforcement and judicial standards.
+                Regulatory scrutiny over virtual asset service providers (VASPs) has expanded under FATF Travel Rule guidelines. Regulated exchanges across the US, EU, UK, and Asia are legally obligated to freeze flagged illicit deposits and respond to verified police disclosure notices. Online Reclaims aligns forensic reports with official law enforcement and judicial standards.
               </p>
             </div>
 

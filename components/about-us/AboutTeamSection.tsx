@@ -33,7 +33,7 @@ export const AboutTeamSection: React.FC = () => {
           </h2>
 
           <p className="text-[15px] sm:text-[16px] leading-[24px] text-[#616267] text-center mb-8">
-            At Payback, we recognize that navigating the complexities of assisting scam victims requires a dedicated team of experts who work seamlessly together. Although we cannot disclose the identity of team members for security reasons, we can tell you about the goals of each department:
+            At Online Reclaims, we recognize that navigating the complexities of assisting scam victims requires a dedicated team of experts who work seamlessly together. Although we cannot disclose the identity of team members for security reasons, we can tell you about the goals of each department:
           </p>
 
           <div className="mt-8 space-y-6">

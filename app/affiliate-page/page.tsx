@@ -6,9 +6,9 @@ import AffiliateWhyWork from '@/components/affiliate/AffiliateWhyWork';
 import AffiliateStatement from '@/components/affiliate/AffiliateStatement';
 
 export const metadata: Metadata = {
-  title: 'Affiliate page - Payback',
+  title: 'Affiliate page - Online Reclaims',
   description:
-    'Partner with Payback and help fight scammers. Through our affiliate program, you can help scam victims reclaim their losses while earning commissions.',
+    'Partner with Online Reclaims and help fight scammers. Through our affiliate program, you can help scam victims reclaim their losses while earning commissions.',
 };
 
 export default function AffiliatePage() {

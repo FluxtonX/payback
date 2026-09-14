@@ -21,7 +21,7 @@ export interface ServiceBatch83Data {
 
 export const servicesBatch83Data: Record<string, ServiceBatch83Data> = {
   "adr-course": {
-    "title": "ADR Training & Dispute Resolution Course | PayBack",
+    "title": "ADR Training & Dispute Resolution Course | Online Reclaims",
     "description": "Master alternative dispute resolution skills, dispute letter drafting, rebuttal formulation, and mediation tactics with our comprehensive ADR course.",
     "heroScamType": "ADR Training",
     "steps": [

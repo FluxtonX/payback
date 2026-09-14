@@ -10,20 +10,20 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: "Property Scams - Get Your Money Back! | PayBack",
-  description: "Victim of a property scam? Recover your money with PayBack lawyers and fund recovery experts. Contact us today for a free consultation.",
+  title: "Property Scams - Get Your Money Back! | Online Reclaims",
+  description: "Victim of a property scam? Recover your money with Online Reclaims lawyers and fund recovery experts. Contact us today for a free consultation.",
   alternates: {
-    canonical: "https://payback.com/property-scams/",
+    canonical: "https://onlinereclaims.com/property-scams/",
   },
   openGraph: {
-    title: "Property Scams - Get Your Money Back! | PayBack",
-    description: "Victim of a property scam? Recover your money with PayBack lawyers and fund recovery experts. Contact us today for a free consultation.",
-    url: "https://payback.com/property-scams/",
-    siteName: 'Payback',
+    title: "Property Scams - Get Your Money Back! | Online Reclaims",
+    description: "Victim of a property scam? Recover your money with Online Reclaims lawyers and fund recovery experts. Contact us today for a free consultation.",
+    url: "https://onlinereclaims.com/property-scams/",
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Property scam Recovery',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: "Property Scams - Get Your Money Back! | PayBack",
-    description: "Victim of a property scam? Recover your money with PayBack lawyers and fund recovery experts. Contact us today for a free consultation.",
-    images: ['/images/payback_og.jpeg'],
+    title: "Property Scams - Get Your Money Back! | Online Reclaims",
+    description: "Victim of a property scam? Recover your money with Online Reclaims lawyers and fund recovery experts. Contact us today for a free consultation.",
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

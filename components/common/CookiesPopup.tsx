@@ -11,14 +11,14 @@ export const CookiesPopup: React.FC<CookiesPopupProps> = ({ onAccept }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const accepted = localStorage.getItem('pb_cookies_accepted');
+    const accepted = localStorage.getItem('or_cookies_accepted') || localStorage.getItem('pb_cookies_accepted');
     if (!accepted) {
       setIsVisible(true);
     }
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('pb_cookies_accepted', 'true');
+    localStorage.setItem('or_cookies_accepted', 'true');
     setIsVisible(false);
     if (onAccept) onAccept();
   };

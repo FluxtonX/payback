@@ -9,7 +9,7 @@ export const CeoStatement: React.FC = () => {
             Our CEO
           </h2>
           <div className="text-[15px] sm:text-[16px] text-[#616267] leading-[24px] max-w-[584px] mx-auto">
-            Amir Geva co-founded Payback in 2017, bringing over a decade of expertise in the field to the forefront of our mission. As a dynamic leader, he spearheads our dedicated team in the global battle against fraud and scams, driving innovation and implementing effective strategies to protect individuals from financial harm.
+            Amir Geva co-founded Online Reclaims in 2017, bringing over a decade of expertise in the field to the forefront of our mission. As a dynamic leader, he spearheads our dedicated team in the global battle against fraud and scams, driving innovation and implementing effective strategies to protect individuals from financial harm.
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ export const AboutHero: React.FC = () => {
             </h1>
 
             <p className="text-[15px] sm:text-[16px] leading-[24px] text-[#616267] text-center xl:text-left max-w-[470px] xl:max-w-[584px] xl:w-[480px] mb-0">
-              Founded in 2017, PayBack has been at the forefront of the battle against online fraud. We have quickly established ourselves as the leader in the field. With a proven track record, we have successfully recovered over $41 million for scam victims worldwide as of 2025 and are still going strong.
+              Founded in 2017, Online Reclaims has been at the forefront of the battle against online fraud. We have quickly established ourselves as the leader in the field. With a proven track record, we have successfully recovered over $41 million for scam victims worldwide as of 2025 and are still going strong.
             </p>
 
             <p className="mt-4 text-[14px] leading-[20px] text-[#a0a6ba] text-center xl:text-left max-w-[470px] xl:max-w-[584px] xl:w-[480px]">

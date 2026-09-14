@@ -37,7 +37,7 @@ export const TestimonialsMiddle: React.FC = () => {
 
   const tocItems = [
     { id: '1' as const, title: 'The Process We Follow to Trace Misplaced or Lost Funds' },
-    { id: '2' as const, title: 'Payback Services' },
+    { id: '2' as const, title: 'Online Reclaims Services' },
     { id: '3' as const, title: 'Customer Testimonials' },
   ];
 
@@ -48,7 +48,7 @@ export const TestimonialsMiddle: React.FC = () => {
         <div className="w-full md:max-w-[584px] text-[#616267]">
           {/* Top Bordered Intro Paragraph */}
           <div className="border-t border-b border-[#616267]/40 py-8 md:py-10 text-[16px] leading-[26px]">
-            Payback was founded to protect traders from unregulated Binary Option and Forex brokers.
+            Online Reclaims was founded to protect traders from unregulated Binary Option and Forex brokers.
             The company comprises of professionals with vast experience in the Forex industry and cybercrimes.
             For over a decade we have claimed funds for hundreds of victims worldwide.
           </div>
@@ -74,13 +74,13 @@ export const TestimonialsMiddle: React.FC = () => {
           {/* Section 2 */}
           <div id="2" className="pt-12 md:pt-14 scroll-mt-28">
             <h3 className="font-bold text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[var(--brand-deep)] mb-6 md:mb-8 font-heading">
-              Payback Services
+              Online Reclaims Services
             </h3>
             <p className="text-[16px] leading-[26px]">
               We know the internet has become a huge part of people’s lives and that it comes with its
               fair share of challenges. The majority of websites offer genuine products and services
               and do a good job of safeguarding your information, but some companies have ulterior
-              motives. This is where Payback comes in. We retrieve funds from unregulated brokers and
+              motives. This is where Online Reclaims comes in. We retrieve funds from unregulated brokers and
               any other company committing online fraud. We offer a free consultation at any time.
             </p>
           </div>
@@ -91,7 +91,7 @@ export const TestimonialsMiddle: React.FC = () => {
               Customer Testimonials
             </h3>
             <p className="text-[16px] leading-[26px]">
-              There are many genuine Payback Reviews on our website that show customer satisfaction.
+              There are many genuine Online Reclaims Reviews on our website that show customer satisfaction.
               Many of our clients had lost hope in every retrieving their money but we helped to
               secure their funds. We will never give up when seeking to resolve your case.
             </p>

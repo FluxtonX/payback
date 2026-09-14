@@ -6,18 +6,18 @@ import ContactUsForm from '@/components/contact-us/ContactUsForm';
 import ContactUsFooter from '@/components/contact-us/ContactUsFooter';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Payback',
+  title: 'Contact Us - Online Reclaims',
   description:
     'If you’ve been ripped off by scammers, get in touch and our team of experts will work to get your money back',
   openGraph: {
-    title: 'Contact Us - Payback',
+    title: 'Contact Us - Online Reclaims',
     description:
       'If you’ve been ripped off by scammers, get in touch and our team of experts will work to get your money back',
-    url: 'https://payback.com/contact-us/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/contact-us/',
+    siteName: 'Online Reclaims',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Home',
@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Contact Us - Payback',
+    title: 'Contact Us - Online Reclaims',
     description:
       'If you’ve been ripped off by scammers, get in touch and our team of experts will work to get your money back',
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

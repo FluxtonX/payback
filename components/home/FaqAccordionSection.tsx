@@ -10,9 +10,9 @@ interface AccordionItemData {
 
 const faqData: AccordionItemData[] = [
   {
-    title: 'About Payback',
+    title: 'About Online Reclaims',
     paragraphs: [
-      'PayBack has only one mission: to protect people from frauds and scams online worldwide, whatever it takes. We help victims of online fraud retrieve what is rightfully theirs using our Investigation Reports and tailored Action plans.',
+      'Online Reclaims has only one mission: to protect people from frauds and scams online worldwide, whatever it takes. We help victims of online fraud retrieve what is rightfully theirs using our Investigation Reports and tailored Action plans.',
       'Although several types of scams have stood the test of time and are constantly growing in number of victims, new scams constantly pop up. Our job is to stay updated on both old and new scams to help the victims and inform our clients on how to stay safe in the future.',
       'We aim to be the number one company in the world to whom people can turn when they try to protect themselves from scams or when they need the tools to fight back after being a victim.',
     ],
@@ -51,7 +51,7 @@ export const FaqAccordionSection: React.FC = () => {
       <div className="container max-w-[1208px] mx-auto px-4">
         <div className="flex flex-col items-center">
           <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-bold text-[var(--brand-deep)] text-center max-w-[700px] mb-6 md:mb-10 leading-tight">
-            More about Payback and our Fraud Investigation Services
+            More about Online Reclaims and our Fraud Investigation Services
           </h2>
 
           <div className="w-full max-w-[470px] md:max-w-[584px] mx-auto">

@@ -7,22 +7,22 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: 'Crypto Asset Tracing - Get Your Stolen Crypto Back | PayBack',
+  title: 'Crypto Asset Tracing - Get Your Stolen Crypto Back | Online Reclaims',
   description:
     'Our crypto asset tracing specialists utilize cutting-edge blockchain forensics to follow stolen digital currencies and build recovery strategies.',
   alternates: {
-    canonical: 'https://payback.com/crypto-asset-tracing/',
+    canonical: 'https://onlinereclaims.com/crypto-asset-tracing/',
   },
   openGraph: {
-    title: 'Crypto Asset Tracing - Get Your Stolen Crypto Back | PayBack',
+    title: 'Crypto Asset Tracing - Get Your Stolen Crypto Back | Online Reclaims',
     description:
       'Our crypto asset tracing specialists utilize cutting-edge blockchain forensics to follow stolen digital currencies and build recovery strategies.',
-    url: 'https://payback.com/crypto-asset-tracing/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/crypto-asset-tracing/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Crypto Asset Tracing',
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Crypto Asset Tracing - Get Your Stolen Crypto Back | PayBack',
+    title: 'Crypto Asset Tracing - Get Your Stolen Crypto Back | Online Reclaims',
     description:
       'Our crypto asset tracing specialists utilize cutting-edge blockchain forensics to follow stolen digital currencies and build recovery strategies.',
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

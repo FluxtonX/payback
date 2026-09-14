@@ -252,7 +252,7 @@ export const VideoReviewsGrid: React.FC = () => {
           >
             <iframe
               src={activeVideo}
-              title="PayBack Client Testimonial"
+              title="Online Reclaims Client Testimonial"
               className="w-full h-full border-0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 
 const OFFICIAL_CHANNELS = {
-  email: ['support@payback.com', 'contact@payback.com', 'info@payback.com', 'compliance@payback.com'],
+  email: ['support@onlinereclaims.com', 'contact@onlinereclaims.com', 'info@onlinereclaims.com', 'compliance@onlinereclaims.com'],
   phone: ['+972539538554', '+16479458789', '+442038078377', '+61283173612'],
-  domain: ['payback.com', 'www.payback.com'],
+  domain: ['onlinereclaims.com', 'www.onlinereclaims.com'],
   whatsapp: ['+972539538554', '972539538554'],
-  social: ['facebook.com/paybackltd', 'linkedin.com/company/payback-ltd', 'twitter.com/payback_ltd', 'x.com/payback_ltd']
+  social: ['facebook.com/onlinereclaims', 'linkedin.com/company/onlinereclaims', 'twitter.com/onlinereclaims', 'x.com/onlinereclaims']
 };
 
 export const PaybackVerifierWidget: React.FC = () => {
@@ -26,7 +26,7 @@ export const PaybackVerifierWidget: React.FC = () => {
     let isOfficial = false;
 
     if (channel === 'email') {
-      isOfficial = OFFICIAL_CHANNELS.email.some((em) => query.includes(em.toLowerCase())) || query.endsWith('@payback.com');
+      isOfficial = OFFICIAL_CHANNELS.email.some((em) => query.includes(em.toLowerCase())) || query.endsWith('@onlinereclaims.com');
     } else if (channel === 'phone') {
       isOfficial = OFFICIAL_CHANNELS.phone.some((ph) => ph.includes(query) || query.includes(ph));
     } else if (channel === 'whatsapp') {
@@ -38,7 +38,7 @@ export const PaybackVerifierWidget: React.FC = () => {
     if (isOfficial) {
       setResult({
         status: 'verified',
-        message: 'Verified Official PayBack Channel. This representative or channel is authenticated and legitimate.',
+        message: 'Verified Official Online Reclaims Channel. This representative or channel is authenticated and legitimate.',
       });
     } else {
       setResult({
@@ -83,7 +83,7 @@ export const PaybackVerifierWidget: React.FC = () => {
               onChange={(e) => setInputVal(e.target.value)}
               placeholder={
                 channel === 'email'
-                  ? 'e.g. support@payback.com'
+                  ? 'e.g. support@onlinereclaims.com'
                   : channel === 'phone'
                   ? 'e.g. +1 647 945-8789'
                   : channel === 'whatsapp'

@@ -14,17 +14,17 @@ export const metadata: Metadata = {
   title: data.title,
   description: data.description,
   alternates: {
-    canonical: 'https://payback.com/adr-course/',
+    canonical: 'https://onlinereclaims.com/adr-course/',
   },
   openGraph: {
     title: data.title,
     description: data.description,
-    url: 'https://payback.com/adr-course/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/adr-course/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: data.title,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: data.title,
     description: data.description,
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

@@ -20,7 +20,7 @@ export interface B2BServiceData {
 
 export const servicesBatch84Data: Record<string, B2BServiceData> = {
   "blue-team": {
-    "title": "Blue Team - Payback",
+    "title": "Blue Team - Online Reclaims",
     "description": "Stop Threats Before They Impact Your Business With Proactive Defense and Rapid Response",
     "heroTitle": "Blue Team",
     "heroSubtitle": "Stop Threats Before They Impact Your Business With Proactive Defense and Rapid Response",
@@ -66,7 +66,7 @@ export const servicesBatch84Data: Record<string, B2BServiceData> = {
     ]
 },
   "red-team": {
-    "title": "Red Team - Payback",
+    "title": "Red Team - Online Reclaims",
     "description": "Expose Vulnerabilities and Strengthen Defenses by Seeing Your Business From The Eyes of Attackers",
     "heroTitle": "Red Team",
     "heroSubtitle": "Expose Vulnerabilities and Strengthen Defenses by Seeing Your Business From The Eyes of Attackers",
@@ -103,7 +103,7 @@ export const servicesBatch84Data: Record<string, B2BServiceData> = {
     ]
 },
   "security-consulting": {
-    "title": "Security Consulting - Payback",
+    "title": "Security Consulting - Online Reclaims",
     "description": "Get Expert Guidance and Proactive Protection From Experienced Professionals",
     "heroTitle": "Security Consulting",
     "heroSubtitle": "Get Expert Guidance and Proactive Protection From Experienced Professionals",
@@ -140,7 +140,7 @@ export const servicesBatch84Data: Record<string, B2BServiceData> = {
     ]
 },
   "soc-consulting": {
-    "title": "SOC Consulting - Payback",
+    "title": "SOC Consulting - Online Reclaims",
     "description": "Let Us Help You Build and Optimize Your Security Operations Center",
     "heroTitle": "SOC Consulting",
     "heroSubtitle": "Let Us Help You Build and Optimize Your Security Operations Center",
@@ -177,7 +177,7 @@ export const servicesBatch84Data: Record<string, B2BServiceData> = {
     ]
 },
   "cyber-intelligence": {
-    "title": "Cyber Intelligence - Payback",
+    "title": "Cyber Intelligence - Online Reclaims",
     "description": "Empower Your Security Team and Stay Ahead of Threats",
     "heroTitle": "Cyber Intelligence",
     "heroSubtitle": "Empower Your Security Team and Stay Ahead of Threats",
@@ -220,7 +220,7 @@ export const servicesBatch84Data: Record<string, B2BServiceData> = {
     ]
 },
   "social-engineering": {
-    "title": "Social Engineering - Payback",
+    "title": "Social Engineering - Online Reclaims",
     "description": "Test Your Defenses Against Social Engineering and Expose Vulnerabilities",
     "heroTitle": "Social Engineering",
     "heroSubtitle": "Test Your Defenses Against Social Engineering and Expose Vulnerabilities",

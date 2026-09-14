@@ -22,8 +22,8 @@ export interface ScamDetectorData {
 
 export const fraudPreventionToolsData: FraudPreventionTool[] = [
   {
-    "title": "Payback Scam Detector",
-    "description": "Avoid falling for an online scam as you browse with the Payback Scam detector. This free Chrome extension provides you with real-time protection as you browse.",
+    "title": "Online Reclaims Scam Detector",
+    "description": "Avoid falling for an online scam as you browse with the Online Reclaims Scam detector. This free Chrome extension provides you with real-time protection as you browse.",
     "logo": "/fraudPreventionsImages/paybackScamDetector.png",
     "reviewLink": "/fraud-prevention-review/payback-scam-detector/",
     "productLink": "https://chromewebstore.google.com/detail/payback-scam-detector/bhjajhbkcghfgakmgjfhnbfjhjniddmo?pli=1/"
@@ -136,25 +136,25 @@ export const fraudPreventionToolsData: FraudPreventionTool[] = [
 ];
 
 export const scamDetectorData: ScamDetectorData = {
-  "title": "Avoid online scams with the PayBack Scam Detector",
-  "description": "This Scam Detector Chrome plugin warns you about scams as you browse. Developed by Payback, this extension uses the information from our database of over 20,000 known fraudulent companies. To learn more about us and our initiatives, visit our official website",
+  "title": "Avoid online scams with the Online Reclaims Scam Detector",
+  "description": "This Scam Detector Chrome plugin warns you about scams as you browse. Developed by Online Reclaims, this extension uses the information from our database of over 20,000 known fraudulent companies. To learn more about us and our initiatives, visit our official website",
   "installLink": "https://chromewebstore.google.com/detail/payback-scam-detector/bhjajhbkcghfgakmgjfhnbfjhjniddmo",
   "features": [
     {
       "title": "Your trusted partner for safe browsing",
-      "description": "The Payback Scam Detector checks websites in real-time and warns you about potential scams. It's easy to use and gives you immediate feedback. Browse the web with confidence knowing that Payback has your back",
+      "description": "The Online Reclaims Scam Detector checks websites in real-time and warns you about potential scams. It's easy to use and gives you immediate feedback. Browse the web with confidence knowing that Online Reclaims has your back",
       "image": "/plugin/pluginState1.png",
       "reversed": false
     },
     {
       "title": "How it works",
-      "description": "The Payback Scam Detector constantly checks websites against a blacklist of over 20,000 known scams, giving you instant warnings if you land on a suspicious page. It's easy to use, and you can even report suspicious sites to help protect others. Plus, the extension doesn't collect cookies or any personal information",
+      "description": "The Online Reclaims Scam Detector constantly checks websites against a blacklist of over 20,000 known scams, giving you instant warnings if you land on a suspicious page. It's easy to use, and you can even report suspicious sites to help protect others. Plus, the extension doesn't collect cookies or any personal information",
       "image": "/plugin/pluginState2.png",
       "reversed": false
     },
     {
       "title": "Getting started",
-      "description": "Add the Payback Scam Detector to your browser, and it automatically starts working in the background. You'll get instant warnings about suspicious websites, and you can even report new scams you encounter. As you do so, your privacy is protected because the extension doesn't collect your personal data",
+      "description": "Add the Online Reclaims Scam Detector to your browser, and it automatically starts working in the background. You'll get instant warnings about suspicious websites, and you can even report new scams you encounter. As you do so, your privacy is protected because the extension doesn't collect your personal data",
       "image": "/plugin/pluginState3.png",
       "reversed": false
     }

@@ -7,22 +7,22 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: 'AML Compliance Services - Anti-Money Laundering Solutions | PayBack',
+  title: 'AML Compliance Services - Anti-Money Laundering Solutions | Online Reclaims',
   description:
     'Comprehensive Anti-Money Laundering (AML) consulting, risk assessments, transaction monitoring frameworks, and compliance audits for global businesses.',
   alternates: {
-    canonical: 'https://payback.com/aml-compliance/',
+    canonical: 'https://onlinereclaims.com/aml-compliance/',
   },
   openGraph: {
-    title: 'AML Compliance Services - Anti-Money Laundering Solutions | PayBack',
+    title: 'AML Compliance Services - Anti-Money Laundering Solutions | Online Reclaims',
     description:
       'Comprehensive Anti-Money Laundering (AML) consulting, risk assessments, transaction monitoring frameworks, and compliance audits for global businesses.',
-    url: 'https://payback.com/aml-compliance/',
-    siteName: 'PayBack',
+    url: 'https://onlinereclaims.com/aml-compliance/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'AML Compliance Services',
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'AML Compliance Services - Anti-Money Laundering Solutions | PayBack',
+    title: 'AML Compliance Services - Anti-Money Laundering Solutions | Online Reclaims',
     description:
       'Comprehensive Anti-Money Laundering (AML) consulting, risk assessments, transaction monitoring frameworks, and compliance audits for global businesses.',
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

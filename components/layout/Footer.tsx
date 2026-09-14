@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
     { title: 'FAQ', href: '/faq/' },
     { title: 'Affiliate page', href: '/affiliate-page/' },
     { title: 'Fraud Prevention Tools', href: '/fraud-prevention-tools/' },
-    { title: 'Payback Verifier', href: '/payback-verifier/' },
+    { title: 'Online Reclaims Verifier', href: '/payback-verifier/' },
     { title: 'Scam Detector', href: '/scam-detector/' },
   ];
 
@@ -399,7 +399,7 @@ export const Footer: React.FC = () => {
 
           {/* Copyright & DMCA Protected */}
           <div className="flex items-center gap-4 text-[#a0a6ba]">
-            <p>© Payback</p>
+            <p>© Online Reclaims</p>
             <div className="relative w-[144px] h-[24px]">
               <picture>
                 <source type="image/webp" srcSet="/images/dmca.webp" />

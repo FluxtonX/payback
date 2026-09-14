@@ -15,22 +15,22 @@ import ContactSection from '@/components/home/ContactSection';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: 'Cyber Investigation Services - Get Your Money Back! | PayBack',
+  title: 'Cyber Investigation Services - Get Your Money Back! | Online Reclaims',
   description:
     'Our Cyber Investigation and Action Plan are the tools you need to recover funds lost to various online scams. It’s Time to Get Your Money Back!',
   alternates: {
-    canonical: 'https://payback.com/cyber-investigations/',
+    canonical: 'https://onlinereclaims.com/cyber-investigations/',
   },
   openGraph: {
-    title: 'Cyber Investigation Services - Get Your Money Back! | PayBack',
+    title: 'Cyber Investigation Services - Get Your Money Back! | Online Reclaims',
     description:
       'Our Cyber Investigation and Action Plan are the tools you need to recover funds lost to various online scams. It’s Time to Get Your Money Back!',
-    url: 'https://payback.com/cyber-investigations/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/cyber-investigations/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Cyber Investigation Services',
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Cyber Investigation Services - Get Your Money Back! | PayBack',
+    title: 'Cyber Investigation Services - Get Your Money Back! | Online Reclaims',
     description:
       'Our Cyber Investigation and Action Plan are the tools you need to recover funds lost to various online scams. It’s Time to Get Your Money Back!',
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

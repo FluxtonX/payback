@@ -24,25 +24,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!article) {
     return {
-      title: 'Article Not Found | Payback',
+      title: 'Article Not Found | Online Reclaims',
       description: 'The requested article could not be located.',
     };
   }
 
-  const canonicalUrl = `https://payback.com/blogs/${article.slug}/`;
+  const canonicalUrl = `https://onlinereclaims.com/blogs/${article.slug}/`;
 
   return {
-    title: `${article.title} - Payback`,
+    title: `${article.title} - Online Reclaims`,
     description: article.excerpt,
-    keywords: [article.category, ...(article.tags || []), 'Scam Recovery', 'Payback Investigation'],
+    keywords: [article.category, ...(article.tags || []), 'Scam Recovery', 'Online Reclaims Investigation'],
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${article.title} - Payback`,
+      title: `${article.title} - Online Reclaims`,
       description: article.excerpt,
       url: canonicalUrl,
-      siteName: 'Payback',
+      siteName: 'Online Reclaims',
       images: [
         {
           url: article.thumbnail,
@@ -87,24 +87,24 @@ export default async function BlogArticlePage({ params }: PageProps) {
     '@type': 'BlogPosting',
     headline: article.title,
     description: article.excerpt,
-    image: `https://payback.com${article.thumbnail}`,
+    image: `https://onlinereclaims.com${article.thumbnail}`,
     datePublished: article.date,
     dateModified: article.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://payback.com/blogs/${article.slug}/`,
+      '@id': `https://onlinereclaims.com/blogs/${article.slug}/`,
     },
     author: {
       '@type': 'Organization',
-      name: 'Payback Forensic Team',
-      url: 'https://payback.com',
+      name: 'Online Reclaims Forensic Team',
+      url: 'https://onlinereclaims.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Payback',
+      name: 'Online Reclaims',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://payback.com/images/payback-logo.png',
+        url: 'https://onlinereclaims.com/images/onlinereclaims.png',
       },
     },
     keywords: [article.category, ...(article.tags || [])].join(', '),

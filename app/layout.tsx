@@ -3,10 +3,10 @@ import './globals.css';
 import AppLayout from '@/components/layout/AppLayout';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://payback.com'),
-  title: 'PayBack : Trading & Investment Scam Funds Recovery',
+  metadataBase: new URL('https://onlinereclaims.com'),
+  title: 'Online Reclaims : Trading & Investment Scam Funds Recovery',
   description:
-    'PayBack is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
+    'Online Reclaims is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
   icons: {
     icon: [
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'PayBack : Trading & Investment Scam Funds Recovery',
+    title: 'Online Reclaims : Trading & Investment Scam Funds Recovery',
     description:
-      'PayBack is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
-    url: 'https://payback.com/',
-    siteName: 'Payback',
+      'Online Reclaims is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
+    url: 'https://onlinereclaims.com/',
+    siteName: 'Online Reclaims',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Home',

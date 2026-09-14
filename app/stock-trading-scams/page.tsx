@@ -10,20 +10,20 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: "Stock Market Scam Recovery With PayBack",
+  title: "Stock Market Scam Recovery With Online Reclaims",
   description: "Our team of lawyers make it their purpose to help those who got scammed by fraudulent brokers. We are here to help you get your money back from stock market fraud.",
   alternates: {
-    canonical: "https://payback.com/stock-trading-scams/",
+    canonical: "https://onlinereclaims.com/stock-trading-scams/",
   },
   openGraph: {
-    title: "Stock Market Scam Recovery With PayBack",
+    title: "Stock Market Scam Recovery With Online Reclaims",
     description: "Our team of lawyers make it their purpose to help those who got scammed by fraudulent brokers. We are here to help you get your money back from stock market fraud.",
-    url: "https://payback.com/stock-trading-scams/",
-    siteName: 'Payback',
+    url: "https://onlinereclaims.com/stock-trading-scams/",
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Stock Trading Recovery',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: "Stock Market Scam Recovery With PayBack",
+    title: "Stock Market Scam Recovery With Online Reclaims",
     description: "Our team of lawyers make it their purpose to help those who got scammed by fraudulent brokers. We are here to help you get your money back from stock market fraud.",
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

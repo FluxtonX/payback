@@ -6,22 +6,22 @@ import ScamTypesSection from '@/components/home/ScamTypesSection';
 import { fraudPreventionToolsData } from '@/data/phase9Data';
 
 export const metadata: Metadata = {
-  title: 'Fraud Prevention Tools | PayBack',
+  title: 'Fraud Prevention Tools | Online Reclaims',
   description:
-    'Discover reliable fraud prevention tools, cybersecurity resources, identity protection, and anti-phishing utilities to stay safe online with PayBack.',
+    'Discover reliable fraud prevention tools, cybersecurity resources, identity protection, and anti-phishing utilities to stay safe online with Online Reclaims.',
   alternates: {
-    canonical: 'https://payback.com/fraud-prevention-tools/',
+    canonical: 'https://onlinereclaims.com/fraud-prevention-tools/',
   },
   openGraph: {
-    title: 'Fraud Prevention Tools | PayBack',
+    title: 'Fraud Prevention Tools | Online Reclaims',
     description:
-      'Discover reliable fraud prevention tools, cybersecurity resources, identity protection, and anti-phishing utilities to stay safe online with PayBack.',
-    url: 'https://payback.com/fraud-prevention-tools/',
-    siteName: 'Payback',
+      'Discover reliable fraud prevention tools, cybersecurity resources, identity protection, and anti-phishing utilities to stay safe online with Online Reclaims.',
+    url: 'https://onlinereclaims.com/fraud-prevention-tools/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Fraud Prevention Tools',
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Fraud Prevention Tools | PayBack',
+    title: 'Fraud Prevention Tools | Online Reclaims',
     description:
-      'Discover reliable fraud prevention tools, cybersecurity resources, identity protection, and anti-phishing utilities to stay safe online with PayBack.',
-    images: ['/images/payback_og.jpeg'],
+      'Discover reliable fraud prevention tools, cybersecurity resources, identity protection, and anti-phishing utilities to stay safe online with Online Reclaims.',
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

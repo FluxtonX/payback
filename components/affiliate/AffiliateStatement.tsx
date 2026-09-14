@@ -13,10 +13,10 @@ export const AffiliateStatement: React.FC = () => {
           </div>
           <p className="mt-2 text-[16px] leading-[24px] text-center m-0">
             <a
-              href="mailto:affiliates@payback.com"
+              href="mailto:affiliates@Online Reclaims.com"
               className="text-[var(--brand-deep)] font-medium underline hover:text-[var(--brand-accent)] transition-colors"
             >
-              affiliates@payback.com
+              affiliates@Online Reclaims.com
             </a>
           </p>
         </div>

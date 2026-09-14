@@ -11,7 +11,7 @@ export interface LegalPageData {
 
 export const phase10LegalData: Record<string, LegalPageData> = {
   "privacyPolicy": {
-    "title": "Privacy Policy - Payback",
+    "title": "Privacy Policy - Online Reclaims",
     "description": "Our official Privacy & Cookie Policy detailing how we handle personal data, maintain digital security, and respect your privacy rights.",
     "articles": [
       {
@@ -59,8 +59,8 @@ export const phase10LegalData: Record<string, LegalPageData> = {
     ]
   },
   "tnc": {
-    "title": "Terms & Conditions - Payback",
-    "description": "Website standard terms and conditions governing the use of Payback services, forensic consulting, and digital asset dispute restitution.",
+    "title": "Terms & Conditions - Online Reclaims",
+    "description": "Website standard terms and conditions governing the use of Online Reclaims services, forensic consulting, and digital asset dispute restitution.",
     "articles": [
       {
         "title": "1. Introduction",
@@ -79,7 +79,7 @@ export const phase10LegalData: Record<string, LegalPageData> = {
       {
         "title": "3. The Services",
         "paragraphs": [
-          "Money Back Ltd (trading as Payback) provides advice and guidance. The services are provided by and/or under the supervision of competent attorneys who are Israeli-licensed attorneys admitted to the Israel Bar Association. The services include recovery consulting, which constitutes assisting our clients through the procedure of cancelation and refund of transactions using an out-of-court alternative dispute resolution process. The company does not represent its clients. You can visit our Contact Us page for more information."
+          "Money Back Ltd (trading as Online Reclaims) provides advice and guidance. The services are provided by and/or under the supervision of competent attorneys who are Israeli-licensed attorneys admitted to the Israel Bar Association. The services include recovery consulting, which constitutes assisting our clients through the procedure of cancelation and refund of transactions using an out-of-court alternative dispute resolution process. The company does not represent its clients. You can visit our Contact Us page for more information."
         ]
       },
       {
@@ -160,8 +160,8 @@ export const phase10LegalData: Record<string, LegalPageData> = {
     ]
   },
   "legal": {
-    "title": "Legal & Regulatory Statement - Payback",
-    "description": "Legal notices, compliance standards, and regulatory statements regarding Payback investigation and consulting operations.",
+    "title": "Legal & Regulatory Statement - Online Reclaims",
+    "description": "Legal notices, compliance standards, and regulatory statements regarding Online Reclaims investigation and consulting operations.",
     "articles": [
       {
         "title": "1. Introduction",
@@ -172,17 +172,17 @@ export const phase10LegalData: Record<string, LegalPageData> = {
       {
         "title": "2. About The Company",
         "paragraphs": [
-          "Money Back Ltd operates under the trading name: Payback, has been in operation since August 2017, and is a law-abiding company which counsels & helps victims of fraud to recover their stolen funds.",
-          "Money Back Ltd (trading as Payback) (CRN: 515711653) is an Israeli-registered company, and operating in various other jurisdictions, worldwide."
+          "Money Back Ltd operates under the trading name: Online Reclaims, has been in operation since August 2017, and is a law-abiding company which counsels & helps victims of fraud to recover their stolen funds.",
+          "Money Back Ltd (trading as Online Reclaims) (CRN: 515711653) is an Israeli-registered company, and operating in various other jurisdictions, worldwide."
         ]
       },
       {
         "title": "3. The Services",
         "paragraphs": [
-          "Money Back Ltd (trading as Payback) helps consumers who approach us for advice and guidance.",
+          "Money Back Ltd (trading as Online Reclaims) helps consumers who approach us for advice and guidance.",
           "The services are provided by and/or are under the supervision of competent attorneys who are Israeli-licensed attorneys admitted to the Israel Bar Association.",
-          "Our services' primary focus is providing investigation and crypto tracing reports for informational purposes only. These products are exclusively fact-based investigative documents and tailored to provide clients with professional insights and factual analysis about the fraud, detailing findings that can support further independent actions on their part using an out-of-court alternative dispute resolution process. The company does not represent its clients and is not obligated to appear in litigation, arbitration, or administrative proceedings; the services rendered do not include court representation. Nor does Payback offer any investments, financial services, or advice.",
-          "Furthermore, Money Back Ltd (trading as Payback) cannot guarantee the outcome or result in connection with the services that clients retain.",
+          "Our services' primary focus is providing investigation and crypto tracing reports for informational purposes only. These products are exclusively fact-based investigative documents and tailored to provide clients with professional insights and factual analysis about the fraud, detailing findings that can support further independent actions on their part using an out-of-court alternative dispute resolution process. The company does not represent its clients and is not obligated to appear in litigation, arbitration, or administrative proceedings; the services rendered do not include court representation. Nor does Online Reclaims offer any investments, financial services, or advice.",
+          "Furthermore, Money Back Ltd (trading as Online Reclaims) cannot guarantee the outcome or result in connection with the services that clients retain.",
           "All services are provided in accordance with, and contingent upon, a contractual agreement.",
           "3.1 Cancellation of the services under the contract is in accordance with the Israeli Consumer Protection Law (Transaction Cancellation), 2010, S.2(3)."
         ]
@@ -190,7 +190,7 @@ export const phase10LegalData: Record<string, LegalPageData> = {
       {
         "title": "4. Compliance, Regulation & Authorization",
         "paragraphs": [
-          "Money Back Ltd (trading as Payback) Israeli company (CRN: 515711653), is authorized and regulated under the Israeli law and operates globally. Money Back Ltd activity is authorized and in full compliance with any regulatory requirements of the jurisdictions in which it operates.",
+          "Money Back Ltd (trading as Online Reclaims) Israeli company (CRN: 515711653), is authorized and regulated under the Israeli law and operates globally. Money Back Ltd activity is authorized and in full compliance with any regulatory requirements of the jurisdictions in which it operates.",
           "4.1 In the United Kingdom jurisdiction, the company operates through a legal exemption, with the full knowledge and awareness of The Financial Conduct Authority (FCA), which removes the need for Money Back Ltd to be authorized and regulated by the FCA.",
           "4.2 In the Canadian jurisdiction, the company operates with the full knowledge and awareness of The Ontario Securities Commission (OSC).",
           "4.3 In the Australian jurisdiction, the company operates under the name Money Back (Aust) Ltd (ARBN 678 842 236), formally registered with the Australian Securities and Investments Commission (ASIC) and operates with the full knowledge and awareness of the Australian Financial Complaints Authority (AFCA).",
@@ -202,19 +202,19 @@ export const phase10LegalData: Record<string, LegalPageData> = {
       {
         "title": "5. No Warranties",
         "paragraphs": [
-          "Money Back Ltd (trading as Payback) performs the services rendered to consumers, who approach us for advice and counsel them to the best of our knowledge and understanding, based on our experience. The company does not represent its clients and cannot make and express or implied warranties of any kind about any outcome or result."
+          "Money Back Ltd (trading as Online Reclaims) performs the services rendered to consumers, who approach us for advice and counsel them to the best of our knowledge and understanding, based on our experience. The company does not represent its clients and cannot make and express or implied warranties of any kind about any outcome or result."
         ]
       },
       {
         "title": "6. Liability",
         "paragraphs": [
-          "Money Back Ltd (trading as Payback), including its officers, directors, and employees, shall not be liable for any direct or indirect, consequential, or special liability arising out of or in any way related to the services, rather under the contract. By engaging the service, the client knowingly accepts and takes the responsibility upon himself/herself and acts for himself/herself under the services rendered by the company."
+          "Money Back Ltd (trading as Online Reclaims), including its officers, directors, and employees, shall not be liable for any direct or indirect, consequential, or special liability arising out of or in any way related to the services, rather under the contract. By engaging the service, the client knowingly accepts and takes the responsibility upon himself/herself and acts for himself/herself under the services rendered by the company."
         ]
       }
     ]
   },
   "whistleblowing": {
-    "title": "Whistleblowing - Scam Wallet Reporting | Payback",
+    "title": "Whistleblowing - Scam Wallet Reporting | Online Reclaims",
     "description": "Confidential whistleblower portal and cryptocurrency fraud reporting. Submit suspicious wallet addresses and transaction evidence safely.",
     "articles": [
       {
@@ -237,9 +237,9 @@ export const phase10LegalData: Record<string, LegalPageData> = {
         ]
       },
       {
-        "title": "How Can Payback Help in Crypto Cases?",
+        "title": "How Can Online Reclaims Help in Crypto Cases?",
         "paragraphs": [
-          "Payback employs a wide variety of methods to untangle the complexities associated with blockchain transactions. Our team knows the ins and outs of blockchain and how scammers try to exploit it. We use our knowledge to track down where your money might have gone, and work with law enforcement and other involved parties to facilitate recovery efforts and potentially freeze those assets, among other measures."
+          "Online Reclaims employs a wide variety of methods to untangle the complexities associated with blockchain transactions. Our team knows the ins and outs of blockchain and how scammers try to exploit it. We use our knowledge to track down where your money might have gone, and work with law enforcement and other involved parties to facilitate recovery efforts and potentially freeze those assets, among other measures."
         ]
       },
       {
@@ -255,7 +255,7 @@ export const phase10LegalData: Record<string, LegalPageData> = {
         ]
       },
       {
-        "title": "What is Payback's Edge In Crypto Investigations?",
+        "title": "What is Online Reclaims's Edge In Crypto Investigations?",
         "paragraphs": [
           "Our crypto experts combine cutting-edge blockchain analysis, regulatory compliance knowledge, and proven investigative methods for successful asset recovery. More specifically, our team uniquely blends a variety of skills and resources that are essential for effective crypto investigations, including:",
           "Deep understanding of how various blockchains function, transaction patterns, and the tools required to analyze on-chain data.",
@@ -268,10 +268,10 @@ export const phase10LegalData: Record<string, LegalPageData> = {
           "What are Digital Currencies?",
           "How Does the Blockchain Work?",
           "Why Do Scammers Prefer Digital Currencies?",
-          "How Can Payback Help in Crypto Cases?",
+          "How Can Online Reclaims Help in Crypto Cases?",
           "In What Ways Can Crypto Investigations Be Complex?",
           "Are Steps Being Taken To Fight Crimes In the Crypto Space?",
-          "What is Payback's Edge In Crypto Investigations?"
+          "What is Online Reclaims's Edge In Crypto Investigations?"
         ]
       }
     ]

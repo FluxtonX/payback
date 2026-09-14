@@ -7,22 +7,22 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: 'KYC Services - Identity Verification & Compliance | PayBack',
+  title: 'KYC Services - Identity Verification & Compliance | Online Reclaims',
   description:
     'Comprehensive KYC solutions, identity verification, risk assessments, and compliance advisory tailored for fintech, crypto, and enterprise platforms.',
   alternates: {
-    canonical: 'https://payback.com/kyc-services/',
+    canonical: 'https://onlinereclaims.com/kyc-services/',
   },
   openGraph: {
-    title: 'KYC Services - Identity Verification & Compliance | PayBack',
+    title: 'KYC Services - Identity Verification & Compliance | Online Reclaims',
     description:
       'Comprehensive KYC solutions, identity verification, risk assessments, and compliance advisory tailored for fintech, crypto, and enterprise platforms.',
-    url: 'https://payback.com/kyc-services/',
-    siteName: 'PayBack',
+    url: 'https://onlinereclaims.com/kyc-services/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'KYC Services',
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'KYC Services - Identity Verification & Compliance | PayBack',
+    title: 'KYC Services - Identity Verification & Compliance | Online Reclaims',
     description:
       'Comprehensive KYC solutions, identity verification, risk assessments, and compliance advisory tailored for fintech, crypto, and enterprise platforms.',
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

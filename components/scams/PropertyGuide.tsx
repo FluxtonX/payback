@@ -23,7 +23,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: 'Can I Get My Money Back From a Property Scam?',
-    a: 'Yes, recovery is possible. Payback’s investigative team traces domestic and international wire payments, works with receiving banks and escrow institutions, and assists in launching swift recovery proceedings.',
+    a: 'Yes, recovery is possible. Online Reclaims’s investigative team traces domestic and international wire payments, works with receiving banks and escrow institutions, and assists in launching swift recovery proceedings.',
   },
 ];
 
@@ -211,7 +211,7 @@ export const PropertyGuide: React.FC = () => {
             <div className="bg-[var(--brand-primary)] text-white p-6 text-center">
               <h4 className="text-[20px] font-bold mb-2">Let’s start your investigation!</h4>
               <p className="text-[14px] text-[var(--brand-soft)] mb-5">
-                Victim of a property scam? Recover your money with PayBack lawyers and fund recovery experts.
+                Victim of a property scam? Recover your money with Online Reclaims lawyers and fund recovery experts.
               </p>
               <Link
                 href="/contact-us/"

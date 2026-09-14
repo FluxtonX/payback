@@ -39,10 +39,10 @@ export const ContactUsFooter: React.FC = () => {
               />
             </div>
             <a
-              href="mailto:info@payback.com"
+              href="mailto:info@onlinereclaims.com"
               className="text-[var(--brand-primary)] underline hover:text-[var(--brand-deep)] transition-colors"
             >
-              info@payback.com
+              info@onlinereclaims.com
             </a>
           </div>
         </div>

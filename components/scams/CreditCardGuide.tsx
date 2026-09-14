@@ -19,7 +19,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: 'Can you get your money back from a credit card phishing scam?',
-    a: 'Absolutely! Victims of credit card phishing scams can successfully reclaim stolen funds via bank chargeback mechanisms, card issuer dispute processes, and forensic recovery documentation provided by Payback.',
+    a: 'Absolutely! Victims of credit card phishing scams can successfully reclaim stolen funds via bank chargeback mechanisms, card issuer dispute processes, and forensic recovery documentation provided by Online Reclaims.',
   },
 ];
 
@@ -145,7 +145,7 @@ export const CreditCardGuide: React.FC = () => {
                 2. Request an expedited chargeback investigation under card scheme rules (Visa / Mastercard zero liability protections).
               </p>
               <p>
-                3. Consult Payback’s forensic specialists to structure formal dispute documentation that satisfies card network dispute arbitration criteria.
+                3. Consult Online Reclaims’s forensic specialists to structure formal dispute documentation that satisfies card network dispute arbitration criteria.
               </p>
             </div>
 
@@ -212,7 +212,7 @@ export const CreditCardGuide: React.FC = () => {
             <div className="bg-[var(--brand-primary)] text-white p-6 text-center">
               <h4 className="text-[20px] font-bold mb-2">Let’s start your investigation!</h4>
               <p className="text-[14px] text-[var(--brand-soft)] mb-5">
-                Victim of a credit card phishing scam? Recover your money with PayBack lawyers and fund recovery experts.
+                Victim of a credit card phishing scam? Recover your money with Online Reclaims lawyers and fund recovery experts.
               </p>
               <Link
                 href="/contact-us/"

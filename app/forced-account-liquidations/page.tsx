@@ -10,20 +10,20 @@ import { servicesBatch82Data } from '@/data/servicesBatch82';
 const data = servicesBatch82Data['forced-account-liquidations'];
 
 export const metadata: Metadata = {
-  title: `${data.title} | PayBack`,
+  title: `${data.title} | Online Reclaims`,
   description: data.description,
   alternates: {
-    canonical: 'https://payback.com/forced-account-liquidations/',
+    canonical: 'https://onlinereclaims.com/forced-account-liquidations/',
   },
   openGraph: {
-    title: `${data.title} | PayBack`,
+    title: `${data.title} | Online Reclaims`,
     description: data.description,
-    url: 'https://payback.com/forced-account-liquidations/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/forced-account-liquidations/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: data.title,
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: `${data.title} | PayBack`,
+    title: `${data.title} | Online Reclaims`,
     description: data.description,
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

@@ -8,18 +8,18 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import ScamTypesSection from '@/components/testimonials/ScamTypesSection';
 
 export const metadata: Metadata = {
-  title: 'Testimonials - Payback',
+  title: 'Testimonials - Online Reclaims',
   description:
-    'Read real reviews from our satisfied clients and discover how PayBack has successfully helped recover lost funds.',
+    'Read real reviews from our satisfied clients and discover how Online Reclaims has successfully helped recover lost funds.',
   openGraph: {
-    title: 'Testimonials - Payback',
+    title: 'Testimonials - Online Reclaims',
     description:
-      'Read real reviews from our satisfied clients and discover how PayBack has successfully helped recover lost funds.',
-    url: 'https://payback.com/testimonials/',
-    siteName: 'Payback',
+      'Read real reviews from our satisfied clients and discover how Online Reclaims has successfully helped recover lost funds.',
+    url: 'https://onlinereclaims.com/testimonials/',
+    siteName: 'Online Reclaims',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Home',
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Testimonials - Payback',
+    title: 'Testimonials - Online Reclaims',
     description:
-      'Read real reviews from our satisfied clients and discover how PayBack has successfully helped recover lost funds.',
-    images: ['/images/payback_og.jpeg'],
+      'Read real reviews from our satisfied clients and discover how Online Reclaims has successfully helped recover lost funds.',
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

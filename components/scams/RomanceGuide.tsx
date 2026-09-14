@@ -154,7 +154,7 @@ export const RomanceGuide: React.FC = () => {
                 2. Preserve all digital evidence, including chat logs, phone records, emails, wallet addresses, and wire receipts.
               </p>
               <p>
-                3. Contact Payback’s forensic specialists. Our investigation maps transaction destinations and prepares legal reports to support bank chargeback claims and law enforcement actions.
+                3. Contact Online Reclaims’s forensic specialists. Our investigation maps transaction destinations and prepares legal reports to support bank chargeback claims and law enforcement actions.
               </p>
             </div>
 

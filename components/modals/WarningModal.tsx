@@ -8,7 +8,7 @@ export const WarningModal: React.FC = () => {
 
   useEffect(() => {
     // Show after a brief delay on client
-    const hasDismissed = typeof window !== 'undefined' && sessionStorage.getItem('pb_warning_dismissed');
+    const hasDismissed = typeof window !== 'undefined' && (sessionStorage.getItem('or_warning_dismissed') || sessionStorage.getItem('pb_warning_dismissed'));
     if (!hasDismissed) {
       const timer = setTimeout(() => setVisible(true), 1500);
       return () => clearTimeout(timer);
@@ -33,7 +33,7 @@ export const WarningModal: React.FC = () => {
   const handleDismiss = () => {
     setVisible(false);
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem('pb_warning_dismissed', 'true');
+      sessionStorage.setItem('or_warning_dismissed', 'true');
     }
   };
 
@@ -58,7 +58,7 @@ export const WarningModal: React.FC = () => {
             <span className="font-bold text-[var(--brand-deep)] text-[16px]">Note</span>
             <span className="text-[#050424]">
               {' '}- Beware of imposters:<br />
-              a) Our emails end with @payback.com<br />
+              a) Our emails end with @onlinereclaims.com<br />
               b) We would NEVER ask you to send us money via Crypto.
             </span>
           </div>

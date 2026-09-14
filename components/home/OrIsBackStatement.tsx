@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export const PbIsBackStatement: React.FC = () => {
+export const OrIsBackStatement: React.FC = () => {
   return (
     <section className="py-12 lg:py-20 font-sans">
       <div className="container max-w-[1000px] mx-auto px-4">
@@ -51,4 +51,4 @@ export const PbIsBackStatement: React.FC = () => {
   );
 };
 
-export default PbIsBackStatement;
+export default OrIsBackStatement;

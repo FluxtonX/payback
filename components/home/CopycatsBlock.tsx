@@ -31,9 +31,9 @@ export const CopycatsBlock: React.FC = () => {
             </h2>
 
             <p className="text-[15px] sm:text-[16px] text-[#616267] leading-[26px] max-w-[470px] xl:max-w-[584px] xl:w-[480px] mb-8">
-              Scammers go as far as posing as legitimate scam recovery companies and even present themselves as Payback. So it&#x27;s important to remember:
+              Scammers go as far as posing as legitimate scam recovery companies and even present themselves as Online Reclaims. So it&#x27;s important to remember:
               <br />
-              a) Our emails end with: @payback.com
+              a) Our emails end with: @Online Reclaims.com
               <br />
               b) We would NEVER ask you to send us money via Crypto.
             </p>

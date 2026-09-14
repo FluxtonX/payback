@@ -6,20 +6,20 @@ import { servicesBatch84Data } from '@/data/servicesBatch84';
 const data = servicesBatch84Data['blue-team'];
 
 export const metadata: Metadata = {
-  title: `${data.title} | PayBack`,
+  title: `${data.title} | Online Reclaims`,
   description: data.description,
   alternates: {
-    canonical: 'https://payback.com/blue-team/',
+    canonical: 'https://onlinereclaims.com/blue-team/',
   },
   openGraph: {
-    title: `${data.title} | PayBack`,
+    title: `${data.title} | Online Reclaims`,
     description: data.description,
-    url: 'https://payback.com/blue-team/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/blue-team/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: data.title,
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: `${data.title} | PayBack`,
+    title: `${data.title} | Online Reclaims`,
     description: data.description,
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

@@ -25,7 +25,7 @@ const steps: StepCard[] = [
     step: '3',
     title: '3. Refer Clients',
     icon: '/icons/redirectClients.svg',
-    description: "Promote Payback's scam investigation services to your audience",
+    description: "Promote Online Reclaims's scam investigation services to your audience",
   },
   {
     step: '4',
@@ -40,7 +40,7 @@ export const AffiliateHowItWorks: React.FC = () => {
     <section className="overflow-x-hidden pb-8 mb-16 min-[360px]:mb-[72px] md:mb-20 min-[1366px]:mb-32 font-sans">
       <div className="w-full max-w-[470px] md:max-w-[768px] min-[1366px]:max-w-[1208px] mx-auto px-4 md:px-6">
         <h2 className="text-[32px] leading-[40px] md:text-[40px] md:leading-[48px] min-[1366px]:text-[48px] min-[1366px]:leading-[56px] font-semibold text-[var(--brand-deep)] text-center max-w-[720px] mx-auto tracking-[0.1px]">
-          Become a Payback Affiliate
+          Become a Online Reclaims Affiliate
         </h2>
         <div className="mt-5 max-w-[640px] text-center mx-auto text-[#a0a6ba] text-[18px] leading-[28px]">
           <p>Partner with Us to Help Scam Victims Reclaim Their Losses</p>

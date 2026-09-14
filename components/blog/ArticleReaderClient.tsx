@@ -295,7 +295,7 @@ export const ArticleReaderClient: React.FC<ArticleReaderClientProps> = ({
             {/* Author Footer & Legal Notice */}
             <div className="pt-8 border-t border-[#a0a6ba]/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-[#616267]">
               <div>
-                <p className="font-semibold text-[#112152]">Published by Payback Forensic Research Desk</p>
+                <p className="font-semibold text-[#112152]">Published by Online Reclaims Forensic Research Desk</p>
                 <p>Updated in accordance with 2026 international fraud directives.</p>
               </div>
               <Link

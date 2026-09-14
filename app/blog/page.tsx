@@ -8,24 +8,24 @@ import { GuaranteeBlock } from '@/components/home/GuaranteeBlock';
 import { ContactSection } from '@/components/home/ContactSection';
 
 export const metadata: Metadata = {
-  title: 'Blog - Scam Intelligence & Fund Recovery Guides | Payback',
+  title: 'Blog - Scam Intelligence & Fund Recovery Guides | Online Reclaims',
   description:
-    'Explore authoritative guides, cyber scam threat intelligence, forex & crypto fraud investigations, and asset recovery methodologies from the forensic research team at Payback.',
+    'Explore authoritative guides, cyber scam threat intelligence, forex & crypto fraud investigations, and asset recovery methodologies from the forensic research team at Online Reclaims.',
   alternates: {
-    canonical: 'https://payback.com/blog/',
+    canonical: 'https://onlinereclaims.com/blog/',
   },
   openGraph: {
-    title: 'Blog - Scam Intelligence & Fund Recovery Guides | Payback',
+    title: 'Blog - Scam Intelligence & Fund Recovery Guides | Online Reclaims',
     description:
-      'Explore authoritative guides, cyber scam threat intelligence, forex & crypto fraud investigations, and asset recovery methodologies from Payback.',
-    url: 'https://payback.com/blog/',
-    siteName: 'Payback',
+      'Explore authoritative guides, cyber scam threat intelligence, forex & crypto fraud investigations, and asset recovery methodologies from Online Reclaims.',
+    url: 'https://onlinereclaims.com/blog/',
+    siteName: 'Online Reclaims',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
-        alt: 'Payback Blog & Scam Intelligence Archive',
+        alt: 'Online Reclaims Blog & Scam Intelligence Archive',
       },
     ],
     locale: 'en_US',
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog - Scam Intelligence & Fund Recovery Guides | Payback',
+    title: 'Blog - Scam Intelligence & Fund Recovery Guides | Online Reclaims',
     description:
-      'Explore authoritative guides, cyber scam threat intelligence, forex & crypto fraud investigations, and asset recovery methodologies from Payback.',
-    images: ['/images/payback_og.jpeg'],
+      'Explore authoritative guides, cyber scam threat intelligence, forex & crypto fraud investigations, and asset recovery methodologies from Online Reclaims.',
+    images: ['/images/onlinereclaims.png'],
   },
 };
 
@@ -48,24 +48,24 @@ export default function BlogPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'Payback Scam Intelligence Archive',
-    url: 'https://payback.com/blog/',
+    name: 'Online Reclaims Scam Intelligence Archive',
+    url: 'https://onlinereclaims.com/blog/',
     description:
       'Expert analysis, threat intelligence, forensic insights, and practical guides to protect your assets and reclaim stolen funds.',
     publisher: {
       '@type': 'Organization',
-      name: 'Payback',
-      url: 'https://payback.com',
-      logo: 'https://payback.com/images/payback-logo.png',
+      name: 'Online Reclaims',
+      url: 'https://onlinereclaims.com',
+      logo: 'https://onlinereclaims.com/images/onlinereclaims.png',
     },
     blogPost: BLOG_ARTICLES.map((art) => ({
       '@type': 'BlogPosting',
       headline: art.title,
-      url: `https://payback.com/blogs/${art.slug}/`,
+      url: `https://onlinereclaims.com/blogs/${art.slug}/`,
       datePublished: art.date,
       author: {
         '@type': 'Organization',
-        name: 'Payback Team',
+        name: 'Online Reclaims Team',
       },
       image: art.thumbnail,
       description: art.excerpt,

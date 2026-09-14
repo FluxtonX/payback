@@ -10,20 +10,20 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: "Romance Scams Recovery With PayBack",
+  title: "Romance Scams Recovery With Online Reclaims",
   description: "If you have been ripped off by scammers, get in touch and our team of experts will work tirelessly until they provide you the tools you need to get your money back.",
   alternates: {
-    canonical: "https://payback.com/romance-scams/",
+    canonical: "https://onlinereclaims.com/romance-scams/",
   },
   openGraph: {
-    title: "Romance Scams Recovery With PayBack",
+    title: "Romance Scams Recovery With Online Reclaims",
     description: "If you have been ripped off by scammers, get in touch and our team of experts will work tirelessly until they provide you the tools you need to get your money back.",
-    url: "https://payback.com/romance-scams/",
-    siteName: 'Payback',
+    url: "https://onlinereclaims.com/romance-scams/",
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Romance scam Recovery',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: "Romance Scams Recovery With PayBack",
+    title: "Romance Scams Recovery With Online Reclaims",
     description: "If you have been ripped off by scammers, get in touch and our team of experts will work tirelessly until they provide you the tools you need to get your money back.",
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

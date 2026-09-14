@@ -17,9 +17,9 @@ export const faqData: FAQItem[] = [
     isDefault: true,
   },
   {
-    question: 'What is the cost of pursuing a case via Payback?',
+    question: 'What is the cost of pursuing a case via Online Reclaims?',
     answer:
-      'Payback provides the tools you need to pursue your case in the form of a detailed Investigation Report that includes a suggested Action Plan for you to follow. Such a report costs $500, with an additional $750 per transaction.',
+      'Online Reclaims provides the tools you need to pursue your case in the form of a detailed Investigation Report that includes a suggested Action Plan for you to follow. Such a report costs $500, with an additional $750 per transaction.',
   },
   {
     question: "Why don't you charge me at the end of the process only?",
@@ -27,16 +27,16 @@ export const faqData: FAQItem[] = [
       'Each case requires a significant amount of man-hours to investigate, process, and bring to successful completion. We charge a fixed fee to cover the costs of producing the investigation report, so it is necessary to arrange payment prior to the start of the investigation.',
   },
   {
-    question: 'Where is Payback based?',
-    answer: 'Payback is located in Ontario, Canada (100 King Street West, Suite 5600, Toronto, ON M5X 1C9).',
+    question: 'Where is Online Reclaims based?',
+    answer: 'Online Reclaims is located in Ontario, Canada (100 King Street West, Suite 5600, Toronto, ON M5X 1C9).',
   },
   {
-    question: 'How do I know that Payback isn’t a scam?',
+    question: 'How do I know that Online Reclaims isn’t a scam?',
     answer:
       'We believe that a question like that is best answered by the company’s clients. We invite you to check out the hundreds of great reviews by our clients to verify that we are a legitimate and reputable organization. We are also registered with the Israeli justice department, as well as this our staff will happily forward you the relevant credentials.',
   },
   {
-    question: 'Why is Payback not regulated by the FCA (Financial Conduct Authority)?',
+    question: 'Why is Online Reclaims not regulated by the FCA (Financial Conduct Authority)?',
     answer:
       'We are an authorized and regulated Israeli company, based outside of the UK, hence we comply with the relevant legal exemption that applies to us. However, we do adhere to all relevant legal parameters as we go about securing the recovery of your lost assets.',
   },

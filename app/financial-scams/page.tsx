@@ -10,20 +10,20 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: "Financial Scams Recovery With PayBack",
+  title: "Financial Scams Recovery With Online Reclaims",
   description: "If you have been ripped off by scammers, get in touch and our team of experts will work tirelessly until they provide you the tools you need to get your money back.",
   alternates: {
-    canonical: "https://payback.com/financial-scams/",
+    canonical: "https://onlinereclaims.com/financial-scams/",
   },
   openGraph: {
-    title: "Financial Scams Recovery With PayBack",
+    title: "Financial Scams Recovery With Online Reclaims",
     description: "If you have been ripped off by scammers, get in touch and our team of experts will work tirelessly until they provide you the tools you need to get your money back.",
-    url: "https://payback.com/financial-scams/",
-    siteName: 'Payback',
+    url: "https://onlinereclaims.com/financial-scams/",
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Financial scams Recovery',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: "Financial Scams Recovery With PayBack",
+    title: "Financial Scams Recovery With Online Reclaims",
     description: "If you have been ripped off by scammers, get in touch and our team of experts will work tirelessly until they provide you the tools you need to get your money back.",
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 
@@ -53,7 +53,7 @@ export default function Page() {
       <HowItWorksV2 />
       <ScamAdvertisementBanner
         title="Been Scammed? Let’s Investigate The Case"
-        description="Millions of dollars are lost to financial scams every year, and this number is unfortunately rising. If you were one of the many people caught up in a financial scam, you're certainly not alone. We at Payback work tirelessly to investigate financial scam cases."
+        description="Millions of dollars are lost to financial scams every year, and this number is unfortunately rising. If you were one of the many people caught up in a financial scam, you're certainly not alone. We at Online Reclaims work tirelessly to investigate financial scam cases."
       />
       <GuaranteeBlock />
       <FinancialGuide />

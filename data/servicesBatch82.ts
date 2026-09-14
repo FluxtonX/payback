@@ -21,7 +21,7 @@ export interface ServiceBatch82Data {
 
 export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
   "scam-restitution-consulting": {
-    "title": "PayBack : Alternative Dispute Resolution Consulting",
+    "title": "Online Reclaims : Alternative Dispute Resolution Consulting",
     "description": "Resolve Your Disputes Out of Court With Our Expert Alternative Dispute Resolution Consulting",
     "heroScamType": "Scam Restitution Consulting",
     "steps": [
@@ -54,7 +54,7 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
         },
         {
             "id": "sec-why-choose-payback-for-scam-restitution-consulting",
-            "label": "Why Choose Payback for Scam Restitution Consulting?"
+            "label": "Why Choose Online Reclaims for Scam Restitution Consulting?"
         },
         {
             "id": "sec-our-process",
@@ -76,9 +76,9 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
         },
         {
             "id": "sec-why-choose-payback-for-scam-restitution-consulting",
-            "title": "Why Choose Payback for Scam Restitution Consulting?",
+            "title": "Why Choose Online Reclaims for Scam Restitution Consulting?",
             "paragraphs": [
-                "Here's why you should choose Payback as your trusted partner for your scam restitution journey:"
+                "Here's why you should choose Online Reclaims as your trusted partner for your scam restitution journey:"
             ],
             "steps": []
         },
@@ -111,7 +111,7 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
             "id": "sec-conclusion",
             "title": "Conclusion",
             "paragraphs": [
-                "It's easy to feel lost and overwhelmed when navigating restitution and everything that comes with it while trying to reclaim your hard-earned money. That's why having an experienced guide can make all the difference. With Payback's Scam Restitution Consulting, you'll get all the help you need."
+                "It's easy to feel lost and overwhelmed when navigating restitution and everything that comes with it while trying to reclaim your hard-earned money. That's why having an experienced guide can make all the difference. With Online Reclaims's Scam Restitution Consulting, you'll get all the help you need."
             ],
             "steps": []
         }
@@ -120,7 +120,7 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
     "stickyContent": "Don't face the challenge of scam restitution alone. Contact us today, and let us help you reclaim your losses."
 },
   "claims-and-disputes": {
-    "title": "PayBack : Claims & Disputes",
+    "title": "Online Reclaims : Claims & Disputes",
     "description": "Get expert legal advice and resolve your digital assets claims and disputes",
     "heroScamType": "Claims & Disputes",
     "steps": [
@@ -209,7 +209,7 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
     "stickyContent": "Our expert team is here to provide the guidance and support you need to navigate the complexities of claims and disputes. Contact us today for a free consultation."
 },
   "adr-guidance": {
-    "title": "PayBack : Alternative Dispute Resolution Consulting",
+    "title": "Online Reclaims : Alternative Dispute Resolution Consulting",
     "description": "Resolve Your Disputes Out of Court With Our Expert Alternative Dispute Resolution Consulting",
     "heroScamType": "ADR Guidance",
     "steps": [
@@ -310,7 +310,7 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
     "stickyContent": "There's no need to waste your time on disputes and court cases when you have our expert Alternative Dispute Resolution consulting at your service."
 },
   "forced-account-liquidations": {
-    "title": "PayBack : Forced Account Liquidation Recovery",
+    "title": "Online Reclaims : Forced Account Liquidation Recovery",
     "description": "We can help you navigate the complexities of forced account liquidation",
     "heroScamType": "Forced Account Liquidations",
     "steps": [
@@ -395,7 +395,7 @@ export const servicesBatch82Data: Record<string, ServiceBatch82Data> = {
     "stickyContent": "Getting your account liquidated may cause some people to give up, but that shouldn't be your story. Get in touch for a free consultation and we'll help you fight for your rights"
 },
   "regulatory-compliance-and-other-services": {
-    "title": "PayBack : Regulatory Compliance & Other Services",
+    "title": "Online Reclaims : Regulatory Compliance & Other Services",
     "description": "We can help you ensure your business stays compliant and thrives",
     "heroScamType": "Regulatory Compliance",
     "steps": [

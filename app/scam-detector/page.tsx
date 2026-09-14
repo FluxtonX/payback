@@ -6,34 +6,34 @@ import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 import { scamDetectorData } from '@/data/phase9Data';
 
 export const metadata: Metadata = {
-  title: 'PayBack Scam Detector - Safe Browsing Chrome Extension | PayBack',
+  title: 'Online Reclaims Scam Detector - Safe Browsing Chrome Extension | Online Reclaims',
   description:
-    'Avoid online scams while you browse with the PayBack Scam Detector. Our free Chrome extension cross-references over 20,000 known fraudulent websites in real time.',
+    'Avoid online scams while you browse with the Online Reclaims Scam Detector. Our free Chrome extension cross-references over 20,000 known fraudulent websites in real time.',
   alternates: {
-    canonical: 'https://payback.com/scam-detector/',
+    canonical: 'https://onlinereclaims.com/scam-detector/',
   },
   openGraph: {
-    title: 'PayBack Scam Detector - Safe Browsing Chrome Extension | PayBack',
+    title: 'Online Reclaims Scam Detector - Safe Browsing Chrome Extension | Online Reclaims',
     description:
-      'Avoid online scams while you browse with the PayBack Scam Detector. Our free Chrome extension cross-references over 20,000 known fraudulent websites in real time.',
-    url: 'https://payback.com/scam-detector/',
-    siteName: 'Payback',
+      'Avoid online scams while you browse with the Online Reclaims Scam Detector. Our free Chrome extension cross-references over 20,000 known fraudulent websites in real time.',
+    url: 'https://onlinereclaims.com/scam-detector/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
-        alt: 'PayBack Scam Detector',
+        alt: 'Online Reclaims Scam Detector',
       },
     ],
   },
   twitter: {
     card: 'summary',
-    title: 'PayBack Scam Detector - Safe Browsing Chrome Extension | PayBack',
+    title: 'Online Reclaims Scam Detector - Safe Browsing Chrome Extension | Online Reclaims',
     description:
-      'Avoid online scams while you browse with the PayBack Scam Detector. Our free Chrome extension cross-references over 20,000 known fraudulent websites in real time.',
-    images: ['/images/payback_og.jpeg'],
+      'Avoid online scams while you browse with the Online Reclaims Scam Detector. Our free Chrome extension cross-references over 20,000 known fraudulent websites in real time.',
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

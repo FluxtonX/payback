@@ -228,7 +228,7 @@ export const DisclaimerSection: React.FC = () => {
         {/* Disclaimer Content Wrapper */}
         <div className="pt-6 pb-4 flex flex-col items-center text-center max-w-[1208px] mx-auto text-[var(--brand-soft)] text-[12px] sm:text-[13px] xl:text-[14px] leading-[22px] sm:leading-[24px]">
           <p className="mb-4">
-            Money Back Ltd. (trading as Payback), Israeli company No. 515711653, is authorized and regulated in Israel &amp; operates globally.
+            Money Back Ltd. (trading as Online Reclaims), Israeli company No. 515711653, is authorized and regulated in Israel &amp; operates globally.
             <br />
             In Australia (ARBN 678 842 236) &amp; are an AFCA member No.109819. In the EU, we provide full support services in compliance with all applicable laws and regulations. In the UK, we operate under an FCA-recognized legal exclusion. In the US, we’re approved to operate and follow applicable compliance requirements and a fixed payment structure.
           </p>
@@ -238,7 +238,7 @@ export const DisclaimerSection: React.FC = () => {
             Recoveries can be lengthy. For self-help options, see our{' '}
             <a
               style={{ textDecoration: 'underline' }}
-              href="https://payback.com/blogs/guide-to-diy-chargebacks/"
+              href="https://onlinereclaims.com/blogs/guide-to-diy-chargebacks/"
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-[#ffd700] transition-colors"

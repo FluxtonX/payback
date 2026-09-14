@@ -34,7 +34,7 @@ export const AffiliateWhyWork: React.FC = () => {
           </div>
 
           <p className="max-w-[470px] min-[1366px]:max-w-[480px] min-[1366px]:w-[480px] text-[#616267] text-[16px] leading-[24px] text-center min-[1366px]:text-left m-0">
-            Partner with Payback and help fight scammers. Through our affiliate program, you can help scam victims reclaim their losses while earning commissions for your referrals
+            Partner with Online Reclaims and help fight scammers. Through our affiliate program, you can help scam victims reclaim their losses while earning commissions for your referrals
           </p>
         </div>
       </div>

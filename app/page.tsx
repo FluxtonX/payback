@@ -15,22 +15,22 @@ import ScamTypesSection from '@/components/home/ScamTypesSection';
 import FaqAccordionSection from '@/components/home/FaqAccordionSection';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 import ContactSection from '@/components/home/ContactSection';
-import PbIsBackStatement from '@/components/home/PbIsBackStatement';
+import OrIsBackStatement from '@/components/home/OrIsBackStatement';
 import WarningModal from '@/components/modals/WarningModal';
 
 export const metadata: Metadata = {
-  title: 'PayBack : Trading & Investment Scam Funds Recovery',
+  title: 'Online Reclaims : Trading & Investment Scam Funds Recovery',
   description:
-    'PayBack is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
+    'Online Reclaims is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
   openGraph: {
-    title: 'PayBack : Trading & Investment Scam Funds Recovery',
+    title: 'Online Reclaims : Trading & Investment Scam Funds Recovery',
     description:
-      'PayBack is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
-    url: 'https://payback.com/',
-    siteName: 'Payback',
+      'Online Reclaims is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
+    url: 'https://onlinereclaims.com/',
+    siteName: 'Online Reclaims',
     images: [
       {
-        url: 'https://payback.com/images/payback_og.jpeg',
+        url: 'https://onlinereclaims.com/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Home',
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'PayBack : Trading & Investment Scam Funds Recovery',
+    title: 'Online Reclaims : Trading & Investment Scam Funds Recovery',
     description:
-      'PayBack is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
-    images: ['https://payback.com/images/payback_og.jpeg'],
+      'Online Reclaims is here to help you recover funds lost in fraudulent investment or trading schemes performed by unethical brokers. It’s Time to Get Your Money Back!',
+    images: ['https://onlinereclaims.com/images/onlinereclaims.png'],
   },
   alternates: {
-    canonical: 'https://payback.com/',
+    canonical: 'https://onlinereclaims.com/',
   },
 };
 
@@ -73,7 +73,7 @@ export default function HomePage() {
       {/* 07: Money Retrieved Stats Banner */}
       <StatsCallout />
 
-      {/* 08: Why Work With Payback */}
+      {/* 08: Why Work With Online Reclaims */}
       <WhyWorkSection />
 
       {/* 09: 14-Day Money Back Guarantee */}
@@ -103,8 +103,8 @@ export default function HomePage() {
       {/* 16: Comprehensive Contact Form */}
       <ContactSection />
 
-      {/* 17: Official Statement: Payback is Back */}
-      <PbIsBackStatement />
+      {/* 17: Official Statement: Online Reclaims is Back */}
+      <OrIsBackStatement />
 
       {/* 18: Global Warning Modal */}
       <WarningModal />

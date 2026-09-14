@@ -53,7 +53,7 @@ export const ForexGuide: React.FC = () => {
           <div className="w-full xl:w-[584px] flex-shrink-0 text-[#616267] text-[15px] leading-[26px]">
             {/* Introductory Statement */}
             <div className="bg-[var(--brand-soft)]/50 border-l-4 border-[var(--brand-primary)] p-5 mb-8 text-[15px] text-[var(--brand-deep)]">
-              Forex scams are unfortunately common, which is why it’s important to understand how these scams operate and what steps you can take to protect yourself. That’s why we at Payback are dedicated to empowering our clients with the knowledge and tools they need to avoid Forex fraud altogether. We believe that informed investors are better equipped to make sound decisions.
+              Forex scams are unfortunately common, which is why it’s important to understand how these scams operate and what steps you can take to protect yourself. That’s why we at Online Reclaims are dedicated to empowering our clients with the knowledge and tools they need to avoid Forex fraud altogether. We believe that informed investors are better equipped to make sound decisions.
             </div>
 
             {/* Section 1: What is forex trading? */}
@@ -95,7 +95,7 @@ export const ForexGuide: React.FC = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[var(--brand-accent)] font-bold">✓</span>
-                    <span>If you have fallen victim to an unregulated Forex brokerage, Payback forensic reports help trace digital payment trails to pursue restitution.</span>
+                    <span>If you have fallen victim to an unregulated Forex brokerage, Online Reclaims forensic reports help trace digital payment trails to pursue restitution.</span>
                   </li>
                 </ul>
               </div>
@@ -159,7 +159,7 @@ export const ForexGuide: React.FC = () => {
                 Dealing with the aftermath of a Forex trading scam can be overwhelming, especially when communicating with uncooperative offshore companies. However, victims have legal dispute channels, banking chargeback mechanisms, and regulatory escalation frameworks available.
               </p>
               <p className="mb-6">
-                Payback assists victims by reviewing payment channels (credit cards, bank wires, crypto rails), compiling an authoritative Investigation Report, and structuring an actionable recovery dossier to present to financial authorities.
+                Online Reclaims assists victims by reviewing payment channels (credit cards, bank wires, crypto rails), compiling an authoritative Investigation Report, and structuring an actionable recovery dossier to present to financial authorities.
               </p>
               <div className="bg-[var(--brand-soft)]/60 p-5 border-l-4 border-[var(--brand-accent)]">
                 <p className="text-[14px] text-[var(--brand-deep)] font-medium">

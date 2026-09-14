@@ -143,7 +143,7 @@ export const FinancialGuide: React.FC = () => {
                 2. Change all passwords and security keys across your email, financial, and digital portal accounts.
               </p>
               <p>
-                3. Partner with Payback’s dispute specialists to conduct forensic analysis, trace funds across intermediary clearing houses, and file official restitution reports.
+                3. Partner with Online Reclaims’s dispute specialists to conduct forensic analysis, trace funds across intermediary clearing houses, and file official restitution reports.
               </p>
             </div>
 

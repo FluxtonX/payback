@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   title: `${data.title} | Official Policy`,
   description: data.description,
   alternates: {
-    canonical: 'https://payback.com/privacy-policy/',
+    canonical: 'https://onlinereclaims.com/privacy-policy/',
   },
   openGraph: {
     title: `${data.title} | Official Policy`,
     description: data.description,
-    url: 'https://payback.com/privacy-policy/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/privacy-policy/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: data.title,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: `${data.title} | Official Policy`,
     description: data.description,
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

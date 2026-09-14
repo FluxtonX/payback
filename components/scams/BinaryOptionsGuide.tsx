@@ -55,7 +55,7 @@ export const BinaryOptionsGuide: React.FC = () => {
           <div className="w-full xl:w-[584px] flex-shrink-0 text-[#616267] text-[15px] leading-[26px]">
             {/* Introductory Statement */}
             <div className="bg-[var(--brand-soft)]/50 border-l-4 border-[var(--brand-primary)] p-5 mb-8 text-[15px] text-[var(--brand-deep)]">
-              At Payback, we&#x27;re passionate about empowering our clients to take back what’s rightfully theirs after fraud. Our investigation reports and action plans provide you with the tools and resources you need to retrieve your losses. We also offer informative guides to help you understand and avoid future scams.
+              At Online Reclaims, we&#x27;re passionate about empowering our clients to take back what’s rightfully theirs after fraud. Our investigation reports and action plans provide you with the tools and resources you need to retrieve your losses. We also offer informative guides to help you understand and avoid future scams.
             </div>
 
             {/* Section 1: What are binary options? */}
@@ -107,7 +107,7 @@ export const BinaryOptionsGuide: React.FC = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[var(--brand-accent)] font-bold">✓</span>
-                    <span>Payback forensic investigations help recover money for binary options fraud victims worldwide.</span>
+                    <span>Online Reclaims forensic investigations help recover money for binary options fraud victims worldwide.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[var(--brand-accent)] font-bold">✓</span>

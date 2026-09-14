@@ -4,7 +4,7 @@ export const WhatSetsApartSection: React.FC = () => {
   const items = [
     {
       title: 'Client-centric approach',
-      desc: 'At Payback, our clients are at the heart of everything we do. We are dedicated to providing compassionate support, personalized guidance, and the tools and resources they need throughout the journey.',
+      desc: 'At Online Reclaims, our clients are at the heart of everything we do. We are dedicated to providing compassionate support, personalized guidance, and the tools and resources they need throughout the journey.',
       icon: '/icons/client-centric.svg',
     },
     {
@@ -19,7 +19,7 @@ export const WhatSetsApartSection: React.FC = () => {
     },
     {
       title: 'Expertise and innovation',
-      desc: 'Payback combines a diverse team of specialists with extensive backgrounds in cybersecurity, digital forensics, and legal matters. By harnessing our collective knowledge alongside cutting-edge technology, we strive that our services consistently meet the highest standards.',
+      desc: 'Online Reclaims combines a diverse team of specialists with extensive backgrounds in cybersecurity, digital forensics, and legal matters. By harnessing our collective knowledge alongside cutting-edge technology, we strive that our services consistently meet the highest standards.',
       icon: '/icons/expertise-and-innovation.svg',
     },
     {
@@ -39,7 +39,7 @@ export const WhatSetsApartSection: React.FC = () => {
     },
     {
       title: 'Continuous improvement',
-      desc: 'We at Payback are dedicated to constant improvement and learning. We actively research emerging scam trends, invest in the latest technologies, and adapt our strategies to provide the most effective support possible.',
+      desc: 'We at Online Reclaims are dedicated to constant improvement and learning. We actively research emerging scam trends, invest in the latest technologies, and adapt our strategies to provide the most effective support possible.',
       icon: '/icons/improvement.svg',
     },
   ];
@@ -48,7 +48,7 @@ export const WhatSetsApartSection: React.FC = () => {
     <section className="overflow-x-hidden pb-8 mb-16 sm:mb-[72px] md:mb-20 lg:mb-24 xl:mb-32 font-sans mt-8 sm:mt-12 xl:mt-16">
       <div className="container max-w-[1208px] mx-auto px-4">
         <h2 className="text-[28px] sm:text-[34px] xl:text-[40px] font-bold text-[var(--brand-deep)] text-center mb-10 xl:mb-14">
-          What Sets Payback Apart
+          What Sets Online Reclaims Apart
         </h2>
 
         <ul className="flex flex-col gap-6 md:grid md:grid-cols-2 md:w-[720px] md:gap-8 xl:w-[1000px] xl:gap-x-10 xl:gap-y-8 mx-auto list-none p-0">

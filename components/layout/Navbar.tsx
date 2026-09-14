@@ -16,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
   // Mobile submenu accordion toggles
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileBlogOpen, setMobileBlogOpen] = useState(false);
-  const [mobilePaybackOpen, setMobilePaybackOpen] = useState(false);
+  const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
 
   // Close menus on resize to desktop (>= 1366px matching live site)
   useEffect(() => {
@@ -174,12 +174,12 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
         <div className="max-w-[1208px] mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="block flex-shrink-0">
-            <div className="relative w-[121px] h-[32px] min-[414px]:w-[151px] min-[414px]:h-[40px]">
+            <div className="relative w-[150px] h-[42px] min-[414px]:w-[180px] min-[414px]:h-[48px]">
               <Image
-                src="/elements/logo.svg"
-                alt="Payback Logotype"
-                width={151}
-                height={40}
+                src="/images/onlinereclaims-white.png"
+                alt="Online Reclaims Logo"
+                width={180}
+                height={48}
                 className="w-full h-full object-contain"
                 priority
               />
@@ -364,14 +364,14 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                 )}
               </li>
 
-              {/* Payback Dropdown */}
+              {/* Online Reclaims Dropdown */}
               <li
                 className="relative py-[13px] pr-7 cursor-pointer whitespace-nowrap"
-                onMouseEnter={() => setActiveDropdown('payback')}
+                onMouseEnter={() => setActiveDropdown('Online Reclaims')}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <div className="flex items-center hover:text-[#f4f4f4] transition-colors">
-                  <span>Payback</span>
+                  <span>Online Reclaims</span>
                   <svg
                     width="24"
                     height="24"
@@ -379,16 +379,16 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className={`absolute right-0 top-[13px] transition-transform duration-200 ${
-                      activeDropdown === 'payback' ? 'rotate-180' : ''
+                      activeDropdown === 'Online Reclaims' ? 'rotate-180' : ''
                     }`}
                   >
                     <path
                       d="M16.939 7L12 11.94L7.06096 7L4.93896 9.122L12 16.182L19.061 9.122L16.939 7Z"
-                      fill={activeDropdown === 'payback' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
+                      fill={activeDropdown === 'Online Reclaims' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
                     />
                   </svg>
                 </div>
-                {activeDropdown === 'payback' && (
+                {activeDropdown === 'Online Reclaims' && (
                   <ul className="absolute top-[54px] -left-2 w-[200px] bg-white text-[#616267] py-4 px-6 shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] z-60 flex flex-col gap-3">
                     <li>
                       <Link
@@ -557,16 +557,16 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
               </Link>
             </li>
 
-            {/* Mobile Payback Accordion */}
+            {/* Mobile Online Reclaims Accordion */}
             <li className="pt-2">
               <button
-                onClick={() => setMobilePaybackOpen(!mobilePaybackOpen)}
+                onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)}
                 className="w-full flex justify-between items-center py-2 text-[var(--brand-primary)]"
               >
-                <span>Payback</span>
-                <span className="text-xl">{mobilePaybackOpen ? '−' : '+'}</span>
+                <span>Online Reclaims</span>
+                <span className="text-xl">{mobileCompanyOpen ? '−' : '+'}</span>
               </button>
-              {mobilePaybackOpen && (
+              {mobileCompanyOpen && (
                 <ul className="pl-4 pt-2 space-y-2 text-[15px] text-[#616267]">
                   <li>
                     <Link

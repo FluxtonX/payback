@@ -8,22 +8,22 @@ import { phase10LegalData } from '@/data/phase10Data';
 const data = phase10LegalData['whistleblowing'];
 
 export const metadata: Metadata = {
-  title: 'Whistleblowing & Scam Wallet Reporting | PayBack',
+  title: 'Whistleblowing & Scam Wallet Reporting | Online Reclaims',
   description:
     'Report scam crypto wallets, fraudulent platforms, and illicit blockchain transactions securely. Join our global initiative to track, expose, and recover stolen assets.',
   alternates: {
-    canonical: 'https://payback.com/whistleblowing/',
+    canonical: 'https://onlinereclaims.com/whistleblowing/',
   },
   openGraph: {
-    title: 'Whistleblowing & Scam Wallet Reporting | PayBack',
+    title: 'Whistleblowing & Scam Wallet Reporting | Online Reclaims',
     description:
       'Report scam crypto wallets, fraudulent platforms, and illicit blockchain transactions securely. Join our global initiative to track, expose, and recover stolen assets.',
-    url: 'https://payback.com/whistleblowing/',
-    siteName: 'Payback',
+    url: 'https://onlinereclaims.com/whistleblowing/',
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Whistleblowing Portal',
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Whistleblowing & Scam Wallet Reporting | PayBack',
+    title: 'Whistleblowing & Scam Wallet Reporting | Online Reclaims',
     description:
       'Report scam crypto wallets, fraudulent platforms, and illicit blockchain transactions securely. Join our global initiative to track, expose, and recover stolen assets.',
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 

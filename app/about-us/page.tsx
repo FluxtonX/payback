@@ -9,23 +9,23 @@ import WhatSetsApartSection from '@/components/about-us/WhatSetsApartSection';
 import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import CeoStatement from '@/components/about-us/CeoStatement';
 import AboutTeamSection from '@/components/about-us/AboutTeamSection';
-import PaybackTimeStatement from '@/components/about-us/PaybackTimeStatement';
+import ReclaimTimeStatement from '@/components/about-us/PaybackTimeStatement';
 import ScamTypesSection from '@/components/home/ScamTypesSection';
 import PartnerContactForm from '@/components/about-us/PartnerContactForm';
 
 export const metadata: Metadata = {
-  title: 'About Us - PayBack',
+  title: 'About Us - Online Reclaims',
   description:
-    'Payback is one of the leading chargeback firms worldwide. Specializing in online trading scams (Forex, Binary Options, Digital Currencies, etc), we pride ourselves on',
+    'Online Reclaims is one of the leading chargeback firms worldwide. Specializing in online trading scams (Forex, Binary Options, Digital Currencies, etc), we pride ourselves on',
   openGraph: {
-    title: 'About Us - PayBack',
+    title: 'About Us - Online Reclaims',
     description:
-      'Payback is one of the leading chargeback firms worldwide. Specializing in online trading scams (Forex, Binary Options, Digital Currencies, etc), we pride ourselves on',
-    url: 'https://payback.com/about-us/',
-    siteName: 'Payback',
+      'Online Reclaims is one of the leading chargeback firms worldwide. Specializing in online trading scams (Forex, Binary Options, Digital Currencies, etc), we pride ourselves on',
+    url: 'https://onlinereclaims.com/about-us/',
+    siteName: 'Online Reclaims',
     images: [
       {
-        url: 'https://payback.com/images/payback_og.jpeg',
+        url: 'https://onlinereclaims.com/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Home',
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'About Us - PayBack',
+    title: 'About Us - Online Reclaims',
     description:
-      'Payback is one of the leading chargeback firms worldwide. Specializing in online trading scams (Forex, Binary Options, Digital Currencies, etc), we pride ourselves on',
-    images: ['https://payback.com/images/payback_og.jpeg'],
+      'Online Reclaims is one of the leading chargeback firms worldwide. Specializing in online trading scams (Forex, Binary Options, Digital Currencies, etc), we pride ourselves on',
+    images: ['https://onlinereclaims.com/images/onlinereclaims.png'],
   },
   alternates: {
-    canonical: 'https://payback.com/about-us/',
+    canonical: 'https://onlinereclaims.com/about-us/',
   },
 };
 
@@ -65,7 +65,7 @@ export default function AboutUsPage() {
       {/* 04: Our Vision */}
       <OurVisionSection />
 
-      {/* 05: What Sets Payback Apart */}
+      {/* 05: What Sets Online Reclaims Apart */}
       <WhatSetsApartSection />
 
       {/* 06: Retrieve your money from a scam! CTA */}
@@ -77,8 +77,8 @@ export default function AboutUsPage() {
       {/* 08: About Our Team */}
       <AboutTeamSection />
 
-      {/* 09: It's Payback Time! Statement Card */}
-      <PaybackTimeStatement />
+      {/* 09: It's Time to Reclaim What's Yours! Statement Card */}
+      <ReclaimTimeStatement />
 
       {/* 10: Scam Types Grid (Reusable) */}
       <ScamTypesSection />

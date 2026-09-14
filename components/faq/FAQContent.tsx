@@ -8,12 +8,12 @@ export const FAQContent: React.FC = () => {
       <div className="w-full max-w-[470px] md:max-w-[768px] xl:max-w-[1208px] px-4 md:px-6 xl:px-0 mx-auto">
         {/* Title */}
         <h2 className="max-w-[593px] mx-auto mt-2 mb-4 md:mb-6 text-center font-bold text-[var(--brand-primary)] text-[28px] leading-[32px] md:text-[32px] md:leading-[40px] xl:text-[40px] xl:leading-[48px]">
-          Payback - How Does It Work?
+          Online Reclaims - How Does It Work?
         </h2>
 
         {/* Intro Paragraph */}
         <p className="mx-auto text-center text-[#616267] text-[16px] leading-[24px] max-w-[470px] xl:max-w-[792px] mb-6 min-[360px]:mb-4 md:mb-[72px] xl:mb-8">
-          In order to better understand how Payback works, and the systems we have in place for the recovery of your funds, you’ll find below a series of frequently asked questions.
+          In order to better understand how Online Reclaims works, and the systems we have in place for the recovery of your funds, you’ll find below a series of frequently asked questions.
         </p>
 
         {/* Accordion */}

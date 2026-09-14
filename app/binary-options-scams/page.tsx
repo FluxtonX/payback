@@ -10,20 +10,20 @@ import LetsTalkCTA from '@/components/home/LetsTalkCTA';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
 
 export const metadata: Metadata = {
-  title: "Binary Options Scam Recovery With PayBack",
+  title: "Binary Options Scam Recovery With Online Reclaims",
   description: "Thousands of clients used our Investigation Report to retrieve their losses from binary options fraud. Start with a free consultation.",
   alternates: {
-    canonical: "https://payback.com/binary-options-scams/",
+    canonical: "https://onlinereclaims.com/binary-options-scams/",
   },
   openGraph: {
-    title: "Binary Options Scam Recovery With PayBack",
+    title: "Binary Options Scam Recovery With Online Reclaims",
     description: "Thousands of clients used our Investigation Report to retrieve their losses from binary options fraud. Start with a free consultation.",
-    url: "https://payback.com/binary-options-scams/",
-    siteName: 'Payback',
+    url: "https://onlinereclaims.com/binary-options-scams/",
+    siteName: 'Online Reclaims',
     type: 'website',
     images: [
       {
-        url: '/images/payback_og.jpeg',
+        url: '/images/onlinereclaims.png',
         width: 1200,
         height: 630,
         alt: 'Binary options Recovery',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: "Binary Options Scam Recovery With PayBack",
+    title: "Binary Options Scam Recovery With Online Reclaims",
     description: "Thousands of clients used our Investigation Report to retrieve their losses from binary options fraud. Start with a free consultation.",
-    images: ['/images/payback_og.jpeg'],
+    images: ['/images/onlinereclaims.png'],
   },
 };
 
