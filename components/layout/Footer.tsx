@@ -11,12 +11,14 @@ export const Footer: React.FC = () => {
   };
 
   const sitelinks = [
-    { title: 'Testimonials', href: '/testimonials/' },
+    { title: 'Our Team', href: '/#our-team' },
     { title: 'Contact us', href: '/contact-us/' },
     { title: 'About Us', href: '/about-us/' },
     { title: 'FAQ', href: '/faq/' },
     { title: 'Affiliate page', href: '/affiliate-page/' },
-    { title: 'Sitemap', href: '/sitemap/' },
+    { title: 'Fraud Prevention Tools', href: '/fraud-prevention-tools/' },
+    { title: 'Payback Verifier', href: '/payback-verifier/' },
+    { title: 'Scam Detector', href: '/scam-detector/' },
   ];
 
   const phones = [
@@ -171,7 +173,7 @@ export const Footer: React.FC = () => {
             </button>
             {openAccordion === 'location' && (
               <p className="pb-3 text-[#a0a6ba] text-[15px] leading-[24px]">
-                Ha-Khilazon St 5, Ramat Gan, Israel, 5252269
+                100 King Street West, Suite 5600, Toronto, ON M5X 1C9, Canada
               </p>
             )}
           </div>
@@ -322,7 +324,7 @@ export const Footer: React.FC = () => {
               Location
             </h4>
             <p className="text-[#a0a6ba] text-[16px] leading-[24px]">
-              Ha-Khilazon St 5, Ramat Gan, Israel, 5252269
+              100 King Street West, Suite 5600, Toronto, ON M5X 1C9, Canada
             </p>
           </div>
 

@@ -19,7 +19,7 @@ export const faqData: FAQItem[] = [
   {
     question: 'What is the cost of pursuing a case via Payback?',
     answer:
-      'Payback provides the tools you need to pursue your case in the form of a detailed Investigation Report that includes a suggested Action Plan for you to follow. Such a report costs $3,500, with an additional $750 per transaction.',
+      'Payback provides the tools you need to pursue your case in the form of a detailed Investigation Report that includes a suggested Action Plan for you to follow. Such a report costs $500, with an additional $750 per transaction.',
   },
   {
     question: "Why don't you charge me at the end of the process only?",
@@ -28,7 +28,7 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'Where is Payback based?',
-    answer: 'Payback is located in Ramat Gan, Israel.',
+    answer: 'Payback is located in Ontario, Canada (100 King Street West, Suite 5600, Toronto, ON M5X 1C9).',
   },
   {
     question: 'How do I know that Payback isn’t a scam?',

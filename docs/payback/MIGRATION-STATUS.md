@@ -13,13 +13,10 @@ Tracking phases, milestones, and verification status.
 | **Phase 2** | **Page 02: About Us (`/about-us/`)** | Mission, team, leadership, company timeline | **COMPLETED** | 2026-09-10 | 2026-09-10 |
 | **Phase 3** | **Page 03: Contact Us (`/contact-us/`)** | Full contact forms, global phone numbers, office locations | **COMPLETED** | 2026-09-10 | 2026-09-10 |
 | **Phase 4** | **Page 04: Testimonials (`/testimonials/`)** | Client reviews, Trustpilot embed, video reviews, scam categories | **COMPLETED** | 2026-09-10 | 2026-09-10 |
-| **Phase 5** | **Page 05: FAQ (`/faq/`)** | Complete FAQ accordion categories | **COMPLETED** | 2026-09-10 | 2026-09-10 |
-| **Phase 6** | **Page 06: Affiliate Page (`/affiliate-page/`)** | Affiliate workflow, 4-step cards, 2-col why work, partner statement | **COMPLETED** | 2026-09-10 | 2026-09-10 |
-| **Phase 7** | **Scam Guides Suite (8 Pages)** | All 8 Scam Guides: Binary Options, Forex, Crypto, Stock, Romance, Financial, Property, Credit Card | **COMPLETED** | 2026-09-11 | 2026-09-11 |
-| **Phase 8** | **Cyber Investigation & Services Suite** | Cyber Investigation, Crypto Tracing, KYC, AML, B2B Security | **PENDING** | - | - |
-| **Phase 9** | **Fraud Prevention & Security Tools** | Fraud prevention tools, Payback verifier, Scam detector | **PENDING** | - | - |
-| **Phase 10** | **Legal & Policy Suite** | Privacy policy, terms, whistleblowing, legal | **PENDING** | - | - |
-| **Phase 11** | **Blog Engine & Article Archive** | Blog index & dynamic article template (~150 posts) | **PENDING** | - | - |
+| **Phase 8** | **Cyber Investigation & Services Suite** | 16 Live Services Pages: Batch 8.1 (4 pages), Batch 8.2 (5 pages), Batch 8.3 (ADR Course), Batch 8.4 (B2B Security: 6 pages) | **COMPLETED (16/16 Active Live Services)** | 2026-09-14 | 2026-09-14 |
+| **Phase 9** | **Fraud Prevention & Security Tools Suite** | Fraud Prevention Tools (`/fraud-prevention-tools/`), PayBack Verifier (`/payback-verifier/`), Scam Detector (`/scam-detector/`) | **COMPLETED (3/3 Tools Pages)** | 2026-09-14 | 2026-09-14 |
+| **Phase 10** | **Legal & Policy Suite** | Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/tnc/`), Legal Notice (`/legal/`), Whistleblowing (`/whistleblowing/`) | **COMPLETED (4/4 Legal Pages)** | 2026-09-14 | 2026-09-14 |
+| **Phase 11** | **Blog Engine & Article Archive** | Blog index (`/blog/`) & dynamic article templates (`/blogs/[slug]/`) with interactive topics, live search, and static prerendering (13 comprehensive articles) | **COMPLETED** | 2026-09-14 | 2026-09-14 |
 
 ---
 
@@ -91,4 +88,21 @@ Tracking phases, milestones, and verification status.
 - [x] Production build verification (`npm run build`: 0 errors, prerendered static `/about-us` and `/`)
 - [x] Chunk load & runtime verification: All 9 JS chunks loaded with 200 OK on both pages
 - [x] Documentation recorded in `docs/payback/pages/about-us.md`
+
+---
+
+## Phase 11 Breakdown: Blog Engine & Article Archive
+
+- [x] Extracted complete dataset of 13 comprehensive articles with full body content, dates, categories, authors, reading times, and thumbnails (`data/blogArticles.ts`)
+- [x] Downloaded all missing thumbnail image assets to `public/articlesImages/`
+- [x] Implemented `BlogFeaturedCard.tsx` (Flagship article spotlight hero with 2 stacked side articles)
+- [x] Implemented `BlogArticleCard.tsx` (Reusable grid card with hover zoom, category badges, and reading time)
+- [x] Implemented `BlogIndexClient.tsx` (Interactive category filter buttons, real-time search, and responsive pagination)
+- [x] Implemented `BlogNewsletterSection.tsx` (Newsletter subscription form in Forest Green branding)
+- [x] Implemented `ArticleReaderClient.tsx` (Interactive 2-column reader with dynamic Table of Contents, scroll-spy, sticky consultation sidebar, and social sharing)
+- [x] Implemented `app/blog/page.tsx` with full OpenGraph, Twitter, and Schema.org JSON-LD
+- [x] Implemented `app/blogs/[slug]/page.tsx` with `generateStaticParams` for build-time static prerendering
+- [x] Verified build: `npm run build` generates 54/54 static pages with 0 errors
+- [x] Verified runtime: HTTP 200 OK on both `/blog/` and `/blogs/[slug]/` routes on local dev server
+
 

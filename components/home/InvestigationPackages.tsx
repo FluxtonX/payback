@@ -52,7 +52,7 @@ export const InvestigationPackages: React.FC = () => {
                 Fraud Investigation Report
               </h3>
               <div className="text-[40px] xl:text-[44px] font-semibold text-[var(--brand-deep)] leading-none mb-3">
-                $3,500
+                $500
               </div>
               <div className="text-[14px] text-[var(--brand-primary)] mb-5 h-6">
                 + $750 per transaction
@@ -136,7 +136,7 @@ export const InvestigationPackages: React.FC = () => {
                 Full Support Package
               </h3>
               <div className="text-[40px] xl:text-[44px] font-semibold text-[var(--brand-deep)] leading-none mb-3">
-                $10,000
+                $1,500
               </div>
               <div className="text-[14px] text-[var(--brand-primary)] mb-5 h-6"></div>
               <div className="w-full h-px bg-[#a0a6ba] mb-6"></div>
@@ -218,7 +218,7 @@ export const InvestigationPackages: React.FC = () => {
                 Crypto Tracing Report
               </h3>
               <div className="text-[40px] xl:text-[44px] font-semibold text-[var(--brand-deep)] leading-none mb-3">
-                $3,500
+                $500
               </div>
               <div className="text-[14px] text-[var(--brand-primary)] mb-5 h-6">
                 + $750 per transaction

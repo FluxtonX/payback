@@ -15,7 +15,6 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
 
   // Mobile submenu accordion toggles
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const [mobileOnlineSafetyOpen, setMobileOnlineSafetyOpen] = useState(false);
   const [mobileBlogOpen, setMobileBlogOpen] = useState(false);
   const [mobilePaybackOpen, setMobilePaybackOpen] = useState(false);
 
@@ -67,19 +66,19 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
       ),
       columns: [
         [
-          { label: 'Cyber investigation / (Fraud investigations)', href: '/cyber-investigations/' },
-          { label: 'Crypto asset tracing', href: '/crypto-asset-tracing/' },
-          { label: 'KYC services', href: '/kyc-services/' },
-          { label: 'Binary Options Scams', href: '/binary-options-scams/' },
-          { label: 'Digital Currency Scam', href: '/digital-currency-scams/' },
-          { label: 'Forex Scam', href: '/forex-scams/' },
+          { label: 'Cyber investigation / (Fraud investigations)', href: '/cyber-investigations/', available: true },
+          { label: 'Crypto asset tracing', href: '/crypto-asset-tracing/', available: true },
+          { label: 'KYC services', href: '/kyc-services/', available: true },
+          { label: 'Binary Options Scams', href: '/binary-options-scams/', available: true },
+          { label: 'Digital Currency Scam', href: '/digital-currency-scams/', available: true },
+          { label: 'Forex Scam', href: '/forex-scams/', available: true },
         ],
         [
-          { label: 'Stock Trading Scams', href: '/stock-trading-scams/' },
-          { label: 'Credit Card Phishing Scams', href: '/credit-card-phishing/' },
-          { label: 'Property Scams', href: '/property-scams/' },
-          { label: 'Romance Scams', href: '/romance-scams/' },
-          { label: 'Other Scams...', href: '/financial-scams/' },
+          { label: 'Stock Trading Scams', href: '/stock-trading-scams/', available: true },
+          { label: 'Credit Card Phishing Scams', href: '/credit-card-phishing/', available: true },
+          { label: 'Property Scams', href: '/property-scams/', available: true },
+          { label: 'Romance Scams', href: '/romance-scams/', available: true },
+          { label: 'Other Scams...', href: '/financial-scams/', available: true },
         ],
       ],
     },
@@ -104,8 +103,8 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
       ),
       columns: [
         [
-          { label: 'ADR course', href: '/adr-course/' },
-          { label: 'ADR advanced course', href: '/adr-advanced-course/' },
+          { label: 'ADR course', href: '/adr-course/', available: true },
+          { label: 'ADR advanced course', href: '/adr-advanced-course/', available: false },
         ],
       ],
     },
@@ -130,12 +129,12 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
       ),
       columns: [
         [
-          { label: 'Scam Restitution Consulting', href: '/scam-restitution-consulting/' },
-          { label: 'ADR guidance', href: '/adr-guidance/' },
-          { label: 'Claims & Disputes', href: '/claims-and-disputes/' },
-          { label: 'Forced account liquidations', href: '/forced-account-liquidations/' },
-          { label: 'Regulatory compliance & other services', href: '/regulatory-compliance-and-other-services/' },
-          { label: 'Aml compliance', href: '/aml-compliance/' },
+          { label: 'Scam Restitution Consulting', href: '/scam-restitution-consulting/', available: true },
+          { label: 'ADR guidance', href: '/adr-guidance/', available: true },
+          { label: 'Claims & Disputes', href: '/claims-and-disputes/', available: true },
+          { label: 'Forced account liquidations', href: '/forced-account-liquidations/', available: true },
+          { label: 'Regulatory compliance & other services', href: '/regulatory-compliance-and-other-services/', available: true },
+          { label: 'Aml compliance', href: '/aml-compliance/', available: true },
         ],
       ],
     },
@@ -158,12 +157,12 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
       ),
       columns: [
         [
-          { label: 'Blue Team', href: '/blue-team/' },
-          { label: 'Red Team', href: '/red-team/' },
-          { label: 'Security Consulting', href: '/security-consulting/' },
-          { label: 'SOC Consulting', href: '/soc-consulting/' },
-          { label: 'Cyber Intelligence', href: '/cyber-intelligence/' },
-          { label: 'Social Engineering', href: '/social-engineering/' },
+          { label: 'Blue Team', href: '/blue-team/', available: true },
+          { label: 'Red Team', href: '/red-team/', available: true },
+          { label: 'Security Consulting', href: '/security-consulting/', available: true },
+          { label: 'SOC Consulting', href: '/soc-consulting/', available: true },
+          { label: 'Cyber Intelligence', href: '/cyber-intelligence/', available: true },
+          { label: 'Social Engineering', href: '/social-engineering/', available: true },
         ],
       ],
     },
@@ -190,13 +189,13 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
           {/* Desktop Navigation (>= 1366px) */}
           <nav className="hidden min-[1366px]:flex items-center">
             <ul className="flex items-center gap-5 font-sans text-[16px] text-[#a0a6ba]">
-              {/* Testimonials */}
+              {/* Our Team */}
               <li>
                 <Link
-                  href="/testimonials/"
+                  href="/#our-team"
                   className="block py-[13px] hover:text-[#f4f4f4] transition-colors whitespace-nowrap"
                 >
-                  Testimonials
+                  Our Team
                 </Link>
               </li>
 
@@ -261,16 +260,28 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                         {serviceCategories[activeServiceCategory].columns.map(
                           (col, colIdx) => (
                             <div key={colIdx} className="flex flex-col gap-4">
-                              {col.map((linkItem, linkIdx) => (
-                                <Link
-                                  key={linkIdx}
-                                  href={linkItem.href}
-                                  className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
-                                >
-                                  <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
-                                  <span>{linkItem.label}</span>
-                                </Link>
-                              ))}
+                              {col.map((linkItem, linkIdx) =>
+                                linkItem.available ? (
+                                  <Link
+                                    key={linkIdx}
+                                    href={linkItem.href}
+                                    onClick={() => setActiveDropdown(null)}
+                                    className="flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap group/navitem"
+                                  >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--brand-primary)] flex-shrink-0 group-hover/navitem:scale-125 transition-transform" />
+                                    <span>{linkItem.label}</span>
+                                  </Link>
+                                ) : (
+                                  <div
+                                    key={linkIdx}
+                                    className="flex items-center gap-2.5 text-[16px] font-medium text-[#a0a6ba] cursor-not-allowed select-none whitespace-nowrap opacity-60"
+                                    title="Coming soon"
+                                  >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#a0a6ba] flex-shrink-0" />
+                                    <span>{linkItem.label}</span>
+                                  </div>
+                                )
+                              )}
                             </div>
                           )
                         )}
@@ -282,63 +293,6 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
                       <strong className="font-semibold text-[var(--brand-primary)]">Note:</strong> Due to local regulations, not all services are available in all countries. For more information, contact us.
                     </div>
                   </div>
-                )}
-              </li>
-
-              {/* Online Safety Dropdown */}
-              <li
-                className="relative py-[13px] pr-7 cursor-pointer whitespace-nowrap"
-                onMouseEnter={() => setActiveDropdown('online-safety')}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <div className="flex items-center hover:text-[#f4f4f4] transition-colors">
-                  <span>Online Safety</span>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`absolute right-0 top-[13px] transition-transform duration-200 ${
-                      activeDropdown === 'online-safety' ? 'rotate-180' : ''
-                    }`}
-                  >
-                    <path
-                      d="M16.939 7L12 11.94L7.06096 7L4.93896 9.122L12 16.182L19.061 9.122L16.939 7Z"
-                      fill={activeDropdown === 'online-safety' ? '#f4f4f4' : 'var(--brand-periwinkle)'}
-                    />
-                  </svg>
-                </div>
-                {activeDropdown === 'online-safety' && (
-                  <ul className="absolute top-[54px] -left-2 w-[240px] bg-white text-[#616267] py-4 px-6 shadow-[8px_16px_32px_0_rgba(3,14,49,0.08)] z-60 flex flex-col gap-3">
-                    <li>
-                      <Link
-                        href="/whistleblowing/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
-                      >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
-                        <span>Whistleblowing</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/fraud-prevention-tools/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
-                      >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
-                        <span>Fraud Prevention Tools</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/payback-verifier/"
-                        className="group flex items-center gap-2.5 text-[16px] font-medium text-[#616267] hover:text-[var(--brand-primary)] transition-colors whitespace-nowrap"
-                      >
-                        <span className="w-1 h-1 rounded-full bg-[#616267] group-hover:w-1.5 group-hover:h-1.5 group-hover:bg-[var(--brand-primary)] transition-all flex-shrink-0" />
-                        <span>Payback Verifier</span>
-                      </Link>
-                    </li>
-                  </ul>
                 )}
               </li>
 
@@ -545,11 +499,11 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
           <ul className="space-y-4 text-[16px] font-medium divide-y divide-[#f4f4f4]">
             <li className="pt-2">
               <Link
-                href="/testimonials/"
+                href="/#our-team"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block py-2 text-[var(--brand-primary)]"
               >
-                Testimonials
+                Our Team
               </Link>
             </li>
 
@@ -564,297 +518,31 @@ export const Navbar: React.FC<NavbarProps> = ({ variant = 'dark' }) => {
               </button>
               {mobileServicesOpen && (
                 <div className="pl-4 pt-2 space-y-4 text-[15px] text-[#616267]">
-                  <div>
-                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">Investigation</h5>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link
-                          href="/cyber-investigations/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Cyber investigation / (Fraud investigations)
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/crypto-asset-tracing/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Crypto asset tracing
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/kyc-services/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          KYC services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/binary-options-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Binary Options Scams
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/digital-currency-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Digital Currency Scam
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/forex-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Forex Scam
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/stock-trading-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Stock Trading Scams
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/credit-card-phishing/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Credit Card Phishing Scams
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/property-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Property Scams
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/romance-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Romance Scams
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/financial-scams/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Other Scams...
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">Education</h5>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link
-                          href="/adr-course/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          ADR course
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/adr-advanced-course/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          ADR advanced course
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">Professional Consulting</h5>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link
-                          href="/scam-restitution-consulting/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Scam Restitution Consulting
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/adr-guidance/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          ADR guidance
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/claims-and-disputes/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Claims &amp; Disputes
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/forced-account-liquidations/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Forced account liquidations
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/regulatory-compliance-and-other-services/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Regulatory compliance &amp; other services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/aml-compliance/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Aml compliance
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h5 className="font-semibold text-[var(--brand-primary)] mb-2">B2B Cyber Security</h5>
-                    <ul className="space-y-2">
-                      <li>
-                        <Link
-                          href="/blue-team/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Blue Team
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/red-team/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Red Team
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/security-consulting/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Security Consulting
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/soc-consulting/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          SOC Consulting
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/cyber-intelligence/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Cyber Intelligence
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/social-engineering/"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block py-1 hover:text-[var(--brand-primary)]"
-                        >
-                          Social Engineering
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                  {serviceCategories.map((cat) => (
+                    <div key={cat.id}>
+                      <h5 className="font-semibold text-[var(--brand-primary)] mb-2">{cat.title}</h5>
+                      <ul className="space-y-2">
+                        {cat.columns.flat().map((linkItem, lIdx) => (
+                          <li key={lIdx}>
+                            {linkItem.available ? (
+                              <Link
+                                href={linkItem.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="block py-1 text-[#616267] hover:text-[var(--brand-primary)] transition-colors"
+                              >
+                                {linkItem.label}
+                              </Link>
+                            ) : (
+                              <span className="block py-1 text-[#a0a6ba] cursor-not-allowed select-none opacity-60">
+                                {linkItem.label}
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
-              )}
-            </li>
-
-            {/* Mobile Online Safety Accordion */}
-            <li className="pt-2">
-              <button
-                onClick={() => setMobileOnlineSafetyOpen(!mobileOnlineSafetyOpen)}
-                className="w-full flex justify-between items-center py-2 text-[var(--brand-primary)]"
-              >
-                <span>Online Safety</span>
-                <span className="text-xl">{mobileOnlineSafetyOpen ? '−' : '+'}</span>
-              </button>
-              {mobileOnlineSafetyOpen && (
-                <ul className="pl-4 pt-2 space-y-2 text-[15px] text-[#616267]">
-                  <li>
-                    <Link
-                      href="/whistleblowing/"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[var(--brand-primary)]"
-                    >
-                      Whistleblowing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/fraud-prevention-tools/"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[var(--brand-primary)]"
-                    >
-                      Fraud Prevention Tools
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/payback-verifier/"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="block py-1 hover:text-[var(--brand-primary)]"
-                    >
-                      Payback Verifier
-                    </Link>
-                  </li>
-                </ul>
               )}
             </li>
 

@@ -10,7 +10,7 @@ import WhyWorkSection from '@/components/home/WhyWorkSection';
 import GuaranteeBlock from '@/components/home/GuaranteeBlock';
 import CopycatsBlock from '@/components/home/CopycatsBlock';
 import LetsTalkCTA from '@/components/home/LetsTalkCTA';
-import VideoReviewsSection from '@/components/home/VideoReviewsSection';
+import OurTeamSection from '@/components/home/OurTeamSection';
 import ScamTypesSection from '@/components/home/ScamTypesSection';
 import FaqAccordionSection from '@/components/home/FaqAccordionSection';
 import LatestArticlesSection from '@/components/home/LatestArticlesSection';
@@ -85,8 +85,8 @@ export default function HomePage() {
       {/* 11: Call to Action Banner (Lets Talk) */}
       <LetsTalkCTA />
 
-      {/* 12: Video Reviews (109 YouTube Cases Carousel) */}
-      <VideoReviewsSection />
+      {/* 12: Our Team Section */}
+      <OurTeamSection />
 
       {/* 13: Types of Scams We Investigate */}
       <ScamTypesSection />

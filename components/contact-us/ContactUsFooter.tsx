@@ -23,7 +23,7 @@ export const ContactUsFooter: React.FC = () => {
               />
             </div>
             <span className="text-[var(--brand-primary)] font-normal">
-              Ha-Khilazon St 5, Ramat Gan, Israel, 5252269
+              100 King Street West, Suite 5600, Toronto, ON M5X 1C9, Canada
             </span>
           </div>
 
